@@ -2,6 +2,8 @@
 
 Read the [compact theorem](THEOREM.md) with the [model boundaries](MODEL_AND_CLAIMS.md). Detailed proof sources are preserved unchanged below; their historical allocation notes do not issue current work orders.
 
+For preparation, the [tutorial bridge](TUTORIAL_BRIDGE.md) connects the selected Moudgalya–Motrunich source to the physical multiplicity projection used by these proofs.
+
 | Obligation | Authoritative source |
 |---|---|
 | Physical algebra, exact multiplicity trace, all-path finite recursion | [Initial calculation, Sections 2–4](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md). |

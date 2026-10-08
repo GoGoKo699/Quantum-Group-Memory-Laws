@@ -2,6 +2,8 @@
 
 The physical comparisons below use the primary passages in the stated versions. They distinguish the inherited framework from the evaluated physical spatial law. The [historical contribution review](../archive/research-handoff-2026-10-08/prior/REVIEW.md) and [historical source check](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) retain their original reading records. External articles are linked, not redistributed.
 
+The single background anchor is Moudgalya–Motrunich, arXiv:2108.10324v2. Follow the [tutorial bridge](../research/TUTORIAL_BRIDGE.md) for its reading route and the translation into this repository. The comparisons below serve attribution and proof provenance rather than a list of prerequisite tutorials.
+
 ## Physical predecessors
 
 | Source and inspected passages | Inherited result and distinction |

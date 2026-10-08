@@ -29,10 +29,17 @@ Within the proved bulk domain, the ratio to the center contribution tends to $\m
 
 A specified local, noise-averaged bond-kick model attains this contribution exactly at fixed finite chain size and positive noise strength, even with a Hamiltonian preserving the full algebra. The finite-size relaxation bound contains a dissipative gap whose system-size scaling is not evaluated. The zero-noise and long-time limits must not be interchanged.
 
+## Learn from one source
+
+Start with Moudgalya and Motrunich's [*Hilbert Space Fragmentation and Commutant Algebras*](https://arxiv.org/abs/2108.10324v2). Its pedagogical sections introduce the complete conserved algebra and its contribution to local memory. Our [tutorial bridge](research/TUTORIAL_BRIDGE.md) gives the selective reading order, translates the notation, derives the physical-trace projection, and leads into the spatial law.
+
+The route assumes standard quantum mechanics and linear algebra. The paper is the single background anchor; the repository supplies the model-specific calculation and proof.
+
 ## Reading map
 
 | Start here | What it contains |
 |---|---|
+| [Tutorial bridge](research/TUTORIAL_BRIDGE.md) | One-source preparation, notation dictionary, projection derivation, and a hand calculation at ordinary spin symmetry. |
 | [Model and claims](research/MODEL_AND_CLAIMS.md) and [physical mechanism](research/PHYSICAL_MECHANISM.md) | Observable, assumptions, sector explanation of the two powers, polarization readout, and elementary bulk profile. |
 | [Theorem](research/THEOREM.md) and [proof map](research/PROOF_MAP.md) | Finite recursion, edge/bulk laws, explicit amplitudes, and the complete proofs. |
 | [Local realization](research/LOCAL_REALIZATION.md) | Symmetry-preserving interactions plus unrecorded local noise. |
