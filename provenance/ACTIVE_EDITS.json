@@ -121,9 +121,217 @@
       [
         "edge plateau, an encoded quantum memory, a weak-q crossover law, or a theorem",
         "edge plateau, an encoded quantum memory, a weak-$q$ crossover law, or a theorem"
+      ],
+      [
+        "$$\nE_L=\\sum_i\\left(\\prod_{j<i}q^{-Z_j/2}\\right)s_i^+\n              \\left(\\prod_{j>i}q^{Z_j/2}\\right),\\quad\nF_L=E_L^\\dagger,\\quad K_L=q^{\\sum_jZ_j/2},\\quad\ns_i^+=(X_i+iY_i)/2.\n$$",
+        "```math\nE_L=\\sum_i\\left(\\prod_{j<i}q^{-Z_j/2}\\right)s_i^+\n              \\left(\\prod_{j>i}q^{Z_j/2}\\right),\\quad\nF_L=E_L^\\dagger,\\quad K_L=q^{\\sum_jZ_j/2},\\quad\ns_i^+=(X_i+iY_i)/2.\n```"
+      ],
+      [
+        "$$\nM_{L,i}(q)=2^{-L}\\|\\Pi_q(X_i)\\|_{\\rm HS}^2,\n\\qquad C_i(t)=2^{-L}\\operatorname{Tr}[X_i(t)X_i],\\quad C_i(0)=1.\n$$",
+        "```math\nM_{L,i}(q)=2^{-L}\\|\\Pi_q(X_i)\\|_{\\rm HS}^2,\n\\qquad C_i(t)=2^{-L}\\operatorname{Tr}[X_i(t)X_i],\\quad C_i(0)=1.\n```"
+      ],
+      [
+        "$$\n\\mathcal H_L=\\bigoplus_h\\mathcal V_{h/2}\\otimes\\mathbb C^{m_{L,h}},\\quad\nm_{L,h}=\\binom L{(L-h)/2}-\\binom L{(L-h)/2-1}.\n$$",
+        "```math\n\\mathcal H_L=\\bigoplus_h\\mathcal V_{h/2}\\otimes\\mathbb C^{m_{L,h}},\\quad\nm_{L,h}=\\binom L{(L-h)/2}-\\binom L{(L-h)/2-1}.\n```"
+      ],
+      [
+        "$$\nM_{L,i}=2^{-L}\\sum_h\\frac{\n\\|\\operatorname{Tr}_{m_{L,h}}(P_hX_iP_h)\\|_{\\rm HS}^2}{m_{L,h}}.\n$$",
+        "```math\nM_{L,i}=2^{-L}\\sum_h\\frac{\n\\|\\operatorname{Tr}_{m_{L,h}}(P_hX_iP_h)\\|_{\\rm HS}^2}{m_{L,h}}.\n```"
+      ],
+      [
+        "$$\n\\boxed{M_{L,1}=M_{L,L}=\n\\frac{\\tanh(\\log q)}{\\sqrt{2\\pi L}}+O_q(L^{-1}).}\n$$",
+        "```math\n\\boxed{M_{L,1}=M_{L,L}=\n\\frac{\\tanh(\\log q)}{\\sqrt{2\\pi L}}+O_q(L^{-1}).}\n```"
+      ],
+      [
+        "$$\nM_{L,L-d}=B_d(q)L^{-1/2}+o(L^{-1/2}),\\quad\nB_d(q)=\\frac{(1-z)^2}{\\sqrt{2\\pi}}\\|J_q^df\\|^2,\n$$",
+        "```math\nM_{L,L-d}=B_d(q)L^{-1/2}+o(L^{-1/2}),\\quad\nB_d(q)=\\frac{(1-z)^2}{\\sqrt{2\\pi}}\\|J_q^df\\|^2,\n```"
+      ],
+      [
+        "$$\n(J_q)_{r,r+1}=\\tfrac12\\sqrt{(1-z^{r+1})(1-z^{r+2})},\\quad\n(J_q)_{r,r}=\\tfrac12(q^{-1}+q^{-3})z^r.\n$$",
+        "```math\n(J_q)_{r,r+1}=\\tfrac12\\sqrt{(1-z^{r+1})(1-z^{r+2})},\\quad\n(J_q)_{r,r}=\\tfrac12(q^{-1}+q^{-3})z^r.\n```"
+      ],
+      [
+        "$$\nb(q)=\\frac{q^{-1}+q^{-3}}{(1-q^{-2})^2},\\quad\nq_0=2.0810189966245356\\ldots.\n$$",
+        "```math\nb(q)=\\frac{q^{-1}+q^{-3}}{(1-q^{-2})^2},\\quad\nq_0=2.0810189966245356\\ldots.\n```"
+      ],
+      [
+        "$$\n\\boxed{M_{L,i_L}(q)=\\mathcal K(q)\\mathcal F(x)L^{-2}[1+o(1)].}\n$$",
+        "```math\n\\boxed{M_{L,i_L}(q)=\\mathcal K(q)\\mathcal F(x)L^{-2}[1+o(1)].}\n```"
+      ],
+      [
+        "$$\nA_\\pm(q)=(1\\mp q^{-1})\n \\left[\\frac{(z;z)_\\infty}{(\\pm q^{-1};z)_\\infty}\\right]^4,\n\\qquad\\mathcal K=\\tfrac12(A_+^2+A_-^2),\n$$",
+        "```math\nA_\\pm(q)=(1\\mp q^{-1})\n \\left[\\frac{(z;z)_\\infty}{(\\pm q^{-1};z)_\\infty}\\right]^4,\n\\qquad\\mathcal K=\\tfrac12(A_+^2+A_-^2),\n```"
+      ],
+      [
+        "$$\n\\mathcal F(x)=\\frac{3\\sqrt2}{4\\pi[x(1-x)]^3}\n\\int_0^1\\frac{u^2(1-u)^2\\,du}\n {[\\tfrac12+(u-x)^2/(x(1-x))]^{5/2}}.\n$$",
+        "```math\n\\mathcal F(x)=\\frac{3\\sqrt2}{4\\pi[x(1-x)]^3}\n\\int_0^1\\frac{u^2(1-u)^2\\,du}\n {[\\tfrac12+(u-x)^2/(x(1-x))]^{5/2}}.\n```"
+      ],
+      [
+        "$$\nB_d(q)\\sim\\mathcal K(q)(\\pi\\sqrt2)^{-1}d^{-3/2}\\quad(d\\to\\infty).\n$$",
+        "```math\nB_d(q)\\sim\\mathcal K(q)(\\pi\\sqrt2)^{-1}d^{-3/2}\\quad(d\\to\\infty).\n```"
+      ],
+      [
+        "$$\nP_j=(qI-R_j)/(q+q^{-1}),\\quad U_j=I-2P_j,\\quad\n\\mathcal L^\\dagger(O)=\\sum_j\\gamma_j(U_jOU_j-O),\\quad\\gamma_j>0.\n$$",
+        "```math\nP_j=(qI-R_j)/(q+q^{-1}),\\quad U_j=I-2P_j,\\quad\n\\mathcal L^\\dagger(O)=\\sum_j\\gamma_j(U_jOU_j-O),\\quad\\gamma_j>0.\n```"
+      ],
+      [
+        "$\\tfrac12$",
+        "$`\\tfrac12`$"
+      ],
+      [
+        "$q$",
+        "$`q`$"
+      ],
+      [
+        "$\\mathcal A_q$",
+        "$`\\mathcal A_q`$"
+      ],
+      [
+        "$E,F,K$",
+        "$`E,F,K`$"
+      ],
+      [
+        "$q=1$",
+        "$`q=1`$"
+      ],
+      [
+        "$\\bar C_i\\ge M_{L,i}$",
+        "$`\\bar C_i\\ge M_{L,i}`$"
+      ],
+      [
+        "$h$",
+        "$`h`$"
+      ],
+      [
+        "$O(L^3)$",
+        "$`O(L^3)`$"
+      ],
+      [
+        "$O(L^2)$",
+        "$`O(L^2)`$"
+      ],
+      [
+        "$i$",
+        "$`i`$"
+      ],
+      [
+        "$\\binom{L+3}{3}$",
+        "$`\\binom{L+3}{3}`$"
+      ],
+      [
+        "$q>1$",
+        "$`q>1`$"
+      ],
+      [
+        "$d\\ge0$",
+        "$`d\\ge0`$"
+      ],
+      [
+        "$z=q^{-2}$",
+        "$`z=q^{-2}`$"
+      ],
+      [
+        "$f_r=q^{-r}\\sqrt{1-z^{r+1}}$",
+        "$`f_r=q^{-r}\\sqrt{1-z^{r+1}}`$"
+      ],
+      [
+        "$B_d$",
+        "$`B_d`$"
+      ],
+      [
+        "$M=1/L$",
+        "$`M=1/L`$"
+      ],
+      [
+        "$b(q)<1$",
+        "$`b(q)<1`$"
+      ],
+      [
+        "$q>q_0$",
+        "$`q>q_0`$"
+      ],
+      [
+        "$i_L/L$",
+        "$`i_L/L`$"
+      ],
+      [
+        "$x\\in(0,1)$",
+        "$`x\\in(0,1)`$"
+      ],
+      [
+        "$1<q\\le q_0$",
+        "$`1<q\\le q_0`$"
+      ],
+      [
+        "$q=2.6$",
+        "$`q=2.6`$"
+      ],
+      [
+        "$(a;z)_\\infty=\\prod_{k\\ge0}(1-az^k)$",
+        "$`(a;z)_\\infty=\\prod_{k\\ge0}(1-az^k)`$"
+      ],
+      [
+        "$1+q^{-1}$",
+        "$`1+q^{-1}`$"
+      ],
+      [
+        "$(-q^{-1};z)_\\infty$",
+        "$`(-q^{-1};z)_\\infty`$"
+      ],
+      [
+        "$A_-=(1+q^{-1})[(z;z)_\\infty/(-q^{-1};z)_\\infty]^4$",
+        "$`A_-=(1+q^{-1})[(z;z)_\\infty/(-q^{-1};z)_\\infty]^4`$"
+      ],
+      [
+        "$\\mathcal F$",
+        "$`\\mathcal F`$"
+      ],
+      [
+        "$\\mathcal K=3.60512146027929\\ldots$",
+        "$`\\mathcal K=3.60512146027929\\ldots`$"
+      ],
+      [
+        "$\\mathcal K\\mathcal F(1/2)=9.55570977050275\\ldots$",
+        "$`\\mathcal K\\mathcal F(1/2)=9.55570977050275\\ldots`$"
+      ],
+      [
+        "$L$",
+        "$`L`$"
+      ],
+      [
+        "$d$",
+        "$`d`$"
+      ],
+      [
+        "$J_q$",
+        "$`J_q`$"
+      ],
+      [
+        "$\\theta=-\\log(b(q))/4$",
+        "$`\\theta=-\\log(b(q))/4`$"
+      ],
+      [
+        "$\\exp(2\\theta)b(q)=\\sqrt{b(q)}<1$",
+        "$`\\exp(2\\theta)b(q)=\\sqrt{b(q)}<1`$"
+      ],
+      [
+        "$R_j$",
+        "$`R_j`$"
+      ],
+      [
+        "$-q^{-1}$",
+        "$`-q^{-1}`$"
+      ],
+      [
+        "$\\Pi_q$",
+        "$`\\Pi_q`$"
+      ],
+      [
+        "$M$",
+        "$`M`$"
       ]
     ],
-    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged."
+    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
   },
   "research/PLATEAU_DICTIONARY.md": {
     "source": "archive/research-handoff-2026-10-08/prior/PLATEAU_DICTIONARY.md",
@@ -143,9 +351,113 @@
       [
         "\\)",
         "$"
+      ],
+      [
+        "$$\n\\mathcal D_H(O)=\\sum_\\epsilon P_\\epsilon O P_\\epsilon,\n\\qquad M(O)=D^{-1}\\|\\Pi_q(O)\\|_{\\rm HS}^2.\n$$",
+        "```math\n\\mathcal D_H(O)=\\sum_\\epsilon P_\\epsilon O P_\\epsilon,\n\\qquad M(O)=D^{-1}\\|\\Pi_q(O)\\|_{\\rm HS}^2.\n```"
+      ],
+      [
+        "$$\n\\boxed{\n\\bar C(O)=M(O)+D^{-1}\\|\\mathcal D_H[O-\\Pi_q(O)]\\|_{\\rm HS}^2.\n}\\tag{1}\n$$",
+        "```math\n\\boxed{\n\\bar C(O)=M(O)+D^{-1}\\|\\mathcal D_H[O-\\Pi_q(O)]\\|_{\\rm HS}^2.\n}\\tag{1}\n```"
+      ],
+      [
+        "$$\n\\mathcal H_L=\\bigoplus_j(\\mathcal V_j\\otimes\\mathbb C^{m_j}),\n\\qquad d_j=2j+1,\n\\qquad H=\\bigoplus_j(I_{d_j}\\otimes h_j).\n$$",
+        "```math\n\\mathcal H_L=\\bigoplus_j(\\mathcal V_j\\otimes\\mathbb C^{m_j}),\n\\qquad d_j=2j+1,\n\\qquad H=\\bigoplus_j(I_{d_j}\\otimes h_j).\n```"
+      ],
+      [
+        "$$\nO_j=P_jOP_j,\\quad S_j=\\operatorname{Tr}_{m_j}O_j,\\quad\nB_{j\\alpha}=(I\\otimes\\langle u_{j\\alpha}|)O_j\n             (I\\otimes|u_{j\\alpha}\\rangle).\n$$",
+        "```math\nO_j=P_jOP_j,\\quad S_j=\\operatorname{Tr}_{m_j}O_j,\\quad\nB_{j\\alpha}=(I\\otimes\\langle u_{j\\alpha}|)O_j\n             (I\\otimes|u_{j\\alpha}\\rangle).\n```"
+      ],
+      [
+        "$$\n\\bar C=D^{-1}\\sum_{j,\\alpha}\\|B_{j\\alpha}\\|_{\\rm HS}^2,\n\\quad\nM=D^{-1}\\sum_j\\frac{\\|S_j\\|_{\\rm HS}^2}{m_j},\n$$",
+        "```math\n\\bar C=D^{-1}\\sum_{j,\\alpha}\\|B_{j\\alpha}\\|_{\\rm HS}^2,\n\\quad\nM=D^{-1}\\sum_j\\frac{\\|S_j\\|_{\\rm HS}^2}{m_j},\n```"
+      ],
+      [
+        "$$\n\\boxed{\n\\bar C-M=D^{-1}\\sum_{j,\\alpha}\n\\left\\|B_{j\\alpha}-\\frac{S_j}{m_j}\\right\\|_{\\rm HS}^2.\n}\\tag{2}\n$$",
+        "```math\n\\boxed{\n\\bar C-M=D^{-1}\\sum_{j,\\alpha}\n\\left\\|B_{j\\alpha}-\\frac{S_j}{m_j}\\right\\|_{\\rm HS}^2.\n}\\tag{2}\n```"
+      ],
+      [
+        "$$\nC_j=O_j-\\frac{S_j}{m_j}\\otimes I_{m_j},\\qquad\nR_j=\\|C_j\\|_{\\rm HS}^2\n=\\|O_j\\|_{\\rm HS}^2-\\frac{\\|S_j\\|_{\\rm HS}^2}{m_j}.\n$$",
+        "```math\nC_j=O_j-\\frac{S_j}{m_j}\\otimes I_{m_j},\\qquad\nR_j=\\|C_j\\|_{\\rm HS}^2\n=\\|O_j\\|_{\\rm HS}^2-\\frac{\\|S_j\\|_{\\rm HS}^2}{m_j}.\n```"
+      ],
+      [
+        "$$\n\\mathbb E|\\langle u|A|u\\rangle|^2\n=\\frac{\\operatorname{Tr}(AA^\\dagger)+|\\operatorname{Tr}A|^2}{m(m+1)}.\n$$",
+        "```math\n\\mathbb E|\\langle u|A|u\\rangle|^2\n=\\frac{\\operatorname{Tr}(AA^\\dagger)+|\\operatorname{Tr}A|^2}{m(m+1)}.\n```"
+      ],
+      [
+        "$$\n\\boxed{\n\\mathbb E(\\bar C-M)=D^{-1}\\sum_j\\frac{R_j}{m_j+1}.\n}\\tag{3}\n$$",
+        "```math\n\\boxed{\n\\mathbb E(\\bar C-M)=D^{-1}\\sum_j\\frac{R_j}{m_j+1}.\n}\\tag{3}\n```"
+      ],
+      [
+        "$$\n\\boxed{\n0\\le\\mathbb E(\\bar C-M)\n\\le\\frac{1}{2^L}\\sum_jd_j\n=\\frac{\\lfloor(L+2)^2/4\\rfloor}{2^L}.\n}\\tag{4}\n$$",
+        "```math\n\\boxed{\n0\\le\\mathbb E(\\bar C-M)\n\\le\\frac{1}{2^L}\\sum_jd_j\n=\\frac{\\lfloor(L+2)^2/4\\rfloor}{2^L}.\n}\\tag{4}\n```"
+      ],
+      [
+        "$$\n\\mathbb E_{\\mathbb R}(\\bar C-M)\n=\\frac1D\\sum_j\\frac{\n\\|C_j\\|_{\\rm HS}^2+\n\\sum_{a,b}\\operatorname{Tr}[(C_j^{ab})^2]}{m_j+2}\n\\le\\frac{2\\lfloor(L+2)^2/4\\rfloor}{2^L}.\\tag{5}\n$$",
+        "```math\n\\mathbb E_{\\mathbb R}(\\bar C-M)\n=\\frac1D\\sum_j\\frac{\n\\|C_j\\|_{\\rm HS}^2+\n\\sum_{a,b}\\operatorname{Tr}[(C_j^{ab})^2]}{m_j+2}\n\\le\\frac{2\\lfloor(L+2)^2/4\\rfloor}{2^L}.\\tag{5}\n```"
+      ],
+      [
+        "$D=2^L$",
+        "$`D=2^L`$"
+      ],
+      [
+        "$\\Pi_q$",
+        "$`\\Pi_q`$"
+      ],
+      [
+        "$\\mathcal A_q$",
+        "$`\\mathcal A_q`$"
+      ],
+      [
+        "$\\bar C(O)=D^{-1}\\|\\mathcal D_H(O)\\|_{\\rm HS}^2$",
+        "$`\\bar C(O)=D^{-1}\\|\\mathcal D_H(O)\\|_{\\rm HS}^2`$"
+      ],
+      [
+        "$\\mathcal A_q\\subseteq\\{H\\}'$",
+        "$`\\mathcal A_q\\subseteq\\{H\\}'`$"
+      ],
+      [
+        "$\\mathcal D_H\\Pi_q=\\Pi_q\\mathcal D_H=\\Pi_q$",
+        "$`\\mathcal D_H\\Pi_q=\\Pi_q\\mathcal D_H=\\Pi_q`$"
+      ],
+      [
+        "$\\bar C(X_i)=1$",
+        "$`\\bar C(X_i)=1`$"
+      ],
+      [
+        "$|u_{j\\alpha}\\rangle$",
+        "$`|u_{j\\alpha}\\rangle`$"
+      ],
+      [
+        "$\\sum_\\alpha B_{j\\alpha}=S_j$",
+        "$`\\sum_\\alpha B_{j\\alpha}=S_j`$"
+      ],
+      [
+        "$\\mathbb E(|u\\rangle\\langle u|)^{\\otimes2}=(I+\\mathsf S)/[m(m+1)]$",
+        "$`\\mathbb E(|u\\rangle\\langle u|)^{\\otimes2}=(I+\\mathsf S)/[m(m+1)]`$"
+      ],
+      [
+        "$\\|O\\|_\\infty\\le1$",
+        "$`\\|O\\|_\\infty\\le1`$"
+      ],
+      [
+        "$R_j\\le\\|O_j\\|_{\\rm HS}^2\\le d_jm_j$",
+        "$`R_j\\le\\|O_j\\|_{\\rm HS}^2\\le d_jm_j`$"
+      ],
+      [
+        "$C_j^{ab}$",
+        "$`C_j^{ab}`$"
+      ],
+      [
+        "$2\\sum_{ab}\\|\\operatorname{Sym}C_j^{ab}\\|_{\\rm HS}^2$",
+        "$`2\\sum_{ab}\\|\\operatorname{Sym}C_j^{ab}\\|_{\\rm HS}^2`$"
+      ],
+      [
+        "$\\bar C/M\\to1$",
+        "$`\\bar C/M\\to1`$"
       ]
     ],
-    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged."
+    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
   },
   "research/LOCAL_REALIZATION.md": {
     "source": "archive/research-handoff-2026-10-08/LOCAL_REALIZATION.md",
@@ -189,8 +501,224 @@
       [
         "[FINAL_CHECK.md](CONTRIBUTION_REVIEW.md) for the handoff decision.",
         "[contribution review](CONTRIBUTION_REVIEW.md) for the contribution assessment."
+      ],
+      [
+        "$$\n\\langle A,B\\rangle_2=2^{-L}\\operatorname{Tr}(A^\\dagger B).\n$$",
+        "```math\n\\langle A,B\\rangle_2=2^{-L}\\operatorname{Tr}(A^\\dagger B).\n```"
+      ],
+      [
+        "$$\nM_{L,i}(q)=\\|\\Pi_q X_i\\|_2^2,\\qquad \\|X_i\\|_2^2=1.\n$$",
+        "```math\nM_{L,i}(q)=\\|\\Pi_q X_i\\|_2^2,\\qquad \\|X_i\\|_2^2=1.\n```"
+      ],
+      [
+        "$$\nR(q)=\\begin{pmatrix}q&0&0&0\\\\0&0&1&0\\\\0&1&q-q^{-1}&0\\\\0&0&0&q\\end{pmatrix}.\n$$",
+        "```math\nR(q)=\\begin{pmatrix}q&0&0&0\\\\0&0&1&0\\\\0&1&q-q^{-1}&0\\\\0&0&0&q\\end{pmatrix}.\n```"
+      ],
+      [
+        "$$\nP_j=\\frac{qI-R_j}{q+q^{-1}},\\qquad U_j=I-2P_j,\n\\qquad \\mathcal S(O)=\\sum_{j=1}^{L-1}\\gamma_j(U_jOU_j-O),\\quad\\gamma_j>0.\n$$",
+        "```math\nP_j=\\frac{qI-R_j}{q+q^{-1}},\\qquad U_j=I-2P_j,\n\\qquad \\mathcal S(O)=\\sum_{j=1}^{L-1}\\gamma_j(U_jOU_j-O),\\quad\\gamma_j>0.\n```"
+      ],
+      [
+        "$$\n\\ker\\mathcal S=\\{O:[O,R_j]=0\\ \\forall j\\}=\\mathcal A_q.\n$$",
+        "```math\n\\ker\\mathcal S=\\{O:[O,R_j]=0\\ \\forall j\\}=\\mathcal A_q.\n```"
+      ],
+      [
+        "$$\n\\mathcal G_\\varepsilon(O)=i[H,O]+\\varepsilon\\mathcal S(O).\n$$",
+        "```math\n\\mathcal G_\\varepsilon(O)=i[H,O]+\\varepsilon\\mathcal S(O).\n```"
+      ],
+      [
+        "$$\n\\delta_L=\\min_{R\\perp\\mathcal A_q,\\ R\\ne0}\n\\frac{-\\langle R,\\mathcal S(R)\\rangle_2}{\\|R\\|_2^2}>0.\n$$",
+        "```math\n\\delta_L=\\min_{R\\perp\\mathcal A_q,\\ R\\ne0}\n\\frac{-\\langle R,\\mathcal S(R)\\rangle_2}{\\|R\\|_2^2}>0.\n```"
+      ],
+      [
+        "$$\n\\boxed{\\|e^{t\\mathcal G_\\varepsilon}(I-\\Pi_q)O\\|_2\n\\le e^{-\\varepsilon\\delta_L t}\\|(I-\\Pi_q)O\\|_2.}\n$$",
+        "```math\n\\boxed{\\|e^{t\\mathcal G_\\varepsilon}(I-\\Pi_q)O\\|_2\n\\le e^{-\\varepsilon\\delta_L t}\\|(I-\\Pi_q)O\\|_2.}\n```"
+      ],
+      [
+        "$$\n\\boxed{|C_{i,\\varepsilon}(t)-M_{L,i}(q)|\n\\le[1-M_{L,i}(q)]e^{-\\varepsilon\\delta_Lt},}\n$$",
+        "```math\n\\boxed{|C_{i,\\varepsilon}(t)-M_{L,i}(q)|\n\\le[1-M_{L,i}(q)]e^{-\\varepsilon\\delta_Lt},}\n```"
+      ],
+      [
+        "$$\n\\boxed{\\lim_{t\\to\\infty}C_{i,\\varepsilon}(t)=M_{L,i}(q).}\n$$",
+        "```math\n\\boxed{\\lim_{t\\to\\infty}C_{i,\\varepsilon}(t)=M_{L,i}(q).}\n```"
+      ],
+      [
+        "$$\n-\\langle O,\\mathcal S(O)\\rangle_2\n=\\frac12\\sum_j\\gamma_j\\|[U_j,O]\\|_2^2.\n$$",
+        "```math\n-\\langle O,\\mathcal S(O)\\rangle_2\n=\\frac12\\sum_j\\gamma_j\\|[U_j,O]\\|_2^2.\n```"
+      ],
+      [
+        "$$\n\\mathcal K\\Pi_q=\\Pi_q\\mathcal K=0,\n\\qquad\\mathcal S\\Pi_q=\\Pi_q\\mathcal S=0.\n$$",
+        "```math\n\\mathcal K\\Pi_q=\\Pi_q\\mathcal K=0,\n\\qquad\\mathcal S\\Pi_q=\\Pi_q\\mathcal S=0.\n```"
+      ],
+      [
+        "$$\n\\frac d{dt}\\|R(t)\\|_2^2\n=2\\varepsilon\\langle R(t),\\mathcal S R(t)\\rangle_2\n\\le-2\\varepsilon\\delta_L\\|R(t)\\|_2^2.\n$$",
+        "```math\n\\frac d{dt}\\|R(t)\\|_2^2\n=2\\varepsilon\\langle R(t),\\mathcal S R(t)\\rangle_2\n\\le-2\\varepsilon\\delta_L\\|R(t)\\|_2^2.\n```"
+      ],
+      [
+        "$$\nC_{i,\\varepsilon}(t)=M_{L,i}+\\langle R_i,e^{t\\mathcal G_\\varepsilon}R_i\\rangle_2.\n$$",
+        "```math\nC_{i,\\varepsilon}(t)=M_{L,i}+\\langle R_i,e^{t\\mathcal G_\\varepsilon}R_i\\rangle_2.\n```"
+      ],
+      [
+        "$$\n\\lim_{\\varepsilon\\downarrow0}\\lim_{t\\to\\infty}C_{i,\\varepsilon}(t)=M_{L,i}.\n$$",
+        "```math\n\\lim_{\\varepsilon\\downarrow0}\\lim_{t\\to\\infty}C_{i,\\varepsilon}(t)=M_{L,i}.\n```"
+      ],
+      [
+        "$$\n\\lim_{T\\to\\infty}\\frac1T\\int_0^T\n\\left[\\lim_{\\varepsilon\\downarrow0}C_{i,\\varepsilon}(t)\\right]dt\n=\\overline C_{i,0}=M_{L,i}+\\Delta_{H,i},\\quad\\Delta_{H,i}\\ge0.\n$$",
+        "```math\n\\lim_{T\\to\\infty}\\frac1T\\int_0^T\n\\left[\\lim_{\\varepsilon\\downarrow0}C_{i,\\varepsilon}(t)\\right]dt\n=\\overline C_{i,0}=M_{L,i}+\\Delta_{H,i},\\quad\\Delta_{H,i}\\ge0.\n```"
+      ],
+      [
+        "$$\nH=\\frac\\omega2\\sum_jZ_j.\n$$",
+        "```math\nH=\\frac\\omega2\\sum_jZ_j.\n```"
+      ],
+      [
+        "$$\n\\langle\\Pi_qX_i,e^{t\\mathcal G_\\varepsilon}\\Pi_qX_i\\rangle_2\n=M_{L,i}\\cos(\\omega t).\n$$",
+        "```math\n\\langle\\Pi_qX_i,e^{t\\mathcal G_\\varepsilon}\\Pi_qX_i\\rangle_2\n=M_{L,i}\\cos(\\omega t).\n```"
+      ],
+      [
+        "$$\n\\dim\\mathcal A_q=\\sum_{h\\equiv L\\ (2)}(h+1)^2=\\binom{L+3}{3}.\n$$",
+        "```math\n\\dim\\mathcal A_q=\\sum_{h\\equiv L\\ (2)}(h+1)^2=\\binom{L+3}{3}.\n```"
+      ],
+      [
+        "$$\n\\boxed{\\sum_{P\\in\\mathcal P_L}\\|\\Pi_qP\\|_2^2=\\binom{L+3}{3}.}\n$$",
+        "```math\n\\boxed{\\sum_{P\\in\\mathcal P_L}\\|\\Pi_qP\\|_2^2=\\binom{L+3}{3}.}\n```"
+      ],
+      [
+        "$\\mathcal A_q$",
+        "$`\\mathcal A_q`$"
+      ],
+      [
+        "$\\Pi_q$",
+        "$`\\Pi_q`$"
+      ],
+      [
+        "$q,-q^{-1}$",
+        "$`q,-q^{-1}`$"
+      ],
+      [
+        "$R_j$",
+        "$`R_j`$"
+      ],
+      [
+        "$U_j$",
+        "$`U_j`$"
+      ],
+      [
+        "$q=1$",
+        "$`q=1`$"
+      ],
+      [
+        "$H=H^\\dagger$",
+        "$`H=H^\\dagger`$"
+      ],
+      [
+        "$H$",
+        "$`H`$"
+      ],
+      [
+        "$\\varepsilon>0$",
+        "$`\\varepsilon>0`$"
+      ],
+      [
+        "$L\\ge2$",
+        "$`L\\ge2`$"
+      ],
+      [
+        "$\\delta_L$",
+        "$`\\delta_L`$"
+      ],
+      [
+        "$\\mathcal K=i[H,\\cdot]$",
+        "$`\\mathcal K=i[H,\\cdot]`$"
+      ],
+      [
+        "$\\mathcal G_\\varepsilon$",
+        "$`\\mathcal G_\\varepsilon`$"
+      ],
+      [
+        "$R(t)$",
+        "$`R(t)`$"
+      ],
+      [
+        "$X_i=\\Pi_qX_i+R_i$",
+        "$`X_i=\\Pi_qX_i+R_i`$"
+      ],
+      [
+        "$\\|R_i\\|_2^2=1-M_{L,i}$",
+        "$`\\|R_i\\|_2^2=1-M_{L,i}`$"
+      ],
+      [
+        "$\\mathcal S$",
+        "$`\\mathcal S`$"
+      ],
+      [
+        "$L$",
+        "$`L`$"
+      ],
+      [
+        "$\\varepsilon\\downarrow0$",
+        "$`\\varepsilon\\downarrow0`$"
+      ],
+      [
+        "$\\Delta_{H,i}$",
+        "$`\\Delta_{H,i}`$"
+      ],
+      [
+        "$t$",
+        "$`t`$"
+      ],
+      [
+        "$\\varepsilon$",
+        "$`\\varepsilon`$"
+      ],
+      [
+        "$L=4$",
+        "$`L=4`$"
+      ],
+      [
+        "$H=0$",
+        "$`H=0`$"
+      ],
+      [
+        "$q=2.6$",
+        "$`q=2.6`$"
+      ],
+      [
+        "$0.5$",
+        "$`0.5`$"
+      ],
+      [
+        "$0.2710324357256192$",
+        "$`0.2710324357256192`$"
+      ],
+      [
+        "$q\\ge1$",
+        "$`q\\ge1`$"
+      ],
+      [
+        "$\\mathcal P_L$",
+        "$`\\mathcal P_L`$"
+      ],
+      [
+        "$4^L$",
+        "$`4^L`$"
+      ],
+      [
+        "$q>1$",
+        "$`q>1`$"
+      ],
+      [
+        "$L^{-1/2}$",
+        "$`L^{-1/2}`$"
+      ],
+      [
+        "$L^{-2}$",
+        "$`L^{-2}`$"
+      ],
+      [
+        "$q>q_0$",
+        "$`q>q_0`$"
       ]
     ],
-    "purpose": "Navigation, GitHub math delimiters, and stable introductory/status wording only; scientific assertions unchanged."
+    "purpose": "Navigation, GitHub math delimiters, and stable introductory/status wording only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
   }
 }

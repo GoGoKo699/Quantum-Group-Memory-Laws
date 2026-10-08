@@ -23,22 +23,22 @@ The kernel proof counts every second-coordinate change with two strictly subcrit
 
 The [bulk account, Section 4.2](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md) uses adjacent differences of
 
-$$
+```math
 b_n(k)=2^{-n}\binom n{(n+k)/2},\qquad
 \Delta b_n(k)=b_n(k)-b_n(k+2),
-$$
+```
 
-with $n\ge0$ an integer and binomial coefficients zero outside their support. Its displayed rational identity should be read with the support condition
+with $`n\ge0`$ an integer and binomial coefficients zero outside their support. Its displayed rational identity should be read with the support condition
 
-$$
+```math
 \Delta b_n(k)=\frac{2(k+1)}{n+k+2}b_n(k),
 \qquad k\equiv n\pmod2,\quad k\ge -n.
-$$
+```
 
-Parity alone does not suffice: at $k=-n-2$ the denominator vanishes while the adjacent difference equals $-2^{-n}$. For indices below $-n$, use binomial symmetry in the nonsingular form
+Parity alone does not suffice: at $`k=-n-2`$ the denominator vanishes while the adjacent difference equals $`-2^{-n}`$. For indices below $`-n`$, use binomial symmetry in the nonsingular form
 
-$$
+```math
 \Delta b_n(k)=-\Delta b_n(-k-2).
-$$
+```
 
-This explicitly qualifies the intermediate identity in the immutable source. The reflected index is at least $n$ for the omitted parity indices, so it is covered by the displayed support condition. The adjacent-difference estimates, kernel bound, and stated spatial-memory theorem are unchanged.
+This explicitly qualifies the intermediate identity in the immutable source. The reflected index is at least $`n`$ for the omitted parity indices, so it is covered by the displayed support condition. The adjacent-difference estimates, kernel bound, and stated spatial-memory theorem are unchanged.

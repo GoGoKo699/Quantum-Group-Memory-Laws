@@ -14,73 +14,73 @@ not a separate first-discovery claim or a second paper.
 
 ## 1. An exact separation, including accidental degeneracies
 
-Let the spin-chain Hilbert-space dimension be $D=2^L$, and use the ordinary,
-unnormalized Hilbert--Schmidt norm. Let $\Pi_q$ be the orthogonal projection
-onto the full symmetry algebra $\mathcal A_q$. For a Hermitian observable O
+Let the spin-chain Hilbert-space dimension be $`D=2^L`$, and use the ordinary,
+unnormalized Hilbert--Schmidt norm. Let $`\Pi_q`$ be the orthogonal projection
+onto the full symmetry algebra $`\mathcal A_q`$. For a Hermitian observable O
 and any H commuting with this algebra, define
 
-$$
+```math
 \mathcal D_H(O)=\sum_\epsilon P_\epsilon O P_\epsilon,
 \qquad M(O)=D^{-1}\|\Pi_q(O)\|_{\rm HS}^2.
-$$
+```
 
 The projectors are onto distinct energies, not individual vectors within a
 possibly degenerate eigenspace. Finite-dimensional time averaging gives
-$\bar C(O)=D^{-1}\|\mathcal D_H(O)\|_{\rm HS}^2$.
-Because $\mathcal A_q\subseteq\{H\}'$, the projections are nested:
-$\mathcal D_H\Pi_q=\Pi_q\mathcal D_H=\Pi_q$.
+$`\bar C(O)=D^{-1}\|\mathcal D_H(O)\|_{\rm HS}^2`$.
+Because $`\mathcal A_q\subseteq\{H\}'`$, the projections are nested:
+$`\mathcal D_H\Pi_q=\Pi_q\mathcal D_H=\Pi_q`$.
 Consequently
 
-$$
+```math
 \boxed{
 \bar C(O)=M(O)+D^{-1}\|\mathcal D_H[O-\Pi_q(O)]\|_{\rm HS}^2.
 }\tag{1}
-$$
+```
 
 This is the Pythagorean identity for nested operator-space projections. It
 includes all degeneracies and does not require integrability, nonintegrability,
 randomness, locality, or a dynamical approximation. The residual term is not
 known from symmetry alone. It is zero if and only if the residual observable
 has no matrix elements within any energy eigenspace. In particular H=0 gives
-$\bar C(X_i)=1$, not M. Finite spectral projectors alone do not establish
+$`\bar C(X_i)=1`$, not M. Finite spectral projectors alone do not establish
 that their additional overlap is large or small.
 
 ## 2. Explicit multiplicity form
 
 Use the symmetry decomposition
 
-$$
+```math
 \mathcal H_L=\bigoplus_j(\mathcal V_j\otimes\mathbb C^{m_j}),
 \qquad d_j=2j+1,
 \qquad H=\bigoplus_j(I_{d_j}\otimes h_j).
-$$
+```
 
 For the following simplified formula assume that each h_j has simple spectrum
 and that eigenvalues in different j blocks do not coincide. These assumptions
-are not needed for (1). If $|u_{j\alpha}\rangle$ is an eigenbasis of h_j, put
+are not needed for (1). If $`|u_{j\alpha}\rangle`$ is an eigenbasis of h_j, put
 
-$$
+```math
 O_j=P_jOP_j,\quad S_j=\operatorname{Tr}_{m_j}O_j,\quad
 B_{j\alpha}=(I\otimes\langle u_{j\alpha}|)O_j
              (I\otimes|u_{j\alpha}\rangle).
-$$
+```
 
 Then
 
-$$
+```math
 \bar C=D^{-1}\sum_{j,\alpha}\|B_{j\alpha}\|_{\rm HS}^2,
 \quad
 M=D^{-1}\sum_j\frac{\|S_j\|_{\rm HS}^2}{m_j},
-$$
+```
 
-and $\sum_\alpha B_{j\alpha}=S_j$ yields
+and $`\sum_\alpha B_{j\alpha}=S_j`$ yields
 
-$$
+```math
 \boxed{
 \bar C-M=D^{-1}\sum_{j,\alpha}
 \left\|B_{j\alpha}-\frac{S_j}{m_j}\right\|_{\rm HS}^2.
 }\tag{2}
-$$
+```
 
 The extra plateau is the variation of the diagonal multiplicity blocks around
 their average. Additional accidental degeneracies contribute further coherent
@@ -109,39 +109,39 @@ may be fixed: eigenvalue randomness is unnecessary for this plateau calculation.
 The resulting H commutes with the symmetry but is generally nonlocal.
 
 Define
-$$
+```math
 C_j=O_j-\frac{S_j}{m_j}\otimes I_{m_j},\qquad
 R_j=\|C_j\|_{\rm HS}^2
 =\|O_j\|_{\rm HS}^2-\frac{\|S_j\|_{\rm HS}^2}{m_j}.
-$$
+```
 
 The standard Haar-vector moment is
-$$
+```math
 \mathbb E|\langle u|A|u\rangle|^2
 =\frac{\operatorname{Tr}(AA^\dagger)+|\operatorname{Tr}A|^2}{m(m+1)}.
-$$
+```
 It follows from unitary invariance and
-$\mathbb E(|u\rangle\langle u|)^{\otimes2}=(I+\mathsf S)/[m(m+1)]$.
+$`\mathbb E(|u\rangle\langle u|)^{\otimes2}=(I+\mathsf S)/[m(m+1)]`$.
 Apply it to every irrep matrix element of C_j and sum over the m_j columns.
 Correlations between different columns are irrelevant because this expression
 is linear in their individual squared overlaps. Therefore
 
-$$
+```math
 \boxed{
 \mathbb E(\bar C-M)=D^{-1}\sum_j\frac{R_j}{m_j+1}.
 }\tag{3}
-$$
+```
 
-For $\|O\|_\infty\le1$, compression gives
-$R_j\le\|O_j\|_{\rm HS}^2\le d_jm_j$. Thus
+For $`\|O\|_\infty\le1`$, compression gives
+$`R_j\le\|O_j\|_{\rm HS}^2\le d_jm_j`$. Thus
 
-$$
+```math
 \boxed{
 0\le\mathbb E(\bar C-M)
 \le\frac{1}{2^L}\sum_jd_j
 =\frac{\lfloor(L+2)^2/4\rfloor}{2^L}.
 }\tag{4}
-$$
+```
 
 This bound treats low-multiplicity sectors explicitly; no claim that every m_j
 is exponentially large is needed. At m_j=1, R_j is exactly zero.
@@ -149,15 +149,15 @@ is exponentially large is needed. At m_j=1, R_j is exactly zero.
 For a real O and a real q-Schur basis, a real-symmetric reference H can instead
 have Haar-orthogonal multiplicity eigenvectors. The sphere fourth moment gives
 
-$$
+```math
 \mathbb E_{\mathbb R}(\bar C-M)
 =\frac1D\sum_j\frac{
 \|C_j\|_{\rm HS}^2+
 \sum_{a,b}\operatorname{Tr}[(C_j^{ab})^2]}{m_j+2}
 \le\frac{2\lfloor(L+2)^2/4\rfloor}{2^L}.\tag{5}
-$$
-Here $C_j^{ab}$ are real m_j by m_j blocks. The numerator equals
-$2\sum_{ab}\|\operatorname{Sym}C_j^{ab}\|_{\rm HS}^2$, so it is nonnegative.
+```
+Here $`C_j^{ab}`$ are real m_j by m_j blocks. The numerator equals
+$`2\sum_{ab}\|\operatorname{Sym}C_j^{ab}\|_{\rm HS}^2`$, so it is nonnegative.
 The real and complex ensembles are distinct. The upper bound is deliberately
 conservative; it need not be below one at the smallest L.
 
@@ -165,7 +165,7 @@ conservative; it need not be below one at the smallest L.
 
 At fixed q in the proved bulk domain and fixed x in (0,1), M is asymptotically a
 positive multiple of L^-2. Equations (4)-(5), positivity, and Markov's inequality
-then give $\bar C/M\to1$ in probability for the stated random-eigenbasis
+then give $`\bar C/M\to1`$ in probability for the stated random-eigenbasis
 ensemble. For each fixed relative tolerance the failure probability is bounded
 by a constant times L^4 2^-L. The boundary law similarly permits a vanishing
 relative excess there. This is a consequence of a specified ensemble, not a
