@@ -25,6 +25,8 @@ Here $\Pi_q$ projects onto the **whole quantum-group symmetry algebra**, includi
 
 The sufficient bulk proof threshold is $q_0=2.0810189966\ldots$. It is **not a physical transition**. The amplitude and spatial profile are explicitly defined in the [theorem](research/THEOREM.md). Both end and bulk contributions vanish as the chain grows. The limits are not uniform as $q\to1$ or as the observation site approaches a boundary.
 
+Within the proved bulk domain, the ratio to the center contribution tends to $\mathcal F(x)/\mathcal F(1/2)$, independently of $q$. Deformation changes the leading bulk amplitude while preserving this normalized interior profile.
+
 A specified local, noise-averaged bond-kick model attains this contribution exactly at fixed finite chain size and positive noise strength, even with a Hamiltonian preserving the full algebra. The finite-size relaxation bound contains a dissipative gap whose system-size scaling is not evaluated. The zero-noise and long-time limits must not be interchanged.
 
 ## Reading map

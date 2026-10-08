@@ -10,6 +10,8 @@ The edge law holds for fixed real q>1. The bulk equality has the sufficient doma
 
 The physical story is a changed spatial overlap with a conserved algebra whose dimension stays the same for every finite q>=1. End enhancement and bulk suppression are asymptotic comparisons in the stated regimes; both contributions vanish as L grows. They do not imply transport of memory or conservation of total single-site memory.
 
+Within the proved fixed-q bulk domain, the leading ratio to the center contribution is F(x)/F(1/2), independent of q at fixed interior position fractions. This normalized profile is already part of the bulk theorem; it is not a uniform boundary interpolation.
+
 Full-commutant principles and spectral tools are inherited. research/CONTRIBUTION_REVIEW.md separates the central spatial law, proof ingredients, Hamiltonian-specific excess, local noisy attainment, and nonlocal reference ensemble. The additional calculation and source-reading limits are explicitly attributed. Reproducible checks are internal evidence, not independent proof or originality certification. Historical proofs/checkers/reports live in archive/research-handoff-2026-10-08/ and must not be overwritten.
 
 Purpose and contact
