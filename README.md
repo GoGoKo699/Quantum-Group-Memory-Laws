@@ -14,7 +14,7 @@ of order $`L^{-2}`$ in the proved regimes below.
 | [Tutorial bridge](research/TUTORIAL_BRIDGE.md) · [Physical mechanism](research/PHYSICAL_MECHANISM.md) | Learn from one external source, then follow the projection and sector explanation. |
 | [Theorem](research/THEOREM.md) · [Proof map](research/PROOF_MAP.md) | Read the exact laws, constants, domains, and full proof dependencies. |
 | [Model and claims](research/MODEL_AND_CLAIMS.md) · [Local realization](research/LOCAL_REALIZATION.md) | Check the physical trace, assumptions, and noise-averaged attainment. |
-| [The result in context](research/CONTRIBUTION_REVIEW.md) · [Attribution](literature/ATTRIBUTION.md) | Compare the evaluated spatial law with its inherited framework and predecessors. |
+| [Attribution](literature/ATTRIBUTION.md) | Compare the evaluated spatial law with its inherited framework and predecessors. |
 | [Verification](VERIFICATION.md) | Reproduce the checks and inspect their evidence. |
 | [LLM guide](llms.txt) | Identify relevant questions and the authoritative reading route. |
 
@@ -69,7 +69,7 @@ The complete-commutant projection principle, representation theory,
 orthogonal-polynomial formulas, and stationary-commutant mechanism are inherited.
 The contribution is their evaluated **physical multiplicity
 trace and uniform finite-deformation spatial asymptotics**. The
-[result in context](research/CONTRIBUTION_REVIEW.md) develops that distinction.
+[attribution map](literature/ATTRIBUTION.md) gives the source comparisons.
 
 ## One tutorial, then this result
 

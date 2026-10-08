@@ -18,10 +18,10 @@ The complete symmetry term is a lower bound on the finite-chain **infinite-time 
 
 ## Supporting interpretation
 
-The [local realization](LOCAL_REALIZATION.md) combines coherent evolution preserving the **entire** algebra with positive-rate local bond reflections. Noise times are unrecorded and averaged. At every fixed finite $`L`$ and positive noise strength, the correlation converges to the symmetry projection; its convergence bound uses an unestimated finite-size dissipative gap. Preserving only total magnetization is not sufficient for a constant transverse plateau.
+The [local realization](LOCAL_REALIZATION.md) combines coherent evolution preserving the **entire** algebra with positive-rate local bond reflections. Noise times are unrecorded and averaged. At every fixed finite $`L`$ and positive noise strength, the correlation converges to the symmetry projection; its convergence bound is expressed in terms of the finite-size dissipative gap. Preserving only total magnetization is not sufficient for a constant transverse plateau.
 
 The [physical mechanism](PHYSICAL_MECHANISM.md) gives its direct polarization readout, the exact sector decomposition behind the two spatial powers, and an elementary evaluation of the existing bulk-profile integral. These deductions retain the theorem's parameter domains and orders of limits.
 
 The generally nonlocal random-eigenbasis reference evaluates the mean Hamiltonian-specific excess. Its assumptions and role as a reference ensemble are given in the [plateau dictionary](PLATEAU_DICTIONARY.md).
 
-The finite numerical checks test identities and evaluations. The large-$`L`$ law rests on the uniform analytical proof. [The result in context](CONTRIBUTION_REVIEW.md) explains the physical interpretation and relation to prior work.
+The finite numerical checks test identities and evaluations. The large-$`L`$ law rests on the uniform analytical proof. The [attribution map](../literature/ATTRIBUTION.md) compares the result with prior work.
