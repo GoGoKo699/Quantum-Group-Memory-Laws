@@ -54,7 +54,7 @@ Here $`\eta`$ is the normalized squared overlap conditioned on a sector,
 with $`0\le\eta\le1`$. It is an operator-space quantity, not a probability of
 measuring a spin in a particular direction. In the magnetic ladder basis,
 write $`\alpha_{L,i}(h,r)=T_{L,i}(h,r)/m_{L,h}=t_{L,i}(h,r)/D_L(h)`$ for
-the multiplicity-averaged raising matrix element, $`0\le r<h`$. Then
+the multiplicity-averaged raising matrix element, $`0\le r\lt h`$. Then
 
 ```math
 \eta_{L,i;h}=\frac{2}{h+1}\sum_{r=0}^{h-1}
@@ -127,7 +127,7 @@ about a localized dynamical mode or a nonzero limiting end plateau.
 
 ## 4. An interior spin: small overlaps across a growing ladder
 
-Fix $`q>q_0`$, with the sufficient hypothesis $`b(q)<1`$ from the theorem, and
+Fix $`q>q_0`$, with the sufficient hypothesis $`b(q)\lt 1`$ from the theorem, and
 take $`i/L\to x\in(0,1)`$. Put $`\ell=i-1`$, $`n=L-i`$, and $`u=h-r-1`$.
 The proved matching on positive compact ranges of $`u/\sqrt L,r/\sqrt L`$ is
 
@@ -166,7 +166,15 @@ does not give a sum rule over sites or imply movement of memory between sites.
 The integral in the theorem can be evaluated without further asymptotics:
 
 ```math
-\mathcal F(x)=\frac1{2\pi} \left[\frac{\sqrt{2-x}}{x^{3/2}}+ \frac{\sqrt{1+x}}{(1-x)^{3/2}}\right]+\frac{3\sqrt2}{4\pi\sqrt{x(1-x)}} \left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+ \mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0<x<1. \tag{4}
+\begin{aligned}
+\mathcal F(x)={}&\frac1{2\pi}
+\left[\frac{\sqrt{2-x}}{x^{3/2}}+
+\frac{\sqrt{1+x}}{(1-x)^{3/2}}\right]\\
+&+\frac{3\sqrt2}{4\pi\sqrt{x(1-x)}}
+\left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+
+\mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0\lt x\lt 1.
+\end{aligned}
+\tag{4}
 ```
 
 For a direct derivation put $`a=x(1-x)`$, $`c=1-2x`$, and

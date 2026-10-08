@@ -9,7 +9,7 @@ The physical trace, finite recursion, and fixed-$`q`$ domain are those of
 
 Let $`P_0`$ have off-diagonal entries $`1/2`$ on $`\mathbb N_0`$, with killing at $`-1`$.
 Suppose $`H=P_0+W`$, where $`W=\mathrm{diag}(w_r)`$, $`w_r\ge0`$ decays
-exponentially, and $`\beta=2\sum_{r\ge0}(r+1)w_r<1`$. With $`v_{-1}=0`$,
+exponentially, and $`\beta=2\sum_{r\ge0}(r+1)w_r\lt 1`$. With $`v_{-1}=0`$,
 
 ```math
 \langle v,(I-P_0)v\rangle=\frac12\sum_{r\ge-1}|v_{r+1}-v_r|^2,
@@ -22,19 +22,19 @@ $`[-1,1]`$. To exclude bounded regular solutions at the endpoints, use
 
 ```math
 G_0(r,s)=2\min(r+1,s+1),\qquad
-\|G_0W\|_{\infty,h_0}\le\beta<1,\qquad h_0(r)=r+1,
+\|G_0W\|_{\infty,h_0}\le\beta\lt 1,\qquad h_0(r)=r+1,
 ```
 
 where $`\|v\|_{\infty,h_0}=\sup_r|v_r|/(r+1)`$. A bounded solution of $`Hv=v`$
 satisfies $`v=G_0Wv`$: the difference is a free regular solution $`c(r+1)`$,
 and boundedness forces $`c=0`$. Here $`G_0Wv`$ is bounded because
-$`\sum_s(s+1)w_s<\infty`$. Contraction therefore gives $`v=0`$. Conjugating a
+$`\sum_s(s+1)w_s\lt \infty`$. Contraction therefore gives $`v=0`$. Conjugating a
 solution at $`-1`$ by $`(-1)^r`$ gives instead $`v=-G_0Wv`$, with the same conclusion.
 
 For the physical comparison kernel,
 $`w_r=e^{\vartheta}(q^{-1}+q^{-3})q^{-2r}/2`$ and $`\beta=e^{\vartheta}b(q)`$.
 The choice $`\vartheta=-\log b(q)/4`$ makes both required tilts subcritical:
-$`e^{2\vartheta}b(q)=\sqrt{b(q)}<1`$.
+$`e^{2\vartheta}b(q)=\sqrt{b(q)}\lt 1`$.
 
 ## 2. The Jost integral is an adjacent-difference convolution
 
@@ -106,7 +106,7 @@ $`|k|\le B\sqrt{n\log(n+2)}`$. For $`r\le A\sqrt{n\log(n+2)}`$, split the convol
 at $`|j|=\sqrt{n\log(n+2)}`$. The outer tail is exponentially small. On the inner
 part, $`(r+j)^2\ge r^2-2r|j|`$ and $`r/n\to0`$ allow the cross term to be absorbed
 by $`e^{-\eta|j|}`$. The polynomial factor obeys
-$`|r+j|+1\le(r+1)(|j|+1)`$. Therefore, for every $`0<\delta<1`$,
+$`|r+j|+1\le(r+1)(|j|+1)`$. Therefore, for every $`0\lt \delta\lt 1`$,
 
 ```math
 |(H^ng)_r|\le C_{A,\delta,g,H}(r+1)n^{-3/2}

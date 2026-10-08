@@ -9,7 +9,7 @@ The trace is the **ordinary physical** $`2^{-L}\mathrm{Tr}`$, not a quantum-dime
 The full symmetry projection is evaluated exactly at finite size by a Clebsch–Gordan multiplicity-trace recursion. Its edge asymptotic holds for every fixed finite $`q>1`$. Its bulk equality, including amplitude and spatial profile, is proved for
 
 ```math
-b(q)=\frac{q^{-1}+q^{-3}}{(1-q^{-2})^2}<1,
+b(q)=\frac{q^{-1}+q^{-3}}{(1-q^{-2})^2}\lt 1,
 ```
 
 with $`q`$ fixed and $`i_L/L\to x\in(0,1)`$. This is the sufficient domain $`q>q_0`$, not evidence of a transition at $`q_0`$. At $`q=1`$, the answer is exactly $`1/L`$ everywhere. The boundary-distance limit takes $`L\to\infty`$ first at fixed distance, then takes that distance large; it is not a uniform finite-chain interpolation.

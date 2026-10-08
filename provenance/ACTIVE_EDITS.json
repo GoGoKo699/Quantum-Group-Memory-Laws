@@ -333,9 +333,13 @@
       [
         "\\operatorname{Tr}",
         "\\mathrm{Tr}"
+      ],
+      [
+        "<",
+        "\\lt "
       ]
     ],
-    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged. Subsequent upright-name and thin-space replacements avoid GitHub\u2019s rejected operatorname macro without changing mathematical meaning."
+    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged. Subsequent upright-name and thin-space replacements avoid GitHub\u2019s rejected operatorname macro without changing mathematical meaning. Literal less-than signs use the equivalent TeX lt command to avoid HTML interpretation."
   },
   "research/PLATEAU_DICTIONARY.md": {
     "source": "archive/research-handoff-2026-10-08/prior/PLATEAU_DICTIONARY.md",

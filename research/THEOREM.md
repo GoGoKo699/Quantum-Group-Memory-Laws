@@ -4,7 +4,7 @@
 
 For an open spin-$`\tfrac12`$ chain, retain the real finite-$`q`$ symmetric coproduct
 ```math
-E_L=\sum_i\left(\prod_{j<i}q^{-Z_j/2}\right)s_i^+
+E_L=\sum_i\left(\prod_{j\lt i}q^{-Z_j/2}\right)s_i^+
               \left(\prod_{j>i}q^{Z_j/2}\right),\quad
 F_L=E_L^\dagger,\quad K_L=q^{\sum_jZ_j/2},\quad
 s_i^+=(X_i+iY_i)/2.
@@ -70,12 +70,12 @@ Put
 b(q)=\frac{q^{-1}+q^{-3}}{(1-q^{-2})^2},\quad
 q_0=2.0810189966245356\ldots.
 ```
-For fixed $`q`$ with $`b(q)<1`$ (equivalently $`q>q_0`$), and $`i_L/L`$ tending to $`x\in(0,1)`$,
+For fixed $`q`$ with $`b(q)\lt 1`$ (equivalently $`q>q_0`$), and $`i_L/L`$ tending to $`x\in(0,1)`$,
 ```math
 \boxed{M_{L,i_L}(q)=\mathcal K(q)\mathcal F(x)L^{-2}[1+o(1)].}
 ```
 The threshold is a sufficient domination criterion, not a phase boundary.
-It is not claimed that the law fails for $`1<q\le q_0`$. It includes $`q=2.6`$.
+It is not claimed that the law fails for $`1\lt q\le q_0`$. It includes $`q=2.6`$.
 
 With $`(a;z)_\infty=\prod_{k\ge0}(1-az^k)`$,
 ```math
@@ -112,7 +112,7 @@ replace or silently rewrite those proofs.
 
 The proof sequence is: exact multiplicity projection; exact positive quadrant
 recursion; count changes of the second coordinate with a tilted killed-walk
-majorant; exclude endpoint resonances using $`b(q)<1`$; obtain the uniform moderate-
+majorant; exclude endpoint resonances using $`b(q)\lt 1`$; obtain the uniform moderate-
 deviation envelope; remove large-spin tails with the observable norm; match the
 finite recursion on its leading sectors to $`J_q`$; use its established Al-Salam--
 Chihara measure; retain both spectral endpoints and both parity sublattices;
@@ -120,7 +120,7 @@ then take the dominated Riemann sum. The double-coordinate matching, not a fit
 to the finite-size sequence, connects the spectral tool to the physical law.
 
 The majorant needs two strictly subcritical tilts. One explicit permitted choice
-is $`\theta=-\log(b(q))/4`$, for which $`\exp(2\theta)b(q)=\sqrt{b(q)}<1`$.
+is $`\theta=-\log(b(q))/4`$, for which $`\exp(2\theta)b(q)=\sqrt{b(q)}\lt 1`$.
 The archived review checker verifies counted-coordinate-change paths under both tilts.
 The earlier checker verified a one-tilt displacement bound. This addition changes
 neither the theorem nor a prior tolerance or reference report.
