@@ -7,7 +7,7 @@ This note gives an operational corollary and interpretation of the quantum-group
 Use the finite open spin-1/2 chain and ordinary normalized Hilbert--Schmidt inner product
 
 ```math
-\langle A,B\rangle_2=2^{-L}\operatorname{Tr}(A^\dagger B).
+\langle A,B\rangle_2=2^{-L}\mathrm{Tr}(A^\dagger B).
 ```
 
 The full real-q symmetry algebra, its image in this physical representation, and its orthogonal projection are denoted by $`\mathcal A_q`$ and $`\Pi_q`$. In particular

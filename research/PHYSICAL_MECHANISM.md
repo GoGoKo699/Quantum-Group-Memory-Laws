@@ -13,7 +13,7 @@ the other spins are maximally mixed. For its Schrödinger generator $`\mathcal G
 duality and preservation of the maximally mixed state give
 
 ```math
-\operatorname{Tr}\!\left[X_i e^{t\mathcal G_*}\rho_i(p)\right]
+\mathrm{Tr}\!\left[X_i e^{t\mathcal G_*}\rho_i(p)\right]
 =pC_i(t)\longrightarrow pM_{L,i}(q).
 ```
 
@@ -37,7 +37,7 @@ define the sector probability and the multiplicity-averaged local operator by
 ```math
 p_{L,h}=(h+1)D_L(h),\qquad
 \overline X_{L,i;h}=
-\frac{\operatorname{Tr}_{m_{L,h}}(P_hX_iP_h)}{m_{L,h}}.
+\frac{\mathrm{Tr}_{m_{L,h}}(P_hX_iP_h)}{m_{L,h}}.
 ```
 
 The sum is over parity-compatible sectors with nonzero multiplicity. Although
@@ -171,8 +171,8 @@ The integral in the theorem can be evaluated without further asymptotics:
 \left[\frac{\sqrt{2-x}}{x^{3/2}}+
 \frac{\sqrt{1+x}}{(1-x)^{3/2}}\right]\\
 &+\frac{3\sqrt2}{4\pi\sqrt{x(1-x)}}
-\left[\operatorname{arsinh}\sqrt{\frac{2x}{1-x}}+
-\operatorname{arsinh}\sqrt{\frac{2(1-x)}x}\right],\quad0<x<1.
+\left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+
+\mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0<x<1.
 \end{aligned}
 \tag{4}
 ```
@@ -184,7 +184,7 @@ $`[a+c\sqrt{a/2}\,t-at^2/2]^2`$. An antiderivative after division by
 $`(1+t^2)^{5/2}`$ is
 
 ```math
-G(t)=\frac{a^2}{4}\operatorname{arsinh}t+
+G(t)=\frac{a^2}{4}\mathrm{arsinh}\,t+
 \frac{3a^2t/4+ac\sqrt{a/2}\,t^2+ac^2t^3/6}{(1+t^2)^{3/2}}.
 ```
 
@@ -193,7 +193,7 @@ Evaluating at $`t=-\sqrt{2x/(1-x)}`$ and $`t=\sqrt{2(1-x)/x}`$ gives (4).
 In particular,
 
 ```math
-\mathcal F(1/2)=\frac{2\sqrt3+3\sqrt2\operatorname{arsinh}\sqrt2}{\pi}
+\mathcal F(1/2)=\frac{2\sqrt3+3\sqrt2\mathrm{arsinh}\,\sqrt2}{\pi}
 =2.650593017679487\ldots,
 \qquad
 \frac{\mathcal F(1/4)}{\mathcal F(1/2)}=1.437091009736557\ldots.
@@ -211,15 +211,15 @@ Write $`\eta=\log q`$. The two-site reflection in the local realization is
 
 ```math
 U_j=\frac{I+Z_jZ_{j+1}}2+
-\frac{\operatorname{sech}\eta}{2}(X_jX_{j+1}+Y_jY_{j+1})-
+\frac{\mathrm{sech}\,\eta}{2}(X_jX_{j+1}+Y_jY_{j+1})-
 \frac{\tanh\eta}{2}(Z_j-Z_{j+1}).
 ```
 
 It fixes the aligned-spin states and has middle block
 
 ```math
-\begin{pmatrix}-\tanh\eta&\operatorname{sech}\eta\\
-\operatorname{sech}\eta&\tanh\eta\end{pmatrix},
+\begin{pmatrix}-\tanh\eta&\mathrm{sech}\,\eta\\
+\mathrm{sech}\,\eta&\tanh\eta\end{pmatrix},
 ```
 
 whose square is the identity. This equals $`I-2(qI-R_j)/(q+q^{-1})`$, so it preserves the full

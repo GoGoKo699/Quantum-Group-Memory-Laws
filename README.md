@@ -25,7 +25,7 @@ For a local Pauli operator $`X_i`$, define
 
 ```math
 M_{L,i}(q)=2^{-L}\|\Pi_q(X_i)\|_{\mathrm{HS}}^2,
-\qquad C_i(t)=2^{-L}\operatorname{Tr}[X_i(t)X_i].
+\qquad C_i(t)=2^{-L}\mathrm{Tr}[X_i(t)X_i].
 ```
 
 Here $`\Pi_q`$ projects onto the **whole quantum-group symmetry algebra**, including

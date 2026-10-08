@@ -8,7 +8,7 @@ The physical trace, finite recursion, and fixed-$`q`$ domain are those of
 ## 1. Subcritical comparison and spectral endpoints
 
 Let $`P_0`$ have off-diagonal entries $`1/2`$ on $`\mathbb N_0`$, with killing at $`-1`$.
-Suppose $`H=P_0+W`$, where $`W=\operatorname{diag}(w_r)`$, $`w_r\ge0`$ decays
+Suppose $`H=P_0+W`$, where $`W=\mathrm{diag}(w_r)`$, $`w_r\ge0`$ decays
 exponentially, and $`\beta=2\sum_{r\ge0}(r+1)w_r<1`$. With $`v_{-1}=0`$,
 
 ```math

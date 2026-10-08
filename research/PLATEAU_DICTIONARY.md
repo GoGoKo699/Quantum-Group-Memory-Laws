@@ -60,7 +60,7 @@ and that eigenvalues in different j blocks do not coincide. These assumptions
 are not needed for (1). If $`|u_{j\alpha}\rangle`$ is an eigenbasis of h_j, put
 
 ```math
-O_j=P_jOP_j,\quad S_j=\operatorname{Tr}_{m_j}O_j,\quad
+O_j=P_jOP_j,\quad S_j=\mathrm{Tr}_{m_j}\,O_j,\quad
 B_{j\alpha}=(I\otimes\langle u_{j\alpha}|)O_j
              (I\otimes|u_{j\alpha}\rangle).
 ```
@@ -118,7 +118,7 @@ R_j=\|C_j\|_{\rm HS}^2
 The standard Haar-vector moment is
 ```math
 \mathbb E|\langle u|A|u\rangle|^2
-=\frac{\operatorname{Tr}(AA^\dagger)+|\operatorname{Tr}A|^2}{m(m+1)}.
+=\frac{\mathrm{Tr}(AA^\dagger)+|\mathrm{Tr}\,A|^2}{m(m+1)}.
 ```
 It follows from unitary invariance and
 $`\mathbb E(|u\rangle\langle u|)^{\otimes2}=(I+\mathsf S)/[m(m+1)]`$.
@@ -153,11 +153,11 @@ have Haar-orthogonal multiplicity eigenvectors. The sphere fourth moment gives
 \mathbb E_{\mathbb R}(\bar C-M)
 =\frac1D\sum_j\frac{
 \|C_j\|_{\rm HS}^2+
-\sum_{a,b}\operatorname{Tr}[(C_j^{ab})^2]}{m_j+2}
+\sum_{a,b}\mathrm{Tr}[(C_j^{ab})^2]}{m_j+2}
 \le\frac{2\lfloor(L+2)^2/4\rfloor}{2^L}.\tag{5}
 ```
 Here $`C_j^{ab}`$ are real m_j by m_j blocks. The numerator equals
-$`2\sum_{ab}\|\operatorname{Sym}C_j^{ab}\|_{\rm HS}^2`$, so it is nonnegative.
+$`2\sum_{ab}\|\mathrm{Sym}\,C_j^{ab}\|_{\rm HS}^2`$, so it is nonnegative.
 The real and complex ensembles are distinct. The upper bound is deliberately
 conservative; it need not be below one at the smallest L.
 
