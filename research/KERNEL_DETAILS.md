@@ -114,8 +114,7 @@ e^{-(1-\delta)r^2/(2n)}.
 ```
 
 The exponentially small Jost error is absorbed in the same window. This
-Gaussian estimate is a derived consequence, not a theorem about physical
-spin dynamics or a quoted result of Damanik–Simon.
+derives the Gaussian estimate for the recursion kernel from the Jost input.
 
 For $`r/\sqrt n`$ in a compact positive interval, let
 $`\mu_n(r)=2\sqrt{2/\pi}(r+1)n^{-3/2}e^{-(r+1)^2/(2n)}`$.

@@ -51,8 +51,7 @@ M_{L,i}(q)=\sum_h p_{L,h}\,\eta_{L,i;h}(q),\qquad
 ```
 
 Here $`\eta`$ is the normalized squared overlap conditioned on a sector,
-with $`0\le\eta\le1`$. It is an operator-space quantity, not a probability of
-measuring a spin in a particular direction. In the magnetic ladder basis,
+with $`0\le\eta\le1`$. In the magnetic ladder basis,
 write $`\alpha_{L,i}(h,r)=T_{L,i}(h,r)/m_{L,h}=t_{L,i}(h,r)/D_L(h)`$ for
 the multiplicity-averaged raising matrix element, $`0\le r\lt h`$. Then
 
@@ -122,8 +121,6 @@ M_{L,L}(q)=\frac{\tanh(\log q)}{\sqrt{2\pi L}}+O_q(L^{-1}).
 ```
 
 Reflection followed by a global spin flip gives the same left-end value.
-This is a magnetic-ladder statement inside each irrep; it is not a claim
-about a localized dynamical mode or a nonzero limiting end plateau.
 
 ## 4. An interior spin: small overlaps across a growing ladder
 
@@ -155,11 +152,8 @@ so the count above does not discard contributions that might change the
 power. The two magnetic parities average the squared bracket to
 $`A_+^2+A_-^2`$, giving
 $`\mathcal K(q)=(A_+^2+A_-^2)/2`$ and the spatial profile $`\mathcal F(x)`$.
-These are recursion estimates, not an assumed diffusion law in physical time.
-
 Thus $`q`$ changes the sector-conditioned local overlaps while leaving both
-$`p_{L,h}`$ and $`\dim\mathcal A_q=\binom{L+3}{3}`$ unchanged. Equation (1)
-does not give a sum rule over sites or imply movement of memory between sites.
+$`p_{L,h}`$ and $`\dim\mathcal A_q=\binom{L+3}{3}`$ unchanged.
 
 ## 5. An elementary form of the bulk profile
 
@@ -201,9 +195,9 @@ In particular,
 
 Positivity, reflection symmetry, and
 $`\mathcal F(x)\sim(\pi\sqrt2)^{-1}x^{-3/2}`$ as $`x\downarrow0`$
-are explicit. This endpoint behavior does not supply a uniform finite-chain
-boundary-to-bulk interpolation. The normalized interior shape is the ratio
-$`\mathcal F(x)/\mathcal F(1/2)`$; $`\mathcal F`$ is not a probability density.
+are explicit. The normalized shape at fixed interior positions is the ratio
+$`\mathcal F(x)/\mathcal F(1/2)`$. The theorem specifies the separate
+boundary-distance limit.
 
 ## 6. A concrete local dynamics and its undeformed limit
 
@@ -243,8 +237,8 @@ walk on a connected path with symmetric positive edge rates. Its stationary
 probability vector is uniform, giving
 $`e^{t\mathcal S}X_i\to L^{-1}\sum_kX_k`$ and $`M_{L,i}(1)=1/L`$ by Pauli
 orthogonality. This closed single-site evolution applies to $`q=1`$, $`H=0`$;
-the general deformed model uses the stationary-algebra proof. Its relaxation
-scaling is not obtained from this undeformed check.
+the general deformed model uses the stationary-algebra proof and finite-size
+gap bound in the local realization.
 
 The [source comparison](../literature/ATTRIBUTION.md) derives the conversion
 between Pauli and ladder-operator normalizations and the exact equivalence

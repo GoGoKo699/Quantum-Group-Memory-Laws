@@ -2,9 +2,9 @@
 
 ## What is preserved
 
-The 79-file source handoff is immutable under `archive/research-handoff-2026-10-08/`. `provenance/IMPORT.json` records its SHA-256 file list and the owner's unchanged license. All five original nested manifests are verified recursively. `provenance/ACTIVE_EDITS.json` specifies the navigation, GitHub math-delimiter and import-status transformations for the three active scientific copies. No scientific formula, original checker, canonical report or scientific assertion tolerance is changed.
+The 79-file source handoff is immutable under `archive/research-handoff-2026-10-08/`. `provenance/IMPORT.json` records its SHA-256 file list and the owner's unchanged license. All five original nested manifests are verified recursively. `provenance/ACTIVE_EDITS.json` specifies the navigation, math-display, import-status, and reader-facing exposition transformations for the three active scientific copies. No scientific formula, original checker, canonical report or scientific assertion tolerance is changed.
 
-`provenance/DOCUMENTS.json` is separate documentation-integrity metadata. A reviewed documentation edit can update it; it must not refresh the protected import hashes. The archived date labels are preserved even where their chronology is inconsistent.
+`provenance/DOCUMENTS.json` is separate documentation-integrity metadata. A reviewed documentation edit can update it; it must not refresh the protected import hashes.
 
 ## Commands
 
@@ -38,9 +38,9 @@ All paths below are relative to the protected handoff root.
 | Coherent-plus-noisy local realization | `check_final.py` | 4 |
 | **Total** | | **24** |
 
-Every subprocess retains its original assertions and tolerances and writes its output outside the archive. Scientific success requires the original exit status and expected group count. The infrastructure separately checks report structure, exact strings/Booleans/integers and finite floating-point values. Its newly declared report-comparison allowance is `abs(actual-reference) <= 2e-12 + 2e-10*abs(reference)`. This is not a replacement for an original assertion.
+Every subprocess retains its original assertions and tolerances and writes its output outside the archive. Scientific success requires the original exit status and expected group count. The infrastructure separately checks report structure, exact strings/Booleans/integers and finite floating-point values. Its report-comparison allowance is `abs(actual-reference) <= 2e-12 + 2e-10*abs(reference)`. This is separate from the scientific assertions.
 
-Every nonidentical numeric field is listed in the receipt with both values and its absolute difference. Byte identity is reported separately. No original reference is overwritten. A failed comparison is investigated, not silently normalized or accepted by widening a tolerance. Historical floating-point differences already recorded in the archive remain visible.
+Every nonidentical numeric field is listed in the receipt with both values and its absolute difference. Byte identity is reported separately. No original reference is overwritten. A failed comparison is investigated, not silently normalized or accepted by widening a tolerance.
 
 The wrapper records the complete source-file hash map before execution, verifies it afterward, and refuses output directories within protected source locations. The ten infrastructure tests include negative controls for changed schemas/values, unsafe paths, and prohibited output locations.
 
@@ -62,4 +62,4 @@ A green badge or steps-only summary is not source-matched verification. Local ex
 
 ## Interpretation
 
-The full physical Hilbert-space checks are small (up to dimension 256 in the original suites). Larger chain lengths use polynomial-size recurrence arrays. These tests do not independently prove a uniform asymptotic theorem, establish exhaustive originality, prove a hydrodynamic exponent, or certify a device.
+The full physical Hilbert-space checks use dimensions up to 256. Larger chain lengths use polynomial-size recurrence arrays. These checks test identities, normalizations, and evaluations; the uniform asymptotic laws rest on the analytical arguments linked in the [proof map](research/PROOF_MAP.md).

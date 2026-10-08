@@ -139,8 +139,7 @@ p_{L,h}=\frac{(h+1)m_{L,h}}{2^L}.
 The probabilities are independent of $`q`$, with typical $`h`$ of order $`\sqrt L`$.
 The deformed end has appreciable overlap on a bounded range of magnetic-ladder
 entries, giving the $`L^{-1/2}`$ memory law. In the proved bulk regime, many smaller
-entries give $`L^{-2}`$. These are overlaps inside spin sectors, not a law of
-transport in physical time. The uniform proof controls the sectors omitted by
+entries give $`L^{-2}`$. The uniform proof controls the sectors omitted by
 this power-counting explanation.
 
 | Next question | Read here |
@@ -169,6 +168,5 @@ statements hold. Each answer has a short route in this guide.
 4. A Hamiltonian lower bound and the specified noisy-model equality are
    compatible statements about different invariant operator spaces.
 
-The guide supplies the entry point to the existing derivation. The evaluated
-spatial law and its uniform proof remain the repository's substantive next step
-beyond the tutorial framework.
+The guide connects the tutorial framework to the evaluated spatial law and
+its uniform proof in the repository.

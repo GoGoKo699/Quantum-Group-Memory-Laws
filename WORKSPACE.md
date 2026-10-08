@@ -1,25 +1,25 @@
-# Workspace takeover
+# Repository maintenance
 
 ## Identity and reading order
 
-Work only on **GoGoKo699/Quantum-Group-Memory-Laws**. Read live `main` and [AGENTS.md](AGENTS.md) before making changes. The import starts from the owner's initial commit `d037861f4846c6168068c83aa58112e1f044e43a`; this is a provenance reference, not an assertion about future `main`.
+Work only on **GoGoKo699/Quantum-Group-Memory-Laws**. Read live `main` and [AGENTS.md](AGENTS.md) before making changes.
 
-Start with [model and claims](research/MODEL_AND_CLAIMS.md), [theorem](research/THEOREM.md), [proof map](research/PROOF_MAP.md), [local realization](research/LOCAL_REALIZATION.md), and [plateau dictionary](research/PLATEAU_DICTIONARY.md). Then read [contribution review](research/CONTRIBUTION_REVIEW.md), [attribution](literature/ATTRIBUTION.md), and [verification](VERIFICATION.md).
+Start with [model and claims](research/MODEL_AND_CLAIMS.md), [theorem](research/THEOREM.md), [proof map](research/PROOF_MAP.md), [local realization](research/LOCAL_REALIZATION.md), and [plateau dictionary](research/PLATEAU_DICTIONARY.md). Then read [the result in context](research/CONTRIBUTION_REVIEW.md), [attribution](literature/ATTRIBUTION.md), and [verification](VERIFICATION.md).
 
 ## Begin from the current revision
 
 The reader-facing entry route is [TUTORIAL_BRIDGE.md](research/TUTORIAL_BRIDGE.md), anchored to Moudgalya–Motrunich, arXiv:2108.10324v2. Maintain one prerequisite source and use the existing mechanism, theorem, and proof notes for the project-specific continuation.
 
-Establish live main and inspect its source-matched verification receipt and separate merged-main workflow. The initialization receipts are retained on [PR #1](https://github.com/GoGoKo699/Quantum-Group-Memory-Laws/pull/1); later changes have their own PR evidence. Do not reinitialize the repository. If the hosted evidence is missing or incomplete, finish that verification before development. Otherwise do not rerun every old suite merely to acknowledge takeover.
+Establish live main and inspect its source-matched verification receipt and separate merged-main workflow. Each merged PR records the evidence for its revision. If the hosted evidence is missing or incomplete, finish that verification before development. Otherwise reuse the existing evidence for unchanged source.
 
-Use [contribution and physical interpretation](research/CONTRIBUTION_REVIEW.md) as the author-facing account: the physical question, unchanged algebra dimension and changed spatial overlap, central claim and supporting results, positive and skeptical cases, and orders of limits. Maintain this account at fixed scope. Check specifically that the spatial law is not presented as a deterministic hydrodynamic result or an encoded-memory protocol. Retain the central claim and skeptical case without inflating originality from exactness or passing checks.
+Use [the result in context](research/CONTRIBUTION_REVIEW.md) for the physical question, unchanged algebra dimension and changed spatial overlap, supporting results, and orders of limits. Keep reader-facing pages focused on the results and their hypotheses. Development history belongs in the archive and PR records.
 
 [Physical mechanism](research/PHYSICAL_MECHANISM.md) derives the sector explanation, elementary spatial profile, and polarization readout. [Kernel details](research/KERNEL_DETAILS.md) exposes the convolution and parity factors in the bulk proof. [Attribution](literature/ATTRIBUTION.md) pins the inspected predecessor versions and observable conventions. These support the same central claim; they introduce no broader parameter domain or deterministic saturation assumption.
 
-No new temperature, weak-deformation, higher-spin, noise-gap, or generic-Hamiltonian theorem is required by this handoff. Concrete proof objections and directly covering sources can reopen the assessment. [CURRENT.md](work_orders/CURRENT.md) is the concise task boundary.
+Concrete proof objections, directly covering sources, and explicitly selected new claims can reopen research. [CURRENT.md](work_orders/CURRENT.md) is the task boundary.
 
 ## Boundaries
 
-No other repository or workspace is authorized by this handoff. In particular the monitoring, planar Bell, and electron-preparation projects stay separate. This import does not submit a manuscript, create a release, contact authors, or change repository visibility, collaborators, protection, or settings.
+Authorization is specific to this repository. Submission, release, external contact, and repository-setting changes require their own authorization.
 
 For edits use a feature branch, inspect the exact diff, run the appropriate unchanged scientific tests and infrastructure checks, review the hosted artifact matching the actual head, merge only that reviewed expected head, and inspect the separate merged-main run. Local tests, PR-head tests, and merged-main evidence are distinct.

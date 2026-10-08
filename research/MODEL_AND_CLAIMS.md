@@ -1,4 +1,4 @@
-# Model, claim hierarchy, and boundaries
+# Model and results
 
 The mathematical specification is [THEOREM.md](THEOREM.md). This record uses an open chain of $`L`$ physical spin-$`\tfrac12`$ sites, finite real deformation $`q\ge1`$, and the symmetric coproduct written there. $`X_i`$ is a Pauli operator, so $`C_i(0)=1`$.
 
@@ -22,10 +22,6 @@ The [local realization](LOCAL_REALIZATION.md) combines coherent evolution preser
 
 The [physical mechanism](PHYSICAL_MECHANISM.md) gives its direct polarization readout, the exact sector decomposition behind the two spatial powers, and an elementary evaluation of the existing bulk-profile integral. These deductions retain the theorem's parameter domains and orders of limits.
 
-The random-eigenbasis reference is generally nonlocal. Its exponentially small mean excess is not an ETH theorem and cannot be transferred to a local chaotic Hamiltonian from level statistics alone. Neither supporting calculation is promoted as a separate discovery.
+The generally nonlocal random-eigenbasis reference evaluates the mean Hamiltonian-specific excess. Its assumptions and role as a reference ensemble are given in the [plateau dictionary](PLATEAU_DICTIONARY.md).
 
-## Not established
-
-No hydrodynamic exponent, weak-deformation crossover, arbitrary-local-Hamiltonian saturation theorem, size-independent mixing rate, nonzero thermodynamic edge plateau, encoded-qubit protection, finite-temperature law, higher-spin generalization, or experimental implementation is claimed. More memory at an end and less in the bulk does not imply physical transport of memory from one to the other, or conservation of the sum of single-spin memories.
-
-The finite numerical checks test identities and evaluations. The large-$`L`$ law rests on the uniform analytical proof. Originality and significance remain subject to the [bounded contribution review](CONTRIBUTION_REVIEW.md), not test counts.
+The finite numerical checks test identities and evaluations. The large-$`L`$ law rests on the uniform analytical proof. [The result in context](CONTRIBUTION_REVIEW.md) explains the physical interpretation and relation to prior work.
