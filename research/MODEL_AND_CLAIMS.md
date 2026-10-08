@@ -20,6 +20,8 @@ The complete symmetry term is a lower bound on the finite-chain **infinite-time 
 
 The [local realization](LOCAL_REALIZATION.md) combines coherent evolution preserving the **entire** algebra with positive-rate local bond reflections. Noise times are unrecorded and averaged. At every fixed finite $L$ and positive noise strength, the correlation converges to the symmetry projection; its convergence bound uses an unestimated finite-size dissipative gap. Preserving only total magnetization is not sufficient for a constant transverse plateau.
 
+The [physical mechanism](PHYSICAL_MECHANISM.md) gives its direct polarization readout, the exact sector decomposition behind the two spatial powers, and an elementary evaluation of the existing bulk-profile integral. These deductions retain the theorem's parameter domains and orders of limits.
+
 The random-eigenbasis reference is generally nonlocal. Its exponentially small mean excess is not an ETH theorem and cannot be transferred to a local chaotic Hamiltonian from level statistics alone. Neither supporting calculation is promoted as a separate discovery.
 
 ## Not established

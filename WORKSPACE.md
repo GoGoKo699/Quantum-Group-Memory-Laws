@@ -12,6 +12,8 @@ Establish live main and inspect its source-matched verification receipt and sepa
 
 Use [contribution and physical interpretation](research/CONTRIBUTION_REVIEW.md) as the author-facing account: the physical question, unchanged algebra dimension and changed spatial overlap, central claim and supporting results, positive and skeptical cases, and orders of limits. Maintain this account at fixed scope. Check specifically that the spatial law is not presented as a deterministic hydrodynamic result or an encoded-memory protocol. Retain the central claim and skeptical case without inflating originality from exactness or passing checks.
 
+[Physical mechanism](research/PHYSICAL_MECHANISM.md) derives the sector explanation, elementary spatial profile, and polarization readout. [Kernel details](research/KERNEL_DETAILS.md) exposes the convolution and parity factors in the bulk proof. [Attribution](literature/ATTRIBUTION.md) pins the inspected predecessor versions and observable conventions. These support the same central claim; they introduce no broader parameter domain or deterministic saturation assumption.
+
 No new temperature, weak-deformation, higher-spin, noise-gap, or generic-Hamiltonian theorem is required by this handoff. Concrete proof objections and directly covering sources can reopen the assessment. [CURRENT.md](work_orders/CURRENT.md) is the concise task boundary.
 
 ## Boundaries
