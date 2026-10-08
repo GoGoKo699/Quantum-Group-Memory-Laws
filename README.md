@@ -4,7 +4,9 @@
 
 How much of a local spin's late-time memory is fixed by symmetry alone?
 
-This repository records a spatial law for the **complete transverse symmetry contribution** in an open spin-$\tfrac12$ chain with real quantum-group deformation. Relative to ordinary $SU(2)$, the deformed symmetry enhances the unavoidable end-spin memory while suppressing the bulk contribution. These are overlaps with a conserved operator algebra, not an encoded-memory lifetime or a hydrodynamic decay exponent.
+This repository records a spatial law for the **complete transverse symmetry contribution** in an open spin-$\tfrac12$ chain with real quantum-group deformation. In the large-chain limit, the end contribution decays as $L^{-1/2}$ at every fixed finite $q>1$, while the bulk contribution decays as $L^{-2}$ in the proved domain $q>q_0$. Ordinary $SU(2)$ gives $1/L$ everywhere.
+
+The physical question is how much of a local spin observable overlaps the conserved algebra. Deformation changes that spatial overlap while leaving the algebra's dimension unchanged. Thus the asymptotic end enhancement and bulk suppression concern the shape of conserved operators. Their interpretation is developed in the [contribution review](research/CONTRIBUTION_REVIEW.md).
 
 With the ordinary infinite-temperature trace,
 
@@ -13,7 +15,7 @@ M_{L,i}(q)=2^{-L}\|\Pi_q(X_i)\|_{\mathrm{HS}}^2,
 \qquad C_i(t)=2^{-L}\operatorname{Tr}[X_i(t)X_i].
 $$
 
-Here $\Pi_q$ projects onto the **whole quantum-group symmetry algebra**, including products of its generators. A symmetry-preserving Hamiltonian obeys $\overline C_i\ge M_{L,i}$; its full plateau need not equal this contribution.
+Here $\Pi_q$ projects onto the **whole quantum-group symmetry algebra**, including products of its generators. A symmetry-preserving Hamiltonian obeys $\overline C_i\ge M_{L,i}$, where $\overline C_i$ is the finite-chain infinite-time average. Its full time-averaged memory need not equal this contribution.
 
 | Regime | Complete symmetry contribution |
 |---|---|
@@ -21,9 +23,9 @@ Here $\Pi_q$ projects onto the **whole quantum-group symmetry algebra**, includi
 | End spin, every fixed finite $q>1$ | $M_{L,1}=\tanh(\log q)/\sqrt{2\pi L}+O_q(L^{-1})$. |
 | Bulk, $i/L\to x\in(0,1)$ and fixed $q>q_0$ | $M_{L,i}=\mathcal K(q)\mathcal F(x)L^{-2}[1+o(1)]$. |
 
-The sufficient bulk proof threshold is $q_0=2.0810189966\ldots$. It is **not a physical transition**. The positive amplitude and normalized spatial profile are explicitly defined in the [theorem](research/THEOREM.md). The limits are not uniform as $q\to1$ or as the observation site approaches a boundary.
+The sufficient bulk proof threshold is $q_0=2.0810189966\ldots$. It is **not a physical transition**. The amplitude and spatial profile are explicitly defined in the [theorem](research/THEOREM.md). Both end and bulk contributions vanish as the chain grows. The limits are not uniform as $q\to1$ or as the observation site approaches a boundary.
 
-A specified local, noise-averaged bond-kick model attains this contribution exactly, even with a Hamiltonian preserving the full algebra. The finite-size relaxation bound contains a dissipative gap whose system-size scaling is not evaluated. The zero-noise and long-time limits must not be interchanged.
+A specified local, noise-averaged bond-kick model attains this contribution exactly at fixed finite chain size and positive noise strength, even with a Hamiltonian preserving the full algebra. The finite-size relaxation bound contains a dissipative gap whose system-size scaling is not evaluated. The zero-noise and long-time limits must not be interchanged.
 
 ## Reading map
 

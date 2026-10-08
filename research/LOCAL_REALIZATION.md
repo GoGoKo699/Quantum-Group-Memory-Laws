@@ -1,6 +1,6 @@
 # Local interacting realization of the full symmetry-memory law
 
-**7 October 2026.** An operational corollary and interpretation check for the existing quantum-group spin-memory result. This note does not change its asymptotic formulas or their parameter domains. It is an author-side derivation, not independent review.
+This note gives an operational corollary and interpretation of the quantum-group spin-memory result. Its asymptotic formulas and parameter domains are unchanged. The derivation is author-side, not independent review.
 
 ## 1. Unchanged setting
 
@@ -179,4 +179,4 @@ The stationary-commutant mechanism, including coherent Hamiltonians with strong-
 
 The additional research contribution under assessment remains the evaluated spatial laws in the preserved theorem: $L^{-1/2}$ edge memory for fixed $q>1$ and $L^{-2}$ fixed-fraction bulk memory with its explicit amplitude/profile for $q>q_0$. Nothing here enlarges that bulk domain, solves the deterministic chain's full plateau, or establishes a relaxation exponent, a useful encoded quantum memory, or efficient physical realization.
 
-See [SOURCE_CHECK.md](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) for primary-source reading boundaries and [FINAL_CHECK.md](CONTRIBUTION_REVIEW.md) for the handoff decision.
+See [SOURCE_CHECK.md](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) for primary-source reading boundaries and [contribution review](CONTRIBUTION_REVIEW.md) for the contribution assessment.

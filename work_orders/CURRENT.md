@@ -1,11 +1,11 @@
-# Current bounded task
+# Current work boundary
 
-**Author-facing contribution review and exposition at fixed scientific scope.**
+**Maintain the spatial-memory contribution at its established scientific scope.**
 
-First establish current live main and the initialization PR's exact-revision evidence using [WORKSPACE.md](../WORKSPACE.md). Initialization is not a new scientific pilot.
+The author-facing assessment and claim hierarchy are in [CONTRIBUTION_REVIEW.md](../research/CONTRIBUTION_REVIEW.md). Read it with the [model](../research/MODEL_AND_CLAIMS.md) and [theorem](../research/THEOREM.md). Further exposition should develop this account rather than append equivalent audit checkpoints.
 
-Preserve the ordinary physical trace, complete symmetry algebra, q>1 fixed-deformation edge law, q>q0 restricted bulk equality, exact q=1 value, and the stated orders of limits. Preserve the distinction among symmetry contribution, Hamiltonian-specific excess, nonlocal random-eigenbasis reference, and noise-averaged local attainment.
+Preserve the ordinary physical trace, complete symmetry algebra, q>1 fixed-deformation edge law, q>q0 restricted bulk equality, exact q=1 value, and stated orders of limits. Keep symmetry memory, Hamiltonian-specific excess, the nonlocal reference ensemble, and noise-averaged local attainment distinct.
 
-No unresolved premise is added by the import. Do not append equivalent audit checkpoints or automatically solve weak-deformation crossover, generic local-Hamiltonian saturation, finite-temperature memory, noise-gap scaling, other spins, encoded memory, or a laboratory implementation. Reopen research only for a named proof objection, directly covering source, or explicitly selected new claim.
+The bounded contribution review does not require scientific expansion. Reopen research for a named proof objection, a directly covering source, or an explicitly selected new claim. Weak-deformation crossover, generic local-Hamiltonian saturation, finite temperature, noise-gap scaling, other spins, encoded memory, and laboratory implementation are separate questions.
 
-Protected proofs and reports are immutable. Scientific corrections, if necessary, require a separate explanatory document and revised active claim, not silent archival edits. Follow [AGENTS.md](../AGENTS.md) and [VERIFICATION.md](../VERIFICATION.md) for any change.
+Protected proofs and reports are immutable. A scientific correction requires a separate explanatory document and revised active claim. Before any change establish live main and its exact-revision evidence using [WORKSPACE.md](../WORKSPACE.md); then follow [AGENTS.md](../AGENTS.md) and [VERIFICATION.md](../VERIFICATION.md).

@@ -6,11 +6,11 @@ Work only on **GoGoKo699/Quantum-Group-Memory-Laws**. Read live `main` and [AGEN
 
 Start with [model and claims](research/MODEL_AND_CLAIMS.md), [theorem](research/THEOREM.md), [proof map](research/PROOF_MAP.md), [local realization](research/LOCAL_REALIZATION.md), and [plateau dictionary](research/PLATEAU_DICTIONARY.md). Then read [contribution review](research/CONTRIBUTION_REVIEW.md), [attribution](literature/ATTRIBUTION.md), and [verification](VERIFICATION.md).
 
-## First task
+## Begin from the current revision
 
-Inspect the initialization PR's source-matched verification receipts and the separate merged-main workflow. Establish the actual current revision; do not reinitialize the repository. If the hosted evidence is missing or incomplete, finish that verification before development. Otherwise do not rerun every old suite merely to acknowledge takeover.
+Establish live main and inspect its source-matched verification receipt and separate merged-main workflow. The initialization receipts are retained on [PR #1](https://github.com/GoGoKo699/Quantum-Group-Memory-Laws/pull/1); later changes have their own PR evidence. Do not reinitialize the repository. If the hosted evidence is missing or incomplete, finish that verification before development. Otherwise do not rerun every old suite merely to acknowledge takeover.
 
-Then organize the bounded result for author-facing contribution review and exposition. Check specifically that the spatial law is not presented as a deterministic hydrodynamic result or an encoded-memory protocol. Retain the central claim and skeptical case without inflating originality from exactness or passing checks.
+Use [contribution and physical interpretation](research/CONTRIBUTION_REVIEW.md) as the author-facing account: the physical question, unchanged algebra dimension and changed spatial overlap, central claim and supporting results, positive and skeptical cases, and orders of limits. Maintain this account at fixed scope. Check specifically that the spatial law is not presented as a deterministic hydrodynamic result or an encoded-memory protocol. Retain the central claim and skeptical case without inflating originality from exactness or passing checks.
 
 No new temperature, weak-deformation, higher-spin, noise-gap, or generic-Hamiltonian theorem is required by this handoff. Concrete proof objections and directly covering sources can reopen the assessment. [CURRENT.md](work_orders/CURRENT.md) is the concise task boundary.
 
