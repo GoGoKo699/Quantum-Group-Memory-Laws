@@ -8,6 +8,8 @@ For ordinary $SU(2)$, the contribution is exactly $1/L$ at every site. Real quan
 
 The number of conserved operator directions does not increase. For every finite real $q\ge1$, the represented algebra has dimension $\binom{L+3}{3}$. Deformation changes its embedding in physical operator space and its overlap with local spins. The algebras are generally not nested. The [Pauli-basis identity](LOCAL_REALIZATION.md#5-same-number-of-conserved-directions-different-spatial-overlap) explains this distinction: its sum runs over all Pauli strings, so it implies neither conservation of total single-site memory nor motion of memory from the bulk to the ends.
 
+The [physical mechanism](PHYSICAL_MECHANISM.md) makes this statement quantitative: the infinite-temperature probabilities of total-spin sectors are unchanged, while their conditional overlap with a local spin changes. At a deformed end the overlap occupies a short magnetic-ladder profile; in the bulk many ladder entries contribute with much smaller amplitudes. In the stated local averaged dynamics, $M_{L,i}$ is exactly the retained fraction of an initially polarized spin, with all other spins maximally mixed.
+
 The bulk law also fixes a common interior shape. At each fixed $q>q_0$, with $i_L/L\to x\in(0,1)$,
 
 $$
@@ -43,7 +45,7 @@ This supports retaining one focused contribution with the spatial law as its org
 
 Grant the literature the complete-commutant projection principle, quantum-group representation theory, orthogonal-polynomial and Jost tools, and the stationary-commutant mechanism for symmetry-preserving noise. The additional implication assessed here is the **evaluated physical multiplicity trace and uniform finite-deformation spatial asymptotics**.
 
-The [attribution map](../literature/ATTRIBUTION.md), [archived contribution review](../archive/research-handoff-2026-10-08/prior/REVIEW.md), and [targeted source check](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) identify the inspected passages and access limits. Those records did not identify a directly covering complete law in the same representation. This exposition relies on that bounded source comparison; it does not record a new literature search or establish exhaustive priority. Internal proof scrutiny and executable checks remain distinct from independent review.
+The [attribution map](../literature/ATTRIBUTION.md) compares the physical predecessors in their stated versions and gives exact observable and dissipator conversions. In particular it distinguishes the spin-$\tfrac12$ physical trace from different Temperley–Lieb representations, and includes the newer structural-reference version. The inspected passages do not supply the same complete spatial law. The [archived contribution review](../archive/research-handoff-2026-10-08/prior/REVIEW.md) and [historical source check](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) preserve the earlier reading record. This bounded comparison does not establish exhaustive priority; internal proof scrutiny and executable checks remain distinct from independent review.
 
 ## Orders of limits that carry the interpretation
 

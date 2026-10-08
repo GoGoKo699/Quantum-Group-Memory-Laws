@@ -33,7 +33,7 @@ A specified local, noise-averaged bond-kick model attains this contribution exac
 
 | Start here | What it contains |
 |---|---|
-| [Model and claims](research/MODEL_AND_CLAIMS.md) | Observable, trace, assumptions, and the distinction between established claims and nonclaims. |
+| [Model and claims](research/MODEL_AND_CLAIMS.md) and [physical mechanism](research/PHYSICAL_MECHANISM.md) | Observable, assumptions, sector explanation of the two powers, polarization readout, and elementary bulk profile. |
 | [Theorem](research/THEOREM.md) and [proof map](research/PROOF_MAP.md) | Finite recursion, edge/bulk laws, explicit amplitudes, and the complete proofs. |
 | [Local realization](research/LOCAL_REALIZATION.md) | Symmetry-preserving interactions plus unrecorded local noise. |
 | [Hamiltonian plateau dictionary](research/PLATEAU_DICTIONARY.md) | Exact excess beyond symmetry and the explicitly nonlocal random-eigenbasis benchmark. |
@@ -48,6 +48,7 @@ The complete-commutant projection principle, representation theory, orthogonal-p
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/verify.py --output build/verification
+python tools/check_foundations.py --output build/verification/foundations.json
 ```
 
 The checks use small physical Hilbert spaces and polynomial-size recurrence arrays. They do not establish an asymptotic theorem by fitting finite-size data. The original failed attempts, exact checkers, and reference reports are retained in a [discrete archive](archive/README.md).

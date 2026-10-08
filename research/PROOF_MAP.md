@@ -8,6 +8,8 @@ Read the [compact theorem](THEOREM.md) with the [model boundaries](MODEL_AND_CLA
 | Closed edge sum, fixed-distance limit, auxiliary controls | [Asymptotics, Sections 2–6](../archive/research-handoff-2026-10-08/prior/prior/prior/FOLLOWUP.md). |
 | Full fixed-deformation bulk theorem | [Bulk account](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md), including Sections 4–5 on uniform domination and matching. |
 | Both spectral endpoints, parity, and complete sector sum | [Bulk account, Sections 6–8](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md). |
+| Explicit Jost convolution, Gaussian constant, and parity normalization | [Kernel details](KERNEL_DETAILS.md), deriving the intermediate steps in the bulk account. |
+| Sector explanation, observable readout, and elementary spatial profile | [Physical mechanism](PHYSICAL_MECHANISM.md), deductions from the exact projection and proved asymptotics. |
 | Complement of the common symmetry in a fixed Hamiltonian's plateau | [Plateau dictionary](PLATEAU_DICTIONARY.md). |
 | Local coherent-plus-noisy convergence and broken-hypothesis controls | [Local realization](LOCAL_REALIZATION.md). |
 
