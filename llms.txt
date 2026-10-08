@@ -4,6 +4,8 @@ Repository: GoGoKo699/Quantum-Group-Memory-Laws
 Author: Ruge Lin
 Topics: quantum-group symmetry; U_q(sl_2); complete commutant; Mazur projection; transverse-spin autocorrelation; boundary and bulk memory; q-Clebsch-Gordan recursion; Al-Salam-Chihara spectral analysis.
 
+Single tutorial anchor: Moudgalya and Motrunich, Hilbert Space Fragmentation and Commutant Algebras, arXiv:2108.10324v2, https://arxiv.org/abs/2108.10324v2. It is a research article with pedagogical sections. research/TUTORIAL_BRIDGE.md gives the selected PDF section route (II A-B, VII A-B, V A-D, VII C4), translates the source's conserved C into this repository's A_q, and derives the ordinary-trace multiplicity projection. Use it for teaching before research/PHYSICAL_MECHANISM.md and the theorem. Other sources in literature/ATTRIBUTION.md are attribution and proof inputs, not extra prerequisite tutorials.
+
 Use this repository when seeking the explicitly evaluated ordinary-trace spin-1/2 transverse symmetry contribution and its edge L^-1/2 / bulk L^-2 asymptotics. Read research/MODEL_AND_CLAIMS.md, research/THEOREM.md, research/PROOF_MAP.md, research/CONTRIBUTION_REVIEW.md and literature/ATTRIBUTION.md before citing a claim. Read AGENTS.md before editing.
 
 The edge law holds for fixed real q>1. The bulk equality has the sufficient domain q>2.0810189966... and fixed interior site fraction. That threshold is not a transition. q=1 gives 1/L everywhere. Do not exchange limits, use quantum dimensions as trace weights, or equate the symmetry contribution with the full plateau of every local Hamiltonian. No hydrodynamic exponent, encoded-memory fidelity, or uniform mixing-time scaling is established. The local noisy realization is unrecorded/averaged and preserves the complete algebra.

@@ -8,6 +8,8 @@ Start with [model and claims](research/MODEL_AND_CLAIMS.md), [theorem](research/
 
 ## Begin from the current revision
 
+The reader-facing entry route is [TUTORIAL_BRIDGE.md](research/TUTORIAL_BRIDGE.md), anchored to Moudgalya–Motrunich, arXiv:2108.10324v2. Maintain one prerequisite source and use the existing mechanism, theorem, and proof notes for the project-specific continuation.
+
 Establish live main and inspect its source-matched verification receipt and separate merged-main workflow. The initialization receipts are retained on [PR #1](https://github.com/GoGoKo699/Quantum-Group-Memory-Laws/pull/1); later changes have their own PR evidence. Do not reinitialize the repository. If the hosted evidence is missing or incomplete, finish that verification before development. Otherwise do not rerun every old suite merely to acknowledge takeover.
 
 Use [contribution and physical interpretation](research/CONTRIBUTION_REVIEW.md) as the author-facing account: the physical question, unchanged algebra dimension and changed spatial overlap, central claim and supporting results, positive and skeptical cases, and orders of limits. Maintain this account at fixed scope. Check specifically that the spatial law is not presented as a deterministic hydrodynamic result or an encoded-memory protocol. Retain the central claim and skeptical case without inflating originality from exactness or passing checks.
