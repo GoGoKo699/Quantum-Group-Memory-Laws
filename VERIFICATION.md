@@ -58,7 +58,7 @@ Before merging, inspect the PR diff and download its artifact. Compare every sou
 
 The hosted artifact also contains `foundations.json`. Inspect its four group results and match its source hashes and commit to the same reviewed revision; keep its checks distinct from the 24 original groups and ten infrastructure tests.
 
-A green badge or steps-only summary is not source-matched verification. Local execution, PR-head execution, and merged-main execution are separate receipts. No hosted success is asserted in advance by this document.
+A green badge or steps-only summary is not source-matched verification. Local execution, PR-head execution, and merged-main execution are separate receipts.
 
 ## Interpretation
 

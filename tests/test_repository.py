@@ -31,8 +31,8 @@ class RepositoryTests(unittest.TestCase):
         for _,s,r,_ in v.SUITES:
             self.assertTrue((ROOT/v.ARCHIVE/s).is_file());self.assertTrue((ROOT/v.ARCHIVE/r).is_file())
     def test_08_scope_and_current_identity(self):
-        self.assertIn('GoGoKo699/Quantum-Group-Memory-Laws',(ROOT/'WORKSPACE.md').read_text())
-        self.assertIn('q>q0',(ROOT/'work_orders/CURRENT.md').read_text())
+        self.assertIn('GoGoKo699/Quantum-Group-Memory-Laws',(ROOT/'AGENTS.md').read_text())
+        self.assertIn('q>q_0',(ROOT/'research/MODEL_AND_CLAIMS.md').read_text())
         self.assertIn('ordinary physical',(ROOT/'research/MODEL_AND_CLAIMS.md').read_text())
     def test_09_no_third_party_binary_or_bootstrap_payload(self):
         names=v.source_files(ROOT)

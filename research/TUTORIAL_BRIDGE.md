@@ -153,8 +153,8 @@ this power-counting explanation.
 The end law fixes finite $`q>1`$. The bulk law fixes $`q>q_0`$ and an interior
 position fraction; $`q_0`$ is a sufficient proof threshold. Both contributions
 vanish as $`L`$ grows. The theorem specifies the different boundary-distance and
-weak-deformation limit issues. The finite-size noisy realization leaves the
-system-size dependence of its relaxation gap unevaluated.
+weak-deformation limit issues. The local realization gives a convergence bound
+in terms of the finite-size dissipative gap.
 
 ## 5. Check your understanding
 
