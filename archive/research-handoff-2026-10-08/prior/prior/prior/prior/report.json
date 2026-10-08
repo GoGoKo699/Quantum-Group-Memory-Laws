@@ -1,0 +1,133 @@
+{
+  "closed_hamiltonian_control": {
+    "passed": true,
+    "values": [
+      {
+        "L": 4,
+        "closed_H_average": 0.22736967058881427,
+        "lambda": 0.0,
+        "q": 2.6,
+        "relative_commutator_norm": 6.745849516653672e-16,
+        "site": 2,
+        "symmetry_floor": 0.18813386693445808
+      },
+      {
+        "L": 4,
+        "closed_H_average": 0.21735905998578214,
+        "lambda": 1.0,
+        "q": 2.6,
+        "relative_commutator_norm": 2.6746719785564277e-15,
+        "site": 2,
+        "symmetry_floor": 0.18813386693445808
+      },
+      {
+        "L": 6,
+        "closed_H_average": 0.1317682331827594,
+        "lambda": 0.0,
+        "q": 2.6,
+        "relative_commutator_norm": 6.461895763341348e-16,
+        "site": 3,
+        "symmetry_floor": 0.1009218456824997
+      },
+      {
+        "L": 6,
+        "closed_H_average": 0.1459326884094852,
+        "lambda": 1.0,
+        "q": 2.6,
+        "relative_commutator_norm": 3.5181019773588015e-15,
+        "site": 3,
+        "symmetry_floor": 0.1009218456824997
+      },
+      {
+        "L": 8,
+        "closed_H_average": 0.0841751509612829,
+        "lambda": 0.0,
+        "q": 2.6,
+        "relative_commutator_norm": 8.292336226137265e-16,
+        "site": 4,
+        "symmetry_floor": 0.06401021523778563
+      },
+      {
+        "L": 8,
+        "closed_H_average": 0.08608131877485388,
+        "lambda": 1.0,
+        "q": 2.6,
+        "relative_commutator_norm": 3.952386831191978e-15,
+        "site": 4,
+        "symmetry_floor": 0.06401021523778563
+      }
+    ]
+  },
+  "direct_projection": {
+    "cases": 14,
+    "max_commutator_norm": 1.010149947919277e-15,
+    "max_value_error": 1.6653345369377348e-16,
+    "passed": true
+  },
+  "groups_passed": 4,
+  "large_recurrence": {
+    "passed": true,
+    "values": [
+      {
+        "L": 10,
+        "L_squared_times_full": 4.474123307578407,
+        "full_symmetry": 0.044741233075784065,
+        "one_charge": 0.01974329167274911,
+        "q": 2.6,
+        "ratio": 2.266148614799559,
+        "site": 5
+      },
+      {
+        "L": 20,
+        "L_squared_times_full": 5.7079340321844185,
+        "full_symmetry": 0.014269835080461047,
+        "one_charge": 0.0016275053016543708,
+        "q": 2.6,
+        "ratio": 8.767919260204964,
+        "site": 10
+      },
+      {
+        "L": 40,
+        "L_squared_times_full": 6.8496960115789,
+        "full_symmetry": 0.0042810600072368124,
+        "one_charge": 2.2118624129892764e-05,
+        "q": 2.6,
+        "ratio": 193.55001387500715,
+        "site": 20
+      },
+      {
+        "L": 80,
+        "L_squared_times_full": 7.746944638135234,
+        "full_symmetry": 0.0012104600997086302,
+        "one_charge": 8.170704372238647e-09,
+        "q": 2.6,
+        "ratio": 148146.35857116233,
+        "site": 40
+      },
+      {
+        "L": 160,
+        "L_squared_times_full": 8.376914864064403,
+        "full_symmetry": 0.0003272232368775158,
+        "one_charge": 2.2299353422763293e-15,
+        "q": 2.6,
+        "ratio": 146741132208.56198,
+        "site": 80
+      }
+    ],
+    "warning": "These finite-size values do not prove an asymptotic power law."
+  },
+  "local_noise_saturation": {
+    "hilbert_dimension": 16,
+    "operator_dimension": 256,
+    "passed": true,
+    "site_values": [
+      0.27103243572561897,
+      0.1881338669344581,
+      0.18813386693445816,
+      0.2710324357256189
+    ],
+    "stationary_operator_dimension": 35
+  },
+  "method": "complete symmetry projection, not a transport simulation",
+  "normalization": "C_X(0)=Tr(X_i X_i)/2**L=1"
+}

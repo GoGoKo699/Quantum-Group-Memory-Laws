@@ -1,0 +1,4 @@
+The initial package assembly stopped when checking README's VERIFICATION.json
+link before writing that metadata file. Assembly order was corrected: write
+verification metadata, validate document links, then generate the final manifest.
+This was not a scientific test failure; no scientific code or tolerance changed.

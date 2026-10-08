@@ -1,0 +1,277 @@
+{
+  "auxiliary_crystal_limit": {
+    "bulk_values": [
+      {
+        "L": 80,
+        "L2M": 3.8580242751032743,
+        "analytical_limit": 3.809143396177682,
+        "x": 0.25
+      },
+      {
+        "L": 320,
+        "L2M": 3.8207321414667117,
+        "analytical_limit": 3.809143396177682,
+        "x": 0.25
+      },
+      {
+        "L": 1280,
+        "L2M": 3.812003569602524,
+        "analytical_limit": 3.809143396177682,
+        "x": 0.25
+      },
+      {
+        "L": 80,
+        "L2M": 2.638987436608463,
+        "analytical_limit": 2.650593017679488,
+        "x": 0.5
+      },
+      {
+        "L": 320,
+        "L2M": 2.647423501470841,
+        "analytical_limit": 2.650593017679488,
+        "x": 0.5
+      },
+      {
+        "L": 1280,
+        "L2M": 2.649784195630502,
+        "analytical_limit": 2.650593017679488,
+        "x": 0.5
+      }
+    ],
+    "max_exact_error": 5.551115123125783e-17,
+    "passed": true
+  },
+  "boundary_limits": {
+    "edge_values": [
+      {
+        "L": 100,
+        "M_edge": 0.018342994983517796,
+        "limit_coefficient": 0.15343933861593567,
+        "q": 1.5,
+        "sqrtL_times_M": 0.18342994983517796
+      },
+      {
+        "L": 400,
+        "M_edge": 0.00813570702251524,
+        "limit_coefficient": 0.15343933861593567,
+        "q": 1.5,
+        "sqrtL_times_M": 0.1627141404503048
+      },
+      {
+        "L": 1600,
+        "M_edge": 0.003905143951933603,
+        "limit_coefficient": 0.15343933861593567,
+        "q": 1.5,
+        "sqrtL_times_M": 0.1562057580773441
+      },
+      {
+        "L": 6400,
+        "M_edge": 0.0019280395452984085,
+        "limit_coefficient": 0.15343933861593567,
+        "q": 1.5,
+        "sqrtL_times_M": 0.1542431636238727
+      },
+      {
+        "L": 25600,
+        "M_edge": 0.0009604273202108582,
+        "limit_coefficient": 0.15343933861593567,
+        "q": 1.5,
+        "sqrtL_times_M": 0.1536683712337373
+      },
+      {
+        "L": 100,
+        "M_edge": 0.03141823737619488,
+        "limit_coefficient": 0.29612210504023867,
+        "q": 2.6,
+        "sqrtL_times_M": 0.3141823737619488
+      },
+      {
+        "L": 400,
+        "M_edge": 0.015078067627442973,
+        "limit_coefficient": 0.29612210504023867,
+        "q": 2.6,
+        "sqrtL_times_M": 0.30156135254885946
+      },
+      {
+        "L": 1600,
+        "M_edge": 0.007442854914453606,
+        "limit_coefficient": 0.29612210504023867,
+        "q": 2.6,
+        "sqrtL_times_M": 0.29771419657814424
+      },
+      {
+        "L": 6400,
+        "M_edge": 0.003707228697272522,
+        "limit_coefficient": 0.29612210504023867,
+        "q": 2.6,
+        "sqrtL_times_M": 0.2965782957818018
+      },
+      {
+        "L": 25600,
+        "M_edge": 0.001851566888066597,
+        "limit_coefficient": 0.29612210504023867,
+        "q": 2.6,
+        "sqrtL_times_M": 0.2962507020906555
+      },
+      {
+        "L": 100,
+        "M_edge": 0.03829931684970206,
+        "limit_coefficient": 0.3682544126782456,
+        "q": 5.0,
+        "sqrtL_times_M": 0.3829931684970206
+      },
+      {
+        "L": 400,
+        "M_edge": 0.018634140707822364,
+        "limit_coefficient": 0.3682544126782456,
+        "q": 5.0,
+        "sqrtL_times_M": 0.3726828141564473
+      },
+      {
+        "L": 1600,
+        "M_edge": 0.009238708275099174,
+        "limit_coefficient": 0.3682544126782456,
+        "q": 5.0,
+        "sqrtL_times_M": 0.369548331003967
+      },
+      {
+        "L": 6400,
+        "M_edge": 0.004607808358909163,
+        "limit_coefficient": 0.3682544126782456,
+        "q": 5.0,
+        "sqrtL_times_M": 0.3686246687127331
+      },
+      {
+        "L": 25600,
+        "M_edge": 0.00230224172699214,
+        "limit_coefficient": 0.3682544126782456,
+        "q": 5.0,
+        "sqrtL_times_M": 0.3683586763187424
+      }
+    ],
+    "fixed_distance_profile": [
+      {
+        "asymptotic_coefficient": 0.2961221050402387,
+        "distance_from_end": 0,
+        "sqrt640_times_finite_value": 0.2997183195249981
+      },
+      {
+        "asymptotic_coefficient": 0.13167983069992018,
+        "distance_from_end": 1,
+        "sqrt640_times_finite_value": 0.13431254163081013
+      },
+      {
+        "asymptotic_coefficient": 0.08427193397119108,
+        "distance_from_end": 2,
+        "sqrt640_times_finite_value": 0.08637544434861595
+      },
+      {
+        "asymptotic_coefficient": 0.06080442923144739,
+        "distance_from_end": 3,
+        "sqrt640_times_finite_value": 0.06267375466550247
+      },
+      {
+        "asymptotic_coefficient": 0.0468316483991625,
+        "distance_from_end": 4,
+        "sqrt640_times_finite_value": 0.04854153917441224
+      }
+    ],
+    "not_uniform_in_q_to_1": true,
+    "passed": true
+  },
+  "boundary_statement": "M(L,1,q)=tanh(log(q))/sqrt(2*pi*L)+O_q(1/L), fixed finite q>1",
+  "bulk_lower_bound_controls": {
+    "max_violation": 0.0,
+    "passed": true,
+    "warning": "Numerics check finite identities. Uniform asymptotic lower bound follows from the proved heat-kernel/Green-function argument, not these four tests.",
+    "weighted_path_tests": [
+      {
+        "Jensen_lower": 0.5675862006196137,
+        "L": 16,
+        "ballot_endpoint": 2,
+        "i": 8,
+        "q": 2.0,
+        "weighted_to_unweighted": 0.5886212589053574
+      },
+      {
+        "Jensen_lower": 0.756681765272236,
+        "L": 24,
+        "ballot_endpoint": 4,
+        "i": 6,
+        "q": 2.6,
+        "weighted_to_unweighted": 0.7696646980632005
+      },
+      {
+        "Jensen_lower": 0.7940387901486017,
+        "L": 24,
+        "ballot_endpoint": 4,
+        "i": 12,
+        "q": 2.6,
+        "weighted_to_unweighted": 0.8022302904555209
+      },
+      {
+        "Jensen_lower": 0.9478127466572729,
+        "L": 32,
+        "ballot_endpoint": 4,
+        "i": 16,
+        "q": 5.0,
+        "weighted_to_unweighted": 0.9485820718760238
+      }
+    ]
+  },
+  "bulk_statement": "M(L,i,q) >= c(q,epsilon)/L**2 proved for fixed q>sqrt(3), epsilon L<=i<=(1-epsilon)L; no matching finite-q upper bound",
+  "finite_formula_checks": {
+    "grid_cases": 52,
+    "max_edge_error": 3.4416913763379853e-15,
+    "max_grid_error": 1.6653345369377348e-16,
+    "passed": true
+  },
+  "finite_q_diagnostics": {
+    "no_finite_q_bulk_equality_claim": true,
+    "passed": true,
+    "values": [
+      {
+        "L": 80,
+        "L2M_bulk": 7.746944638135234,
+        "M_bulk": 0.0012104600997086302,
+        "M_edge": 0.03554883157212573,
+        "i": 40,
+        "q": 2.6
+      },
+      {
+        "L": 160,
+        "L2M_bulk": 8.3769148640644,
+        "M_bulk": 0.0003272232368775156,
+        "M_edge": 0.024364616397212747,
+        "i": 80,
+        "q": 2.6
+      },
+      {
+        "L": 320,
+        "L2M_bulk": 8.790551150799349,
+        "M_bulk": 8.584522608202489e-05,
+        "M_edge": 0.016923379530710388,
+        "i": 160,
+        "q": 2.6
+      },
+      {
+        "L": 640,
+        "L2M_bulk": 9.05468702905506,
+        "M_bulk": 2.2106169504528955e-05,
+        "M_edge": 0.01184740682721307,
+        "i": 320,
+        "q": 2.6
+      },
+      {
+        "L": 1280,
+        "L2M_bulk": 9.223106350128148,
+        "M_bulk": 5.629337371904387e-06,
+        "M_edge": 0.008331182191949608,
+        "i": 640,
+        "q": 2.6
+      }
+    ]
+  },
+  "groups_passed": 5,
+  "scope": "full symmetry projection; infinite-temperature Pauli X; open spin-1/2 chain"
+}

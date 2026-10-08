@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/data/qg_memory_review_2026-10-07/check_review.py", line 182, in <module>
+    args=ap.parse_args();report=run();args.output.write_text(json.dumps(report,indent=2,sort_keys=True)+'\n')
+                                ~~~^^
+  File "/mnt/data/qg_memory_review_2026-10-07/check_review.py", line 102, in run
+    assert abs(M-fast(L,site+1,q))<TOL
+                 ~~~~^^^^^^^^^^^^
+  File "/mnt/data/qg_memory_review_2026-10-07/prior/prior/fast_grid.py", line 10, in fast
+    if not (L>=1 and 1<=site<=L and q>1 and math.isfinite(q)):raise ValueError
+                                                              ^^^^^^^^^^^^^^^^
+ValueError
