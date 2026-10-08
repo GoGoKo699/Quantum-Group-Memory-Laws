@@ -47,7 +47,7 @@ $`p_{L,h}`$ is independent of $`q`$. The projection formula gives exactly
 ```math
 M_{L,i}(q)=\sum_h p_{L,h}\,\eta_{L,i;h}(q),\qquad
 \eta_{L,i;h}=\frac{\|\overline X_{L,i;h}\|_{\rm HS}^2}{h+1}.
-\tag{1}
+\qquad(1)
 ```
 
 Here $`\eta`$ is the normalized squared overlap conditioned on a sector,
@@ -59,7 +59,7 @@ the multiplicity-averaged raising matrix element, $`0\le r\lt h`$. Then
 ```math
 \eta_{L,i;h}=\frac{2}{h+1}\sum_{r=0}^{h-1}
 |\alpha_{L,i}(h,r)|^2.
-\tag{2}
+\qquad(2)
 ```
 
 The factor two includes raising and lowering. The [finite recursion](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md)
@@ -72,7 +72,7 @@ to $`h/\sqrt L`$ converge to the density
 
 ```math
 \rho(y)=\sqrt{\frac2\pi}\,y^2e^{-y^2/2},\qquad y>0.
-\tag{3}
+\qquad(3)
 ```
 
 The spacing of allowed $`h`$ is two. Thus
@@ -174,7 +174,7 @@ The integral in the theorem can be evaluated without further asymptotics:
 \left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+
 \mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0\lt x\lt 1.
 \end{aligned}
-\tag{4}
+\qquad(4)
 ```
 
 For a direct derivation put $`a=x(1-x)`$, $`c=1-2x`$, and

@@ -34,7 +34,7 @@ Consequently
 ```math
 \boxed{
 \bar C(O)=M(O)+D^{-1}\|\mathcal D_H[O-\Pi_q(O)]\|_{\rm HS}^2.
-}\tag{1}
+}\qquad(1)
 ```
 
 This is the Pythagorean identity for nested operator-space projections. It
@@ -79,7 +79,7 @@ and $`\sum_\alpha B_{j\alpha}=S_j`$ yields
 \boxed{
 \bar C-M=D^{-1}\sum_{j,\alpha}
 \left\|B_{j\alpha}-\frac{S_j}{m_j}\right\|_{\rm HS}^2.
-}\tag{2}
+}\qquad(2)
 ```
 
 The extra plateau is the variation of the diagonal multiplicity blocks around
@@ -129,7 +129,7 @@ is linear in their individual squared overlaps. Therefore
 ```math
 \boxed{
 \mathbb E(\bar C-M)=D^{-1}\sum_j\frac{R_j}{m_j+1}.
-}\tag{3}
+}\qquad(3)
 ```
 
 For $`\|O\|_\infty\le1`$, compression gives
@@ -140,7 +140,7 @@ $`R_j\le\|O_j\|_{\rm HS}^2\le d_jm_j`$. Thus
 0\le\mathbb E(\bar C-M)
 \le\frac{1}{2^L}\sum_jd_j
 =\frac{\lfloor(L+2)^2/4\rfloor}{2^L}.
-}\tag{4}
+}\qquad(4)
 ```
 
 This bound treats low-multiplicity sectors explicitly; no claim that every m_j
@@ -154,7 +154,7 @@ have Haar-orthogonal multiplicity eigenvectors. The sphere fourth moment gives
 =\frac1D\sum_j\frac{
 \|C_j\|_{\rm HS}^2+
 \sum_{a,b}\mathrm{Tr}[(C_j^{ab})^2]}{m_j+2}
-\le\frac{2\lfloor(L+2)^2/4\rfloor}{2^L}.\tag{5}
+\le\frac{2\lfloor(L+2)^2/4\rfloor}{2^L}.\qquad(5)
 ```
 Here $`C_j^{ab}`$ are real m_j by m_j blocks. The numerator equals
 $`2\sum_{ab}\|\mathrm{Sym}\,C_j^{ab}\|_{\rm HS}^2`$, so it is nonnegative.
