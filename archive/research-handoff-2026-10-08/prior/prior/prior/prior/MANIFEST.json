@@ -1,0 +1,34 @@
+{
+  "PILOT.md": {
+    "bytes": 15783,
+    "sha256": "b5c7f59398f57d70a6db76e1ea4d54a4d3682e23e5e8a5fad2282c12098f5c18"
+  },
+  "SOURCES.md": {
+    "bytes": 3338,
+    "sha256": "115cfdca49addd36e14525a607a9272101308b81ae40fce7ca34f4eae2673e1f"
+  },
+  "check_memory.py": {
+    "bytes": 9867,
+    "sha256": "b57f0f4fe2cc5ba047ccbedd62defce1312f9aa93f922761738eaea57426fbd7"
+  },
+  "environment.json": {
+    "bytes": 310,
+    "sha256": "8a6113d21119e523816ab444aef37516c53d9e2c9391dec1bc2f586f4905d85b"
+  },
+  "report.json": {
+    "bytes": 3561,
+    "sha256": "89737627b1c4adaa9351a7a023d6c7cf23a6f210e7c14bda18a1a51d17216ca9"
+  },
+  "report_repeat.json": {
+    "bytes": 3561,
+    "sha256": "89737627b1c4adaa9351a7a023d6c7cf23a6f210e7c14bda18a1a51d17216ca9"
+  },
+  "run.log": {
+    "bytes": 1163,
+    "sha256": "a30e65fe030361db69d3aa695c04c9c118241845ce8b7d33c4dc9629987af942"
+  },
+  "run_repeat.log": {
+    "bytes": 1170,
+    "sha256": "b26791d111286b0696b9cdb706807fc61eff05e9c6071b55100eb675ee8f1e0c"
+  }
+}

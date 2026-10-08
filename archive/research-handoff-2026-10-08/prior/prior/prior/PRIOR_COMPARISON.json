@@ -1,0 +1,129 @@
+{
+  "archive_sha256": "6e5d6d55cc81fa68ff3fb1e60bbc656e2f2029d84e48acc8d09111755b0d4b6f",
+  "byte_identical_to_original": false,
+  "changed_fields": [
+    {
+      "absolute_difference": 2.7755575615628914e-17,
+      "original": 0.18813386693445808,
+      "path": "/closed_hamiltonian_control/values/0/symmetry_floor",
+      "rerun": 0.1881338669344581
+    },
+    {
+      "absolute_difference": 2.7755575615628914e-17,
+      "original": 0.18813386693445808,
+      "path": "/closed_hamiltonian_control/values/1/symmetry_floor",
+      "rerun": 0.1881338669344581
+    },
+    {
+      "absolute_difference": 5.551115123125783e-17,
+      "original": 0.1317682331827594,
+      "path": "/closed_hamiltonian_control/values/2/closed_H_average",
+      "rerun": 0.13176823318275946
+    },
+    {
+      "absolute_difference": 5.551115123125783e-17,
+      "original": 0.1459326884094852,
+      "path": "/closed_hamiltonian_control/values/3/closed_H_average",
+      "rerun": 0.14593268840948515
+    },
+    {
+      "absolute_difference": 1.5265566588595902e-16,
+      "original": 0.0841751509612829,
+      "path": "/closed_hamiltonian_control/values/4/closed_H_average",
+      "rerun": 0.08417515096128275
+    },
+    {
+      "absolute_difference": 2.9582283945787943e-31,
+      "original": 8.292336226137265e-16,
+      "path": "/closed_hamiltonian_control/values/4/relative_commutator_norm",
+      "rerun": 8.292336226137262e-16
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "original": 0.06401021523778563,
+      "path": "/closed_hamiltonian_control/values/4/symmetry_floor",
+      "rerun": 0.06401021523778562
+    },
+    {
+      "absolute_difference": 1.249000902703301e-16,
+      "original": 0.08608131877485388,
+      "path": "/closed_hamiltonian_control/values/5/closed_H_average",
+      "rerun": 0.08608131877485375
+    },
+    {
+      "absolute_difference": 1.5777218104420236e-30,
+      "original": 3.952386831191978e-15,
+      "path": "/closed_hamiltonian_control/values/5/relative_commutator_norm",
+      "rerun": 3.952386831191977e-15
+    },
+    {
+      "absolute_difference": 1.3877787807814457e-17,
+      "original": 0.06401021523778563,
+      "path": "/closed_hamiltonian_control/values/5/symmetry_floor",
+      "rerun": 0.06401021523778562
+    },
+    {
+      "absolute_difference": 3.2730620995610234e-17,
+      "original": 1.010149947919277e-15,
+      "path": "/direct_projection/max_commutator_norm",
+      "rerun": 9.774193269236668e-16
+    },
+    {
+      "absolute_difference": 8.326672684688674e-17,
+      "original": 1.6653345369377348e-16,
+      "path": "/direct_projection/max_value_error",
+      "rerun": 8.326672684688674e-17
+    },
+    {
+      "absolute_difference": 6.938893903907228e-18,
+      "original": 0.044741233075784065,
+      "path": "/large_recurrence/values/0/full_symmetry",
+      "rerun": 0.04474123307578407
+    },
+    {
+      "absolute_difference": 4.440892098500626e-16,
+      "original": 2.266148614799559,
+      "path": "/large_recurrence/values/0/ratio",
+      "rerun": 2.2661486147995595
+    },
+    {
+      "absolute_difference": 8.881784197001252e-16,
+      "original": 5.7079340321844185,
+      "path": "/large_recurrence/values/1/L_squared_times_full",
+      "rerun": 5.707934032184419
+    },
+    {
+      "absolute_difference": 1.734723475976807e-18,
+      "original": 0.014269835080461047,
+      "path": "/large_recurrence/values/1/full_symmetry",
+      "rerun": 0.014269835080461049
+    },
+    {
+      "absolute_difference": 5.551115123125783e-17,
+      "original": 0.27103243572561897,
+      "path": "/local_noise_saturation/site_values/0",
+      "rerun": 0.271032435725619
+    },
+    {
+      "absolute_difference": 8.326672684688674e-17,
+      "original": 0.1881338669344581,
+      "path": "/local_noise_saturation/site_values/1",
+      "rerun": 0.18813386693445802
+    },
+    {
+      "absolute_difference": 1.6653345369377348e-16,
+      "original": 0.18813386693445816,
+      "path": "/local_noise_saturation/site_values/2",
+      "rerun": 0.188133866934458
+    },
+    {
+      "absolute_difference": 1.1102230246251565e-16,
+      "original": 0.2710324357256189,
+      "path": "/local_noise_saturation/site_values/3",
+      "rerun": 0.271032435725619
+    }
+  ],
+  "max_absolute_numerical_difference": 8.881784197001252e-16,
+  "prior_groups_passed": 4,
+  "prior_members_unchanged": 9
+}

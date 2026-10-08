@@ -1,0 +1,108 @@
+{
+  "research/THEOREM.md": {
+    "source": "archive/research-handoff-2026-10-08/prior/THEOREM.md",
+    "replacements": [
+      [
+        "\\[",
+        "$$"
+      ],
+      [
+        "\\]",
+        "$$"
+      ],
+      [
+        "\\(",
+        "$"
+      ],
+      [
+        "\\)",
+        "$"
+      ],
+      [
+        "(prior/FOLLOWUP.md)",
+        "(../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md)"
+      ],
+      [
+        "(prior/prior/FOLLOWUP.md)",
+        "(../archive/research-handoff-2026-10-08/prior/prior/prior/FOLLOWUP.md)"
+      ],
+      [
+        "(prior/prior/prior/PILOT.md)",
+        "(../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md)"
+      ],
+      [
+        "[REVIEW](REVIEW.md)",
+        "[contribution review](CONTRIBUTION_REVIEW.md)"
+      ],
+      [
+        "The new review checker",
+        "The archived review checker"
+      ],
+      [
+        "No repository, submission, release, or external contact is\ninitiated by this file.",
+        "This repository preserves that bounded result. Submission, release, and\nexternal contact require separate authorization."
+      ]
+    ],
+    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged."
+  },
+  "research/PLATEAU_DICTIONARY.md": {
+    "source": "archive/research-handoff-2026-10-08/prior/PLATEAU_DICTIONARY.md",
+    "replacements": [
+      [
+        "\\[",
+        "$$"
+      ],
+      [
+        "\\]",
+        "$$"
+      ],
+      [
+        "\\(",
+        "$"
+      ],
+      [
+        "\\)",
+        "$"
+      ]
+    ],
+    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged."
+  },
+  "research/LOCAL_REALIZATION.md": {
+    "source": "archive/research-handoff-2026-10-08/LOCAL_REALIZATION.md",
+    "replacements": [
+      [
+        "\\[",
+        "$$"
+      ],
+      [
+        "\\]",
+        "$$"
+      ],
+      [
+        "\\(",
+        "$"
+      ],
+      [
+        "\\)",
+        "$"
+      ],
+      [
+        "(prior/THEOREM.md)",
+        "(THEOREM.md)"
+      ],
+      [
+        "(prior/PLATEAU_DICTIONARY.md)",
+        "(PLATEAU_DICTIONARY.md)"
+      ],
+      [
+        "(SOURCE_CHECK.md)",
+        "(../archive/research-handoff-2026-10-08/SOURCE_CHECK.md)"
+      ],
+      [
+        "(FINAL_CHECK.md)",
+        "(CONTRIBUTION_REVIEW.md)"
+      ]
+    ],
+    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged."
+  }
+}

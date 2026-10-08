@@ -1,0 +1,378 @@
+{
+  "date": "2026-10-07",
+  "earlier_suites_rerun_in_full": false,
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "run_threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "scipy": "1.17.0"
+  },
+  "immediate_prior_groups_passed": 5,
+  "immediate_prior_report_byte_identical": true,
+  "incoming_archive": {
+    "name": "qg_memory_contribution_review.zip",
+    "sha256": "b104bd5bb2cec8073e3d09394d74bb8900b5b175dc26b6efb5e96773abf102d6",
+    "unchanged_member_count": 64
+  },
+  "max_hilbert_dimension_including_legacy_rerun": 256,
+  "max_new_hilbert_dimension": 16,
+  "max_new_superoperator_dimension": 256,
+  "nested_manifests": [
+    {
+      "entries": 63,
+      "path": "prior/MANIFEST.json",
+      "verified": true
+    },
+    {
+      "entries": 46,
+      "path": "prior/prior/MANIFEST.json",
+      "verified": true
+    },
+    {
+      "entries": 28,
+      "path": "prior/prior/prior/MANIFEST.json",
+      "verified": true
+    },
+    {
+      "entries": 8,
+      "path": "prior/prior/prior/prior/MANIFEST.json",
+      "verified": true
+    }
+  ],
+  "new_completed_runs": 2,
+  "new_groups_passed": 4,
+  "new_reports_byte_identical": true,
+  "new_scientific_assertion_failures": 0,
+  "other_failures": [
+    "A read-only shell log inspection used tail -8 across files and failed; tail -n 8 succeeded. No scientific code was affected."
+  ],
+  "protected_originals": [
+    {
+      "bytes": 8976,
+      "path": "prior/PLATEAU_DICTIONARY.md",
+      "sha256": "f022f0b17c825312ee5bc6bd78fe6ff310f156004bc7792991fe7e3568cf5448"
+    },
+    {
+      "bytes": 1989,
+      "path": "prior/README.md",
+      "sha256": "de180b19e1d191240b62a9bef16819584f6580ec591fe36034afa4c027e4d604"
+    },
+    {
+      "bytes": 13417,
+      "path": "prior/REVIEW.md",
+      "sha256": "b0c4d88722eadcbcd3787723c9055a39a3361111ccce2b6425731473a04e0eec"
+    },
+    {
+      "bytes": 6801,
+      "path": "prior/THEOREM.md",
+      "sha256": "8482df429973ea0b707d15ccae5b640438123c2d623ecac65e11f27647d24071"
+    },
+    {
+      "bytes": 10307,
+      "path": "prior/VERIFICATION.json",
+      "sha256": "1cc164dacba272c1046fbda5811a20e3b5afc6d262733dd53ca2509af0926e65"
+    },
+    {
+      "bytes": 8858,
+      "path": "prior/check_review.py",
+      "sha256": "1cd2cfe5e1aef0a363651780763c269dd66bbc55c96cacd2534778ad939e406e"
+    },
+    {
+      "bytes": 8838,
+      "path": "prior/development/check_review_initial.py",
+      "sha256": "9b5d06562b7448faa1f74145fbba5e88752502f8e13706d9a69192193cf11ffa"
+    },
+    {
+      "bytes": 682,
+      "path": "prior/development/initial_failure.log",
+      "sha256": "a8979ef48ae32129e5c437314105074ad092418eaa6aa90457e81bec6cdd7fe6"
+    },
+    {
+      "bytes": 4412,
+      "path": "prior/development/package_review.py",
+      "sha256": "2a65f85219565df09afc27669a1610cb585cec820cd1450fac18214c3da63ab3"
+    },
+    {
+      "bytes": 317,
+      "path": "prior/development/packaging_note.txt",
+      "sha256": "34f9613b08ab063752a45ca8191db77d4e9400157d46b0fa6899054d967c4bfb"
+    },
+    {
+      "bytes": 27325,
+      "path": "prior/prior/FOLLOWUP.md",
+      "sha256": "68bd9c62aac073745f5fe4719bda9391a86421b04c9b662bce11095f61b1d2da"
+    },
+    {
+      "bytes": 6142,
+      "path": "prior/prior/MANIFEST.json",
+      "sha256": "89695510d8d2f070144bb126a098c86bea1ba155d43f9d3f633617fcaa7a6361"
+    },
+    {
+      "bytes": 2604,
+      "path": "prior/prior/README.md",
+      "sha256": "7ea89b993469d5635575186052bd55a65a188bac6a1b228836d94ad4ec600cb6"
+    },
+    {
+      "bytes": 6748,
+      "path": "prior/prior/VERIFICATION.json",
+      "sha256": "a8c3168a2630705a8b69abc7e029dab5c60afafe62d6344a76a8c97b5f67b054"
+    },
+    {
+      "bytes": 3363,
+      "path": "prior/prior/bulk_tools.py",
+      "sha256": "30857ee9428d9a45e68c2c5a05e20f9a0b59284a614d152ad2cf6a65c029ee1e"
+    },
+    {
+      "bytes": 9725,
+      "path": "prior/prior/check_bulk.py",
+      "sha256": "2c6e4354b46ff08cdd3e0b9672dfefd089ea932c237f64c945fee104619e6b7e"
+    },
+    {
+      "bytes": 330,
+      "path": "prior/prior/environment.json",
+      "sha256": "ea658425ee60be758138528ef12603a73472f9fa9385f6ee89ac86b49a6a8763"
+    },
+    {
+      "bytes": 17123,
+      "path": "prior/prior/prior/FOLLOWUP.md",
+      "sha256": "900976e22005f0cbde62d8e6b6d8e0282e8b18396967519a0f6d582a97764190"
+    },
+    {
+      "bytes": 3651,
+      "path": "prior/prior/prior/MANIFEST.json",
+      "sha256": "383184a78f3efb41a54b00393a20a36dac3e7184f3e087cb53cb8f64ac475e60"
+    },
+    {
+      "bytes": 4346,
+      "path": "prior/prior/prior/PRIOR_COMPARISON.json",
+      "sha256": "a9cceb232e4d98d740488d3981f3080c7f33f2c13eb312b951f4630b9f15d7ae"
+    },
+    {
+      "bytes": 3210,
+      "path": "prior/prior/prior/SOURCES.md",
+      "sha256": "b790b803fd83a5550a2574bbc3a61894fffc06f23a7de4e873dc3ca122e83318"
+    },
+    {
+      "bytes": 8137,
+      "path": "prior/prior/prior/check_asymptotics.py",
+      "sha256": "9e5810c00588420975274719b1f27c760f13d106594b21d5789de4542221659b"
+    },
+    {
+      "bytes": 264,
+      "path": "prior/prior/prior/environment.json",
+      "sha256": "6e75ddf9793e4ce7e3c763948834f6f91df8c5b95a5a0dadf5e06c455ce55558"
+    },
+    {
+      "bytes": 2093,
+      "path": "prior/prior/prior/exploratory/STATUS.md",
+      "sha256": "0757535dffe16511815f974e6de41b0a0729d4779c0c05c21cf2ba7fea046d69"
+    },
+    {
+      "bytes": 358,
+      "path": "prior/prior/prior/exploratory/explore.py",
+      "sha256": "3eeb7c4d40f4cfccac09d823340e9c2cf02b11f4a47d9b51d93f2644fddd1cf3"
+    },
+    {
+      "bytes": 933,
+      "path": "prior/prior/prior/exploratory/explore_crystal.py",
+      "sha256": "67e53f0eda6a3c7d20be48fa2511b23ab6b7997befb54498e2b2bddff92f9ecd"
+    },
+    {
+      "bytes": 1954,
+      "path": "prior/prior/prior/exploratory/fast_grid_initial.py",
+      "sha256": "8e8bab0a68f9cd6bcdfca9320c72b1e45ef58254fdc3eed5e6f46d34fafef048"
+    },
+    {
+      "bytes": 487,
+      "path": "prior/prior/prior/exploratory/harmonic.py",
+      "sha256": "6a5967c7448674f0bf35d7d84f74fca1b95a90943cce723b0a8cd60622141bb3"
+    },
+    {
+      "bytes": 1842,
+      "path": "prior/prior/prior/fast_grid.py",
+      "sha256": "749db425103f5aee2e7ba1ca40735d72cf4bda9843ab510a324b5b0b7ff96460"
+    },
+    {
+      "bytes": 1006,
+      "path": "prior/prior/prior/prior/MANIFEST.json",
+      "sha256": "5abaaf811943d39e2b51774260b847a8a24d0dbcf1d3fee1bdfebf0b16cf3aa1"
+    },
+    {
+      "bytes": 15783,
+      "path": "prior/prior/prior/prior/PILOT.md",
+      "sha256": "b5c7f59398f57d70a6db76e1ea4d54a4d3682e23e5e8a5fad2282c12098f5c18"
+    },
+    {
+      "bytes": 3338,
+      "path": "prior/prior/prior/prior/SOURCES.md",
+      "sha256": "115cfdca49addd36e14525a607a9272101308b81ae40fce7ca34f4eae2673e1f"
+    },
+    {
+      "bytes": 9867,
+      "path": "prior/prior/prior/prior/check_memory.py",
+      "sha256": "b57f0f4fe2cc5ba047ccbedd62defce1312f9aa93f922761738eaea57426fbd7"
+    },
+    {
+      "bytes": 310,
+      "path": "prior/prior/prior/prior/environment.json",
+      "sha256": "8a6113d21119e523816ab444aef37516c53d9e2c9391dec1bc2f586f4905d85b"
+    },
+    {
+      "bytes": 3561,
+      "path": "prior/prior/prior/prior/report.json",
+      "sha256": "89737627b1c4adaa9351a7a023d6c7cf23a6f210e7c14bda18a1a51d17216ca9"
+    },
+    {
+      "bytes": 3561,
+      "path": "prior/prior/prior/prior/report_repeat.json",
+      "sha256": "89737627b1c4adaa9351a7a023d6c7cf23a6f210e7c14bda18a1a51d17216ca9"
+    },
+    {
+      "bytes": 1163,
+      "path": "prior/prior/prior/prior/run.log",
+      "sha256": "a30e65fe030361db69d3aa695c04c9c118241845ce8b7d33c4dc9629987af942"
+    },
+    {
+      "bytes": 1170,
+      "path": "prior/prior/prior/prior/run_repeat.log",
+      "sha256": "b26791d111286b0696b9cdb706807fc61eff05e9c6071b55100eb675ee8f1e0c"
+    },
+    {
+      "bytes": 3556,
+      "path": "prior/prior/prior/prior_rerun.json",
+      "sha256": "fdfee41a5576ebcbf51915629002f291965bc36010fe721bb42a4bf9241f9d92"
+    },
+    {
+      "bytes": 51,
+      "path": "prior/prior/prior/prior_rerun.log",
+      "sha256": "d50d75ed7fd2a5a7cc0ef703fe9f73d615bad1f1a10e0e0efa6a70e1aa4f2bc4"
+    },
+    {
+      "bytes": 7338,
+      "path": "prior/prior/prior/report.json",
+      "sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4"
+    },
+    {
+      "bytes": 7338,
+      "path": "prior/prior/prior/report_final.json",
+      "sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4"
+    },
+    {
+      "bytes": 7338,
+      "path": "prior/prior/prior/report_repeat.json",
+      "sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4"
+    },
+    {
+      "bytes": 46,
+      "path": "prior/prior/prior/run.log",
+      "sha256": "c7af888753d6925ca2b8626cb15b159b8925b4a0add5e0c0ab1b66e00a647339"
+    },
+    {
+      "bytes": 52,
+      "path": "prior/prior/prior/run_final.log",
+      "sha256": "d098c8b05da003f66cf31ff8d3cf94d9871ca25bac3e22e71043b4b4f7d71af0"
+    },
+    {
+      "bytes": 53,
+      "path": "prior/prior/prior/run_repeat.log",
+      "sha256": "386897121b46f2d06753847e5ef0e1d119001598e68015a8c9aa4621ff508329"
+    },
+    {
+      "bytes": 7338,
+      "path": "prior/prior/prior_asymptotics_rerun.json",
+      "sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4"
+    },
+    {
+      "bytes": 63,
+      "path": "prior/prior/prior_asymptotics_rerun.log",
+      "sha256": "b650b6800bcc31e42ee554463cb11e71c623692c3fcb6ce951bd5ba684b9f140"
+    },
+    {
+      "bytes": 3556,
+      "path": "prior/prior/prior_memory_rerun.json",
+      "sha256": "fdfee41a5576ebcbf51915629002f291965bc36010fe721bb42a4bf9241f9d92"
+    },
+    {
+      "bytes": 58,
+      "path": "prior/prior/prior_memory_rerun.log",
+      "sha256": "24bec2d81e651fe3373ae6fb63e5b3f1924f672688ef7b54820185998c21f795"
+    },
+    {
+      "bytes": 24434,
+      "path": "prior/prior/report.json",
+      "sha256": "3c169f5d6416fe5a148877f3c77071c2a69231a0456f285947ef63c23824e991"
+    },
+    {
+      "bytes": 24434,
+      "path": "prior/prior/report_initial.json",
+      "sha256": "3c169f5d6416fe5a148877f3c77071c2a69231a0456f285947ef63c23824e991"
+    },
+    {
+      "bytes": 24434,
+      "path": "prior/prior/report_repeat.json",
+      "sha256": "3c169f5d6416fe5a148877f3c77071c2a69231a0456f285947ef63c23824e991"
+    },
+    {
+      "bytes": 27,
+      "path": "prior/prior/requirements.txt",
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    {
+      "bytes": 46,
+      "path": "prior/prior/run.log",
+      "sha256": "bae9e912c896f9c76a110b661f92c90181851490e3ef2ec18dd67199dd8351f5"
+    },
+    {
+      "bytes": 54,
+      "path": "prior/prior/run_initial.log",
+      "sha256": "0a920933e9a20ab7bf689b91937991952b88843530f9e493f370283ed554c774"
+    },
+    {
+      "bytes": 53,
+      "path": "prior/prior/run_repeat.log",
+      "sha256": "5e0b34a56021fa42c83398ffc509948f3cc54491a376edbc0bb3d909c6c85951"
+    },
+    {
+      "bytes": 24434,
+      "path": "prior/prior_bulk_rerun.json",
+      "sha256": "3c169f5d6416fe5a148877f3c77071c2a69231a0456f285947ef63c23824e991"
+    },
+    {
+      "bytes": 94,
+      "path": "prior/prior_bulk_rerun.log",
+      "sha256": "e42421a0b1b59828eb39babd97bb9fcfa8cd5fe5a57484471b81787ccdb42ee1"
+    },
+    {
+      "bytes": 18768,
+      "path": "prior/review_report.json",
+      "sha256": "27acac3dcc20d152e8c4e7012cf261fe9b9149ad00431f847e69d13a0d6e51f0"
+    },
+    {
+      "bytes": 18768,
+      "path": "prior/review_report_repeat.json",
+      "sha256": "27acac3dcc20d152e8c4e7012cf261fe9b9149ad00431f847e69d13a0d6e51f0"
+    },
+    {
+      "bytes": 91,
+      "path": "prior/review_run.log",
+      "sha256": "e5b6ca538fa47a044644f8d240cea994b3fbb473437a38a547b27a1fb681251c"
+    },
+    {
+      "bytes": 98,
+      "path": "prior/review_run_repeat.log",
+      "sha256": "c02f2e20861c8ef3b47aebc22617a3333efc4abe92ebb298f4168c2579883337"
+    },
+    {
+      "bytes": 8680,
+      "path": "prior/MANIFEST.json",
+      "sha256": "767e1beb30c52f33d5b06c65a1eb5a539feda531d047cb484fb85d6668060251"
+    }
+  ],
+  "repository_actions": "None: no read, write, initialization, branch, settings, merge or contact.",
+  "scientific_tolerances_changed": false,
+  "source_execution_limits": "Primary source reading is targeted. The bulk proof is author-side; no independent review or all-source priority clearance. No source plots were extracted."
+}

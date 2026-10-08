@@ -1,0 +1,184 @@
+{
+  "incoming_archive_sha256": "04f7384d75c10841d41128b8d71e3ff97dfce5bc60d87d378f5b919a340a7964",
+  "incoming_members_verified_unchanged": 29,
+  "new_complete_runs": 3,
+  "new_groups_passed": 6,
+  "new_report_sha256": "3c169f5d6416fe5a148877f3c77071c2a69231a0456f285947ef63c23824e991",
+  "new_reports_byte_identical": true,
+  "prior_report_comparisons": [
+    {
+      "byte_identical": true,
+      "differences": [],
+      "max_absolute_numeric_difference": 0,
+      "reference": "prior/report_final.json",
+      "reference_sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4",
+      "rerun": "prior_asymptotics_rerun.json",
+      "rerun_sha256": "1baee58c0da2e4ac2e2f0efab8da266876534a23e092e958c085154b24a23ed4"
+    },
+    {
+      "byte_identical": false,
+      "differences": [
+        {
+          "absolute_difference": 2.7755575615628914e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[0].symmetry_floor",
+          "reference": 0.18813386693445808,
+          "rerun": 0.1881338669344581
+        },
+        {
+          "absolute_difference": 2.7755575615628914e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[1].symmetry_floor",
+          "reference": 0.18813386693445808,
+          "rerun": 0.1881338669344581
+        },
+        {
+          "absolute_difference": 5.551115123125783e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[2].closed_H_average",
+          "reference": 0.1317682331827594,
+          "rerun": 0.13176823318275946
+        },
+        {
+          "absolute_difference": 5.551115123125783e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[3].closed_H_average",
+          "reference": 0.1459326884094852,
+          "rerun": 0.14593268840948515
+        },
+        {
+          "absolute_difference": 1.5265566588595902e-16,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[4].closed_H_average",
+          "reference": 0.0841751509612829,
+          "rerun": 0.08417515096128275
+        },
+        {
+          "absolute_difference": 2.9582283945787943e-31,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[4].relative_commutator_norm",
+          "reference": 8.292336226137265e-16,
+          "rerun": 8.292336226137262e-16
+        },
+        {
+          "absolute_difference": 1.3877787807814457e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[4].symmetry_floor",
+          "reference": 0.06401021523778563,
+          "rerun": 0.06401021523778562
+        },
+        {
+          "absolute_difference": 1.249000902703301e-16,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[5].closed_H_average",
+          "reference": 0.08608131877485388,
+          "rerun": 0.08608131877485375
+        },
+        {
+          "absolute_difference": 1.5777218104420236e-30,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[5].relative_commutator_norm",
+          "reference": 3.952386831191978e-15,
+          "rerun": 3.952386831191977e-15
+        },
+        {
+          "absolute_difference": 1.3877787807814457e-17,
+          "kind": "numeric",
+          "path": "$.closed_hamiltonian_control.values[5].symmetry_floor",
+          "reference": 0.06401021523778563,
+          "rerun": 0.06401021523778562
+        },
+        {
+          "absolute_difference": 3.2730620995610234e-17,
+          "kind": "numeric",
+          "path": "$.direct_projection.max_commutator_norm",
+          "reference": 1.010149947919277e-15,
+          "rerun": 9.774193269236668e-16
+        },
+        {
+          "absolute_difference": 8.326672684688674e-17,
+          "kind": "numeric",
+          "path": "$.direct_projection.max_value_error",
+          "reference": 1.6653345369377348e-16,
+          "rerun": 8.326672684688674e-17
+        },
+        {
+          "absolute_difference": 6.938893903907228e-18,
+          "kind": "numeric",
+          "path": "$.large_recurrence.values[0].full_symmetry",
+          "reference": 0.044741233075784065,
+          "rerun": 0.04474123307578407
+        },
+        {
+          "absolute_difference": 4.440892098500626e-16,
+          "kind": "numeric",
+          "path": "$.large_recurrence.values[0].ratio",
+          "reference": 2.266148614799559,
+          "rerun": 2.2661486147995595
+        },
+        {
+          "absolute_difference": 8.881784197001252e-16,
+          "kind": "numeric",
+          "path": "$.large_recurrence.values[1].L_squared_times_full",
+          "reference": 5.7079340321844185,
+          "rerun": 5.707934032184419
+        },
+        {
+          "absolute_difference": 1.734723475976807e-18,
+          "kind": "numeric",
+          "path": "$.large_recurrence.values[1].full_symmetry",
+          "reference": 0.014269835080461047,
+          "rerun": 0.014269835080461049
+        },
+        {
+          "absolute_difference": 5.551115123125783e-17,
+          "kind": "numeric",
+          "path": "$.local_noise_saturation.site_values[0]",
+          "reference": 0.27103243572561897,
+          "rerun": 0.271032435725619
+        },
+        {
+          "absolute_difference": 8.326672684688674e-17,
+          "kind": "numeric",
+          "path": "$.local_noise_saturation.site_values[1]",
+          "reference": 0.1881338669344581,
+          "rerun": 0.18813386693445802
+        },
+        {
+          "absolute_difference": 1.6653345369377348e-16,
+          "kind": "numeric",
+          "path": "$.local_noise_saturation.site_values[2]",
+          "reference": 0.18813386693445816,
+          "rerun": 0.188133866934458
+        },
+        {
+          "absolute_difference": 1.1102230246251565e-16,
+          "kind": "numeric",
+          "path": "$.local_noise_saturation.site_values[3]",
+          "reference": 0.2710324357256189,
+          "rerun": 0.271032435725619
+        }
+      ],
+      "max_absolute_numeric_difference": 8.881784197001252e-16,
+      "reference": "prior/prior/report.json",
+      "reference_sha256": "89737627b1c4adaa9351a7a023d6c7cf23a6f210e7c14bda18a1a51d17216ca9",
+      "rerun": "prior_memory_rerun.json",
+      "rerun_sha256": "fdfee41a5576ebcbf51915629002f291965bc36010fe721bb42a4bf9241f9d92"
+    }
+  ],
+  "prior_suites_passed": [
+    5,
+    4
+  ],
+  "protected_manifests": [
+    {
+      "path": "prior/MANIFEST.json",
+      "verified_entries": 28
+    },
+    {
+      "path": "prior/prior/MANIFEST.json",
+      "verified_entries": 8
+    }
+  ],
+  "scope": "Completed calculations only. No repository changes, new physical model, large-Hilbert-space dynamics, independent review, or priority certification."
+}
