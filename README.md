@@ -14,13 +14,13 @@ of order $`L^{-2}`$ in the proved regimes below.
 | [Tutorial bridge](research/TUTORIAL_BRIDGE.md) · [Physical mechanism](research/PHYSICAL_MECHANISM.md) | Learn from one external source, then follow the projection and sector explanation. |
 | [Theorem](research/THEOREM.md) · [Proof map](research/PROOF_MAP.md) | Read the exact laws, constants, domains, and full proof dependencies. |
 | [Model and claims](research/MODEL_AND_CLAIMS.md) · [Local realization](research/LOCAL_REALIZATION.md) | Check the physical trace, assumptions, and noise-averaged attainment. |
-| [Contribution review](research/CONTRIBUTION_REVIEW.md) · [Attribution](literature/ATTRIBUTION.md) | Compare the evaluated spatial law with its inherited framework and predecessors. |
-| [Verification](VERIFICATION.md) · [Scope and evidence](STATUS.md) | Reproduce the checks and inspect their evidential limits. |
-| [LLM guide](llms.txt) · [Workspace](WORKSPACE.md) | Identify relevant questions and the authoritative reading route. |
+| [The result in context](research/CONTRIBUTION_REVIEW.md) · [Attribution](literature/ATTRIBUTION.md) | Compare the evaluated spatial law with its inherited framework and predecessors. |
+| [Verification](VERIFICATION.md) | Reproduce the checks and inspect their evidence. |
+| [LLM guide](llms.txt) | Identify relevant questions and the authoritative reading route. |
 
 ## What symmetry protects
 
-Use the ordinary infinite-temperature trace on $`L`$ physical spin-$`\tfrac12`$ sites.
+Use the ordinary infinite-temperature trace on an open chain of $`L`$ physical spin-$`\tfrac12`$ sites.
 For a local Pauli operator $`X_i`$, define
 
 ```math
@@ -67,9 +67,9 @@ large-chain equality rests on the uniform analytical proof.
 
 The complete-commutant projection principle, representation theory,
 orthogonal-polynomial formulas, and stationary-commutant mechanism are inherited.
-The contribution under assessment is their evaluated **physical multiplicity
+The contribution is their evaluated **physical multiplicity
 trace and uniform finite-deformation spatial asymptotics**. The
-[contribution review](research/CONTRIBUTION_REVIEW.md) develops that distinction.
+[result in context](research/CONTRIBUTION_REVIEW.md) develops that distinction.
 
 ## One tutorial, then this result
 
@@ -87,19 +87,6 @@ checks the ordinary-symmetry result by hand. It then leads into the mechanism,
 spatial theorem, proof, and local realization. The route assumes standard quantum
 mechanics and linear algebra; the repository supplies the model-specific steps.
 
-## Scope and evidence
-
-The result uses an open physical spin-half chain, finite real $`q\ge1`$, and the
-specified symmetric coproduct. The ordinary physical trace and multiplicities
-are essential. The noisy attainment is averaged at fixed finite size; its
-relaxation bound contains a dissipative gap whose system-size scaling is not
-evaluated. The zero-noise and long-time limits must not be interchanged.
-
-[Model and claims](research/MODEL_AND_CLAIMS.md) records the limit boundaries;
-[attribution](literature/ATTRIBUTION.md) identifies inherited inputs and inspected
-predecessors. Internal reproduction is not independent proof review or exhaustive
-originality certification.
-
 ## Evidence and reproduction
 
 ```sh
@@ -110,20 +97,18 @@ python tools/check_foundations.py --output build/verification/foundations.json
 ```
 
 The checks use small physical Hilbert spaces and polynomial-size recurrence
-arrays. They test identities and evaluations; fitting finite-size data does not
-establish the asymptotic theorem. The original failed attempts, exact checkers,
-and reference reports are retained in a [discrete archive](archive/README.md).
-[Verification](VERIFICATION.md) explains unchanged scientific assertions,
-reference comparisons, and exact-revision evidence.
+arrays. They test identities and evaluations; the asymptotic theorem rests on
+the uniform analytical proof. [Verification](VERIFICATION.md) explains the
+scientific assertions, reference comparisons, and evidence for each revision.
+The [proof map](research/PROOF_MAP.md) links the complete derivations.
 
 ## Purpose and contact
 
 This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 The [LLM guide](llms.txt) supplies relevant research questions, search phrases,
-and direct links to authoritative files. [WORKSPACE.md](WORKSPACE.md) and
-[the current work order](work_orders/CURRENT.md) govern continuation at the fixed
-scientific scope; see [AGENTS.md](AGENTS.md) before edits.
+and direct links to authoritative files. See [CONTRIBUTING.md](CONTRIBUTING.md)
+for proposed changes.
 
 Code is available under the owner's original [MIT license](LICENSE). Linked
 third-party papers are not redistributed or relicensed by this repository.

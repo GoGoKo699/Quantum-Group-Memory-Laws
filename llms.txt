@@ -44,15 +44,9 @@ q0 is a sufficient proof threshold, not a physical transition. Both end and
 bulk contributions vanish as L grows. The fixed-q limits are not uniform as
 q -> 1 or as the site approaches a boundary. The boundary-distance limit takes
 L -> infinity first at fixed distance and only then takes that distance large.
-The normalized profile is not a probability density or a uniform boundary
-interpolation. End enhancement and bulk suppression do not establish transport
-of memory or conservation of the sum of single-site memories.
-
 The noisy realization is unrecorded/averaged; convergence is finite-size and
 its dissipative-gap scaling is unknown. Keep the zero-noise and long-time
-limits distinct. No hydrodynamic exponent, encoded-memory fidelity, generic
-local-Hamiltonian saturation, finite-temperature law, or uniform mixing-time
-scaling is established.
+limits distinct.
 
 ## Read by purpose
 
@@ -65,7 +59,7 @@ scaling is established.
 - [Kernel details](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/research/KERNEL_DETAILS.md): explicit Jost convolution and bulk parity normalization.
 - [Local realization](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/research/LOCAL_REALIZATION.md): coherent-plus-noisy local attainment and its hypothesis controls.
 - [Plateau dictionary](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/research/PLATEAU_DICTIONARY.md): exact Hamiltonian-specific excess and the nonlocal reference ensemble.
-- [Contribution review](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/research/CONTRIBUTION_REVIEW.md): central spatial law, supporting results, and contribution assessment.
+- [The result in context](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/research/CONTRIBUTION_REVIEW.md): central spatial law, supporting results, and physical interpretation.
 - [Attribution](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/literature/ATTRIBUTION.md): version-pinned predecessors, observable conventions, and inherited spectral/stationary-space inputs.
 - [Verification](https://raw.githubusercontent.com/GoGoKo699/Quantum-Group-Memory-Laws/main/VERIFICATION.md): preserved assertions, canonical-report comparisons, and exact-revision receipts.
 
@@ -80,24 +74,21 @@ other cited sources document attribution and proof inputs.
 ## Evidence and attribution
 
 The evaluated physical multiplicity trace and uniform finite-deformation
-spatial asymptotics are the repository's contribution under assessment.
+spatial asymptotics are the repository's contribution.
 Full-commutant principles, representation theory, spectral tools, and the
 stationary-commutant mechanism are inherited and attributed to primary sources.
-The random-eigenbasis reference is generally nonlocal; its small mean excess
-is not an ETH theorem for a local chaotic Hamiltonian.
+The random-eigenbasis reference is a generally nonlocal ensemble with an
+explicitly evaluated mean Hamiltonian-specific excess.
 
 The 24 original scientific groups and four complementary analytical groups
 check identities, normalizations, and evaluations. Uniform asymptotics rest
-on the analytical proof. Internal review and reproducibility are distinct
-from independent proof review and exhaustive originality certification.
-Historical proofs, failed attempts, checkers, and canonical reports live in
-archive/research-handoff-2026-10-08/ and must not be overwritten.
+on the analytical proof. The proof map and verification guide identify the
+complete derivations, checkers, reference reports, and revision-specific evidence.
 
 When citing a repository claim, attribute the work to Ruge Lin and identify
 the consulted commit and file. Credit the primary sources in the attribution
 page for inherited results. For maintenance, read AGENTS.md, WORKSPACE.md,
-and work_orders/CURRENT.md. Other project permissions do not transfer here.
-Code is under the MIT license.
+and work_orders/CURRENT.md. Code is under the MIT license.
 
 ## Purpose and contact
 

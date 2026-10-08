@@ -1,16 +1,9 @@
 # Symmetry memory and Hamiltonian-dependent excess
 
-## Status and purpose
-
-This note resolves an interpretation question without asserting a new law for
-local chaotic Hamiltonians. The existing complete-symmetry projection is retained.
-The identities below say precisely what a particular Hamiltonian adds. A Haar
-random eigenbasis within each multiplicity space is then a **declared nonlocal
-reference ensemble**, not an assumption silently imposed on a spin-chain Hamiltonian.
-
-The projection and random-vector moment methods are standard. Their specialized
-application here is a diagnostic for interpreting the boundary/bulk memory law,
-not a separate first-discovery claim or a second paper.
+The full time-averaged correlation separates into the symmetry projection and a
+nonnegative Hamiltonian-dependent excess. A Haar-random eigenbasis within each
+multiplicity space gives a generally nonlocal reference ensemble in which the
+mean excess can be evaluated exactly.
 
 ## 1. An exact separation, including accidental degeneracies
 
@@ -37,13 +30,10 @@ Consequently
 }\qquad(1)
 ```
 
-This is the Pythagorean identity for nested operator-space projections. It
-includes all degeneracies and does not require integrability, nonintegrability,
-randomness, locality, or a dynamical approximation. The residual term is not
-known from symmetry alone. It is zero if and only if the residual observable
-has no matrix elements within any energy eigenspace. In particular H=0 gives
-$`\bar C(X_i)=1`$, not M. Finite spectral projectors alone do not establish
-that their additional overlap is large or small.
+This is the Pythagorean identity for nested operator-space projections and
+includes all degeneracies. The residual term depends on the Hamiltonian. It
+vanishes exactly when the residual observable has no matrix elements within
+any energy eigenspace. In particular H=0 gives $`\bar C(X_i)=1`$.
 
 ## 2. Explicit multiplicity form
 
@@ -56,8 +46,8 @@ Use the symmetry decomposition
 ```
 
 For the following simplified formula assume that each h_j has simple spectrum
-and that eigenvalues in different j blocks do not coincide. These assumptions
-are not needed for (1). If $`|u_{j\alpha}\rangle`$ is an eigenbasis of h_j, put
+and that eigenvalues in different j blocks do not coincide. Equation (1) covers
+arbitrary degeneracies. If $`|u_{j\alpha}\rangle`$ is an eigenbasis of h_j, put
 
 ```math
 O_j=P_jOP_j,\quad S_j=\mathrm{Tr}_{m_j}\,O_j,\quad
@@ -83,23 +73,21 @@ and $`\sum_\alpha B_{j\alpha}=S_j`$ yields
 ```
 
 The extra plateau is the variation of the diagonal multiplicity blocks around
-their average. Additional accidental degeneracies contribute further coherent
-matrix elements; they are already handled by (1). Neither absence of accidental
-degeneracies nor nonintegrability forces the variance in (2) to vanish.
+their average. Additional accidental degeneracies contribute coherent matrix
+elements, which (1) includes.
 
-### Direct checks in the already selected local Hamiltonian
+### Examples in a local Hamiltonian
 
-The unchanged source Hamiltonian checker uses the QG-preserving XXZ Hamiltonian
-and its specified three-site deformation. At L=8, q=2.6, site 4:
+For the quantum-group-preserving XXZ Hamiltonian and its three-site deformation,
+the [Hamiltonian checker](../archive/research-handoff-2026-10-08/prior/check_review.py)
+gives the following values at L=8, q=2.6, site 4:
 
 | deformation coefficient | complete symmetry M | full time average | excess in (1) |
 |---:|---:|---:|---:|
 | 0 | 0.0640102152378 | 0.0841751509613 | 0.0201649357235 |
 | 1 | 0.0640102152378 | 0.0860813187749 | 0.0220711035371 |
 
-The values reproduce the previously established small-system distinction. They
-are not new thermodynamic evidence. The fresh contribution is the explicit
-identity measuring the residual, not another assertion that the residual can exist.
+Both examples have a strictly positive Hamiltonian-dependent excess.
 
 ## 3. Exact random-eigenbasis control
 
@@ -143,8 +131,7 @@ $`R_j\le\|O_j\|_{\rm HS}^2\le d_jm_j`$. Thus
 }\qquad(4)
 ```
 
-This bound treats low-multiplicity sectors explicitly; no claim that every m_j
-is exponentially large is needed. At m_j=1, R_j is exactly zero.
+The bound includes low-multiplicity sectors. At m_j=1, R_j is exactly zero.
 
 For a real O and a real q-Schur basis, a real-symmetric reference H can instead
 have Haar-orthogonal multiplicity eigenvectors. The sphere fourth moment gives
@@ -158,18 +145,16 @@ have Haar-orthogonal multiplicity eigenvectors. The sphere fourth moment gives
 ```
 Here $`C_j^{ab}`$ are real m_j by m_j blocks. The numerator equals
 $`2\sum_{ab}\|\mathrm{Sym}\,C_j^{ab}\|_{\rm HS}^2`$, so it is nonnegative.
-The real and complex ensembles are distinct. The upper bound is deliberately
-conservative; it need not be below one at the smallest L.
+Equation (5) gives the real ensemble's exact mean and its upper bound.
 
-### What this does imply
+### Relative excess in the reference ensemble
 
 At fixed q in the proved bulk domain and fixed x in (0,1), M is asymptotically a
 positive multiple of L^-2. Equations (4)-(5), positivity, and Markov's inequality
 then give $`\bar C/M\to1`$ in probability for the stated random-eigenbasis
 ensemble. For each fixed relative tolerance the failure probability is bounded
-by a constant times L^4 2^-L. The boundary law similarly permits a vanishing
-relative excess there. This is a consequence of a specified ensemble, not a
-claim of almost-sure convergence for a spatially local sequence of Hamiltonians.
+by a constant times L^4 2^-L. The boundary law similarly gives a vanishing
+relative excess in this ensemble.
 
 At q=2.6, the exact finite-size symmetry values and the real-ensemble *upper
 bound* on its mean excess are:
@@ -180,23 +165,15 @@ bound* on its mean excess are:
 | 40 | 0.00428106000724 | 8.02174326964e-10 |
 | 80 | 0.00121046009971 | 2.78098121940e-21 |
 
-No random 40- or 80-spin Hamiltonian is simulated. The bounds are analytic.
-The exact ensemble mean itself was calculated only for small blocks, using (3)
-and (5), and is retained in the report rather than confused with its upper bound.
-
-### What this does not imply
-
-A local Hamiltonian's eigenvectors need not be uniformly distributed within
-multiplicity sectors. Real-versus-complex level statistics do not establish that
-hypothesis. An energy-dependent eigenstate expectation can retain a systematic
-excess. We have not proved an ETH statement, its rate of convergence, or the
-plateau law of the source's local Hamiltonian/Floquet models. This benchmark is
-therefore not used to erase the inequality in their physical comparison.
+The table combines exact finite-size symmetry values with the analytic bound
+in (5). The Haar-eigenbasis assumption defines this generally nonlocal
+reference ensemble; for a specified local Hamiltonian, (1) remains the exact
+expression for its excess.
 
 ## 4. Verification method
 
-The Haar moment check uses a deterministic exact fourth-moment design, not a
-Monte Carlo error bar. For a complex Haar vector in dimension m, mix the m
+The Haar moment check uses a deterministic exact fourth-moment design. For a
+complex Haar vector in dimension m, mix the m
 coordinate basis vectors (total weight 1/(m+1)) with all vectors whose entries
 are independent fourth roots of unity divided by sqrt(m) (total weight m/(m+1)).
 Their fourth moments agree exactly with the Haar expression. For a real Haar
@@ -206,15 +183,14 @@ fourth moments. Small dimensions are explicitly enumerated.
 
 Independently, small full spin Hamiltonians are assembled from random
 multiplicity eigenbases and distinct spectra; direct spectral time averages
-agree with (2). The original deterministic source Hamiltonians check (1),
-including accidental degeneracies. None of these finite checks replaces the
-algebraic proofs of (1)-(5).
+agree with (2). The deterministic local Hamiltonians check (1),
+including accidental degeneracies. These finite checks complement the
+algebraic derivations above.
 
 ## Attribution
 
-The nested-projection/commutant viewpoint is inherited from Moudgalya--Motrunich,
+The nested-projection and commutant framework comes from Moudgalya--Motrunich,
 PRX 12, 011050 (2022), arXiv:2108.10324. Unitary and orthogonal Haar integration
-is established, e.g. Collins--Sniady, arXiv:math-ph/0402073; the elementary moment
-used here is derived explicitly above. The ensemble and bounds in this note
-specialize those tools to the declared physical representation. No exhaustive
-novelty claim is made for this subsidiary calculation.
+is treated by Collins--Sniady, arXiv:math-ph/0402073. The elementary moments
+used here are derived above and specialized to the physical spin representation.
+See the [attribution map](../literature/ATTRIBUTION.md) for the source comparison.

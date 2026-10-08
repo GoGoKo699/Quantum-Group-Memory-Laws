@@ -1,6 +1,6 @@
 # Proof map
 
-Read the [compact theorem](THEOREM.md) with the [model boundaries](MODEL_AND_CLAIMS.md). Detailed proof sources are preserved unchanged below; their historical allocation notes do not issue current work orders.
+Read the [compact theorem](THEOREM.md) with the [model and assumptions](MODEL_AND_CLAIMS.md). The table connects each proof obligation to its detailed derivation.
 
 For preparation, the [tutorial bridge](TUTORIAL_BRIDGE.md) connects the selected Moudgalya–Motrunich source to the physical multiplicity projection used by these proofs.
 
@@ -15,9 +15,9 @@ For preparation, the [tutorial bridge](TUTORIAL_BRIDGE.md) connects the selected
 | Complement of the common symmetry in a fixed Hamiltonian's plateau | [Plateau dictionary](PLATEAU_DICTIONARY.md). |
 | Local coherent-plus-noisy convergence and broken-hypothesis controls | [Local realization](LOCAL_REALIZATION.md). |
 
-The kernel proof counts every second-coordinate change with two strictly subcritical tilts. The moderate-deviation estimate and large-spin norm bound are necessary to justify summing asymptotics. Numerical agreement with the limiting kernel is not substituted for this step. The imported proof remains author-side; no external independent proof report is present.
+The kernel proof counts every second-coordinate change with two strictly subcritical tilts. The moderate-deviation estimate and large-spin norm bound justify summing the sector asymptotics.
 
-[Verification](../VERIFICATION.md) links the corresponding unmodified checkers. New concrete proof objections should be recorded separately, not resolved by silently editing the protected source.
+[Verification](../VERIFICATION.md) describes the corresponding identity and evaluation checks.
 
 ## Support qualification for the archived binomial identity
 

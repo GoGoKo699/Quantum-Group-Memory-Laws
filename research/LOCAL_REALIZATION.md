@@ -1,8 +1,8 @@
 # Local interacting realization of the full symmetry-memory law
 
-This note gives an operational corollary and interpretation of the quantum-group spin-memory result. Its asymptotic formulas and parameter domains are unchanged. The derivation is author-side, not independent review.
+Local bond noise can retain exactly the quantum-group symmetry contribution to spin memory. This note derives its limiting projection, includes symmetry-preserving coherent interactions, and gives two examples showing why the hypotheses matter.
 
-## 1. Unchanged setting
+## 1. Setting
 
 Use the finite open spin-1/2 chain and ordinary normalized Hilbert--Schmidt inner product
 
@@ -16,22 +16,22 @@ The full real-q symmetry algebra, its image in this physical representation, and
 M_{L,i}(q)=\|\Pi_q X_i\|_2^2,\qquad \|X_i\|_2^2=1.
 ```
 
-No quantum-dimension-weighted trace is used. The finite definition and spatial asymptotics remain exactly those in [the preserved theorem](THEOREM.md). The polynomial-size algebra image must not be described as exponentially fragmented.
+The [theorem](THEOREM.md) gives the finite-size expression and spatial asymptotics in this physical representation.
 
-The previously established local noise uses the inherited two-site Hecke matrices, in the ordered basis up-up, up-down, down-up, down-down,
+Use the two-site Hecke matrix in the ordered basis up-up, up-down, down-up, down-down,
 
 ```math
 R(q)=\begin{pmatrix}q&0&0&0\\0&0&1&0\\0&1&q-q^{-1}&0\\0&0&0&q\end{pmatrix}.
 ```
 
-They have eigenvalues $`q,-q^{-1}`$. With their chain embeddings $`R_j`$, set
+It has eigenvalues $`q,-q^{-1}`$. With their chain embeddings $`R_j`$, set
 
 ```math
 P_j=\frac{qI-R_j}{q+q^{-1}},\qquad U_j=I-2P_j,
 \qquad \mathcal S(O)=\sum_{j=1}^{L-1}\gamma_j(U_jOU_j-O),\quad\gamma_j>0.
 ```
 
-Each $`U_j`$ is a Hermitian two-site unitary. The dynamics is averaged over unrecorded Poisson-distributed kicks; an individual unitary trajectory is not asserted to converge to the projection.
+Each $`U_j`$ is a Hermitian two-site unitary. The dynamics is averaged over unrecorded Poisson-distributed kicks.
 
 The kernel is
 
@@ -39,11 +39,11 @@ The kernel is
 \ker\mathcal S=\{O:[O,R_j]=0\ \forall j\}=\mathcal A_q.
 ```
 
-The second equality is the inherited q-Schur--Weyl commutant relation for this representation. At $`q=1`$ this is the ordinary Schur--Weyl limit. The zero-noise spin Hamiltonians and the random-eigenbasis benchmark remain distinct from this noise-averaged model.
+The second equality is the q-Schur--Weyl commutant relation for this representation. At $`q=1`$ it becomes ordinary Schur--Weyl duality.
 
 ## 2. Add coherent local interactions without changing the limiting projection
 
-Let $`H=H^\dagger`$ commute with every element of $`\mathcal A_q`$. In particular, the previously studied quantum-group-preserving nearest- and next-nearest-neighbor Hamiltonians qualify. Locality of $`H`$ is not necessary for the algebraic proof; choosing that subclass makes the complete physical generator local.
+Let $`H=H^\dagger`$ commute with every element of $`\mathcal A_q`$. Quantum-group-preserving nearest- and next-nearest-neighbor Hamiltonians qualify. The algebraic proof applies to any such $`H`$; choosing local interactions makes the complete generator local.
 
 For any fixed $`\varepsilon>0`$, define the Heisenberg generator
 
@@ -78,7 +78,7 @@ and
 \boxed{\lim_{t\to\infty}C_{i,\varepsilon}(t)=M_{L,i}(q).}
 ```
 
-This equality holds for each nonzero noise strength, without Haar eigenvectors, level-repulsion assumptions, integrability, or nonintegrability. It makes no bound on the scaling of $`\delta_L`$ with chain size or deformation. It is not a rapid-mixing result.
+The convergence bound applies at fixed finite size. Its rate is expressed in terms of the finite-size gap $`\delta_L`$.
 
 ### Proof
 
@@ -112,9 +112,9 @@ Gronwall's inequality proves the contraction. Writing $`X_i=\Pi_qX_i+R_i`$ and u
 C_{i,\varepsilon}(t)=M_{L,i}+\langle R_i,e^{t\mathcal G_\varepsilon}R_i\rangle_2.
 ```
 
-Cauchy--Schwarz and $`\|R_i\|_2^2=1-M_{L,i}`$ give the displayed correlation bound. This proof does not assume diagonalizability of the full generally nonnormal generator and excludes persistent nonzero-frequency modes in this stated class.
+Cauchy--Schwarz and $`\|R_i\|_2^2=1-M_{L,i}`$ give the displayed correlation bound. The norm estimate applies directly to the generally nonnormal generator.
 
-The same conclusion holds for products of propagators with different symmetry-preserving Hamiltonians and fixed $`\mathcal S`$. Each factor preserves $`\Pi_q`$ and contracts its complement by the corresponding duration, so the product contracts by total duration in either time ordering. This is sufficient for the piecewise-constant control tested here, without confusing the order of Schrödinger and Heisenberg propagators.
+The same conclusion holds for piecewise-constant symmetry-preserving Hamiltonians with fixed $`\mathcal S`$. Each propagator preserves $`\Pi_q`$ and contracts its complement by the corresponding duration, so their product contracts by the total duration in either time ordering.
 
 ## 3. An explicit order-of-limits distinction
 
@@ -132,13 +132,13 @@ On the other hand, continuity of finite-dimensional propagators gives the closed
 =\overline C_{i,0}=M_{L,i}+\Delta_{H,i},\quad\Delta_{H,i}\ge0.
 ```
 
-The [preserved plateau dictionary](PLATEAU_DICTIONARY.md) identifies $`\Delta_{H,i}`$ exactly and includes finite local Hamiltonians with strict excess. Closed finite-system oscillations require a Cesàro average, not an unjustified pointwise limit. No simultaneous limit of $`L`$, $`t`$, and $`\varepsilon`$ is inferred.
+The [plateau dictionary](PLATEAU_DICTIONARY.md) identifies $`\Delta_{H,i}`$ exactly and includes finite local Hamiltonians with strict excess. The isolated finite system is described by its infinite-time average; the noisy system has a pointwise long-time limit.
 
-The description is therefore: symmetry-preserving noise eliminates Hamiltonian-specific extra stationary information while retaining the symmetry contribution. It is not a claim that arbitrary laboratory noise improves storage or that the noiseless chaotic-chain plateau is solved.
+Thus the specified symmetry-preserving noise eliminates Hamiltonian-specific extra stationary information while retaining the symmetry contribution.
 
 ## 4. Two hypothesis controls
 
-**All bonds are a sufficient connectivity condition.** Removing the middle bond at $`L=4`$, setting $`H=0`$, and retaining the two separated bond channels increases the stationary-operator dimension from 35 to 100. At $`q=2.6`$, for the first spin, the plateau is $`0.5`$ rather than the connected-chain value $`0.2710324357256192`$. This does not prove that every missing bond prevents the conclusion when a Hamiltonian couples across that cut; the proof uses a sufficient condition.
+**All bonds are a sufficient connectivity condition.** Removing the middle bond at $`L=4`$, setting $`H=0`$, and retaining the two separated bond channels increases the stationary-operator dimension from 35 to 100. At $`q=2.6`$, for the first spin, the plateau is $`0.5`$ rather than the connected-chain value $`0.2710324357256192`$.
 
 **Preserving only total magnetization is insufficient.** Keep all bond channels, but choose
 
@@ -153,7 +153,7 @@ This does not commute with the full raising/lowering algebra. Its protected tran
 =M_{L,i}\cos(\omega t).
 ```
 
-The remaining component decays, but the correlation need not approach a constant. The tests distinguish this from full strong-symmetry preservation; a generic weakly symmetry-covariant model is not substituted for the theorem's conditions.
+The remaining component decays while the protected component continues to rotate. This example shows why preserving magnetization alone is insufficient for a constant transverse plateau.
 
 ## 5. Same number of conserved directions, different spatial overlap
 
@@ -169,14 +169,12 @@ Let $`\mathcal P_L`$ be the $`4^L`$ Hermitian Pauli strings. They are an orthono
 \boxed{\sum_{P\in\mathcal P_L}\|\Pi_qP\|_2^2=\binom{L+3}{3}.}
 ```
 
-This elementary identity is not a new sum rule to promote separately. It explains why the result must not be phrased as deformation creating more independent conserved-operator directions. The embedded algebras at $`q=1`$ and $`q>1`$ are different, have the same dimension, and are generally not nested. For example the undeformed total transverse spin fails to commute with the deformed local Hecke generator.
+The embedded algebras at $`q=1`$ and $`q>1`$ have the same dimension but different conserved directions and are generally not nested. For example, the undeformed total transverse spin fails to commute with the deformed local Hecke generator.
 
-The increase of end-spin overlap and decrease of bulk-spin overlap therefore do not conflict with monotonicity under adding conserved subspaces: deformation is not such an inclusion. The sum runs over *all* Pauli strings, not only single-site spins. It does not establish that total one-body memory is invariant or that memory physically flows from the bulk to the ends.
+Deformation changes the overlaps of local spins with the conserved subspace. The dimension identity sums over *all* Pauli strings, including operators on several sites.
 
-## 6. Attribution and the unchanged main contribution
+## 6. Attribution
 
-The stationary-commutant mechanism, including coherent Hamiltonians with strong-symmetry-preserving Lindblad terms, already belongs to the open-system commutant framework of Li, Sala and Pollmann, arXiv:2305.06918, Sec. II and Appendix B. The argument above is a direct specialization with an explicit norm estimate and scope controls. It carries no new general-principle priority claim.
+The stationary-commutant mechanism, including coherent Hamiltonians with strong-symmetry-preserving Lindblad terms, comes from the open-system commutant framework of Li, Sala and Pollmann, arXiv:2305.06918, Sec. II and Appendix B. The argument above specializes it to this physical representation and gives an explicit norm estimate. The [attribution map](../literature/ATTRIBUTION.md) derives the exact conversion between reflection noise and Hermitian Temperley–Lieb jumps.
 
-The additional research contribution under assessment remains the evaluated spatial laws in the preserved theorem: $`L^{-1/2}`$ edge memory for fixed $`q>1`$ and $`L^{-2}`$ fixed-fraction bulk memory with its explicit amplitude/profile for $`q>q_0`$. Nothing here enlarges that bulk domain, solves the deterministic chain's full plateau, or establishes a relaxation exponent, a useful encoded quantum memory, or efficient physical realization.
-
-See [SOURCE_CHECK.md](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) for primary-source reading boundaries and [contribution review](CONTRIBUTION_REVIEW.md) for the contribution assessment.
+Together with the [spatial theorem](THEOREM.md), this model attains $`L^{-1/2}`$ edge memory for fixed $`q>1`$ and $`L^{-2}`$ fixed-fraction bulk memory with its explicit amplitude and profile for $`q>q_0`$.

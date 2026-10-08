@@ -2,7 +2,7 @@
 
 ## Main claim and its domain
 
-For an open spin-$`\tfrac12`$ chain, retain the real finite-$`q`$ symmetric coproduct
+For an open spin-$`\tfrac12`$ chain and finite real $`q\ge1`$, use the symmetric coproduct
 ```math
 E_L=\sum_i\left(\prod_{j\lt i}q^{-Z_j/2}\right)s_i^+
               \left(\prod_{j>i}q^{Z_j/2}\right),\quad
@@ -38,10 +38,8 @@ M_{L,i}=2^{-L}\sum_h\frac{
 \|\mathrm{Tr}_{m_{L,h}}(P_hX_iP_h)\|_{\rm HS}^2}{m_{L,h}}.
 ```
 The $`q`$-Clebsch--Gordan recursion evaluates this sum in $`O(L^3)`$ arithmetic work and
-$`O(L^2)`$ stored entries for a fixed $`i`$. Those are arithmetic counts, not uniform
-fixed-precision guarantees. The image algebra has dimension $`\binom{L+3}{3}`$,
-so this representation is not called exponentially fragmented merely because
-its non-Abelian symmetry is nonlocal.
+$`O(L^2)`$ stored entries for a fixed $`i`$. These counts refer to arithmetic
+operations and storage. The image algebra has dimension $`\binom{L+3}{3}`$.
 
 ## 2. Edge and fixed-distance limits
 
@@ -75,7 +73,7 @@ For fixed $`q`$ with $`b(q)\lt 1`$ (equivalently $`q>q_0`$), and $`i_L/L`$ tendi
 \boxed{M_{L,i_L}(q)=\mathcal K(q)\mathcal F(x)L^{-2}[1+o(1)].}
 ```
 The threshold is a sufficient domination criterion, not a phase boundary.
-It is not claimed that the law fails for $`1\lt q\le q_0`$. It includes $`q=2.6`$.
+The stated domain includes $`q=2.6`$.
 
 With $`(a;z)_\infty=\prod_{k\ge0}(1-az^k)`$,
 ```math
@@ -105,10 +103,9 @@ interpolation between the end and a site proportional to $`L`$.
 
 ## 4. Proof map and inherited inputs
 
-The full derivation is preserved in [the bulk account](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md), with
+The full derivation is in [the bulk account](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md), with
 the [edge derivation](../archive/research-handoff-2026-10-08/prior/prior/prior/FOLLOWUP.md) and
-[finite recursion](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md). This compact account does not
-replace or silently rewrite those proofs.
+[finite recursion](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md).
 
 The proof sequence is: exact multiplicity projection; exact positive quadrant
 recursion; count changes of the second coordinate with a tilted killed-walk
@@ -116,21 +113,19 @@ majorant; exclude endpoint resonances using $`b(q)\lt 1`$; obtain the uniform mo
 deviation envelope; remove large-spin tails with the observable norm; match the
 finite recursion on its leading sectors to $`J_q`$; use its established Al-Salam--
 Chihara measure; retain both spectral endpoints and both parity sublattices;
-then take the dominated Riemann sum. The double-coordinate matching, not a fit
-to the finite-size sequence, connects the spectral tool to the physical law.
+then take the dominated Riemann sum. The double-coordinate matching connects
+the spectral tool to the physical law.
 
 The majorant needs two strictly subcritical tilts. One explicit permitted choice
 is $`\theta=-\log(b(q))/4`$, for which $`\exp(2\theta)b(q)=\sqrt{b(q)}\lt 1`$.
-The archived review checker verifies counted-coordinate-change paths under both tilts.
-The earlier checker verified a one-tilt displacement bound. This addition changes
-neither the theorem nor a prior tolerance or reference report.
+The [verification suite](../VERIFICATION.md) checks counted-coordinate-change
+paths under both tilts.
 
 Koelink--Verding supplies the orthogonal-polynomial recurrence and measure.
-Damanik--Simon supplies the exponential Jacobi/Jost analyticity input. Their
-spectral theorems are not themselves statements about spin autocorrelations.
+Damanik--Simon supplies the exponential Jacobi/Jost analyticity input.
 Moudgalya--Motrunich supplies the complete-algebra projection framework and
-quantum-group representation context. [contribution review](CONTRIBUTION_REVIEW.md) records the exact
-contribution distinction and review limitations.
+quantum-group representation context. [Attribution](../literature/ATTRIBUTION.md)
+identifies the source passages and their role in the spatial calculation.
 
 ## 5. Where the memory is an actual plateau
 
@@ -145,19 +140,6 @@ the commutant of all $`R_j`$, namely $`\mathcal A_q`$ in this representation. Th
 operator map is $`\Pi_q`$ and its local correlation tends to $`M`$ exactly. The general
 stationary-space method is inherited from open-system commutant theory.
 
-This already provides a local dynamical realization of the baseline. It does
-not establish its relaxation time. It is not the deterministic Hamiltonian or
-Floquet protocol in the motivating hydrodynamics paper.
-
-## 6. Nonclaims and stopping boundary
-
-The result is static finite-size memory from a specified symmetry. It is not a
-hydrodynamic exponent, an ETH theorem for local Hamiltonians, a nonzero limiting
-edge plateau, an encoded quantum memory, a weak-$`q`$ crossover law, or a theorem
-for higher physical spins and different Temperley--Lieb representations.
-
-The theorem's formulas remain unchanged in this review. No blocking issue was
-found in the audited steps; this is author-side scrutiny, not independent review.
-The scientific scope is sufficient for contribution assessment without those
-stronger claims. This repository preserves that bounded result. Submission, release, and
-external contact require separate authorization.
+The [local realization](LOCAL_REALIZATION.md) extends this finite-chain
+convergence to a coherent Hamiltonian preserving the full algebra and gives
+the relaxation bound in terms of the finite-size dissipative gap.
