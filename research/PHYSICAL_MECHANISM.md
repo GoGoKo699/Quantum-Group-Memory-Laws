@@ -166,15 +166,7 @@ does not give a sum rule over sites or imply movement of memory between sites.
 The integral in the theorem can be evaluated without further asymptotics:
 
 ```math
-\begin{aligned}
-\mathcal F(x)={}&\frac1{2\pi}
-\left[\frac{\sqrt{2-x}}{x^{3/2}}+
-\frac{\sqrt{1+x}}{(1-x)^{3/2}}\right]\\
-&+\frac{3\sqrt2}{4\pi\sqrt{x(1-x)}}
-\left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+
-\mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0<x<1.
-\end{aligned}
-\tag{4}
+\begin{aligned} \mathcal F(x)={}&\frac1{2\pi} \left[\frac{\sqrt{2-x}}{x^{3/2}}+ \frac{\sqrt{1+x}}{(1-x)^{3/2}}\right]\\ &+\frac{3\sqrt2}{4\pi\sqrt{x(1-x)}} \left[\mathrm{arsinh}\,\sqrt{\frac{2x}{1-x}}+ \mathrm{arsinh}\,\sqrt{\frac{2(1-x)}x}\right],\quad0<x<1. \end{aligned} \tag{4}
 ```
 
 For a direct derivation put $`a=x(1-x)`$, $`c=1-2x`$, and
