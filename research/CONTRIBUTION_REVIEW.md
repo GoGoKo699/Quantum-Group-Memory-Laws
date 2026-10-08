@@ -1,21 +1,48 @@
-# Contribution review at the repository boundary
+# Contribution and physical interpretation
 
-## Prospective contribution
+## The physical question
 
-Complete-commutant memory projections, nonlocal quantum-group symmetries, and their representation decompositions are established. The recorded calculation evaluates the complete transverse projection in the real-q physical spin-1/2 representation and derives its boundary and restricted-domain bulk spatial asymptotics. The ordinary physical trace, the local observable, and the multiplicity weights are essential.
+How much of a local transverse spin survives projection onto the **entire conserved symmetry algebra**, and how does that amount depend on its position in an open chain?
 
-The result under assessment is the **explicit boundary–bulk scaling contrast and normalized bulk profile**, not discovery of a Mazur inequality, nonlinear conserved charges, random-matrix integration, orthogonal-polynomial methods, or a generic stationary-commutant mechanism.
+For ordinary $SU(2)$, the contribution is exactly $1/L$ at every site. Real quantum-group deformation changes this spatial law: at every fixed finite $q>1$, the end contribution scales as $L^{-1/2}$; at fixed $q>q_0$ and fixed interior position fraction, the bulk contribution scales as $L^{-2}$ with an explicit amplitude and spatial profile. These are asymptotic enhancement and suppression relative to $1/L$. Both contributions still vanish as $L$ grows. The [theorem](THEOREM.md) gives the coefficients and precise domains; $q_0$ is a sufficient proof threshold.
 
-## Strongest positive and skeptical cases
+The number of conserved operator directions does not increase. For every finite real $q\ge1$, the represented algebra has dimension $\binom{L+3}{3}$. Deformation changes its embedding in physical operator space and its overlap with local spins. The algebras are generally not nested. The [Pauli-basis identity](LOCAL_REALIZATION.md#5-same-number-of-conserved-directions-different-spatial-overlap) explains this distinction: its sum runs over all Pauli strings, so it implies neither conservation of total single-site memory nor motion of memory from the bulk to the ends.
 
-The positive case is a spatial law for an entire conserved algebra, rather than an improvement against a deliberately incomplete charge list. The uniform bulk argument evaluates every contributing sector. A specified local interacting, noise-averaged model attains the resulting projection, so it is not solely a formal lower bound.
+## What supports the central claim
 
-The skeptical case remains that the setting and framework are established and much of the proof is representation-specific spectral analysis. The isolated local Hamiltonian's complete plateau is not determined, and the bulk equality has a sufficient deformation restriction. Physical importance must rest on the spatial conclusion, not exactness, report size, or a large ratio against a single-generator bound.
+| Role | Result and its use |
+|---|---|
+| Exact quantity | The ordinary physical infinite-temperature inner product defines the projection of $X_i$ onto the full symmetry algebra. The finite recursion includes all physical multiplicity paths, fixing the quantity whose asymptotic behavior is sought. |
+| Central spatial law | The end coefficient and restricted-domain bulk amplitude/profile are evaluated explicitly. The bulk proof controls all contributing sectors uniformly, rather than inferring an exponent from finite-size data. |
+| Hamiltonian interpretation | The [exact excess identity](PLATEAU_DICTIONARY.md) separates this symmetry contribution from additional time-averaged memory specific to a Hamiltonian, including accidental degeneracies. |
+| Local attainment | The [coherent-plus-noisy model](LOCAL_REALIZATION.md) converges to this projection at fixed finite size and positive noise strength. It realizes the baseline as an actual noise-averaged plateau. |
+| Reference ensemble | A generally nonlocal random eigenbasis has a controlled mean excess. This is a diagnostic benchmark for the distinction above. |
 
-The inherited frameworks and precise missing implication are recorded in [ATTRIBUTION](../literature/ATTRIBUTION.md), the [full archived review](../archive/research-handoff-2026-10-08/prior/REVIEW.md), and the [final source check](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md). No directly covering complete law was identified in the inspected passages. This is a bounded comparison, not exhaustive priority clearance. Internal proof scrutiny and executable checks are not independent review.
+The central result is the evaluated spatial law. The excess identity clarifies its meaning; the local realization shows how it can be attained. The reference ensemble is not an assumption about the eigenvectors of a local spin Hamiltonian.
 
-## Allocation
+The technical chain is recorded in the [proof map](PROOF_MAP.md): physical multiplicity trace, exact finite recursion, uniform domination and sector matching, then spectral evaluation. The ordinary trace and physical representation are essential throughout. Spectral measures used in the calculation do not replace those physical trace weights.
 
-Retain one bounded project and organize author-facing contribution review and exposition. No new scientific premise is introduced by the repository import, and no publication outcome is predicted. Reopen science for a concrete proof objection, a directly covering source, or an explicitly selected new claim. Optional extensions are listed as nonclaims, not mandatory prerequisites.
+## Why the result matters, and the skeptical case
 
-The [current work order](../work_orders/CURRENT.md) controls the workspace. Dated statements in archived pilot notes are historical evidence, not standing requests to resume a completed exploration.
+The positive case is a quantitative answer for a complete conserved algebra. It shows that deforming a symmetry can make its unavoidable local memory asymptotically larger at an end and smaller in the interior, even though the algebra dimension is unchanged. Because the calculation covers the entire algebra, the contrast does not depend on selecting an incomplete list of charges. The local noise-averaged realization gives the spatial law a concrete dynamical setting.
+
+The skeptical case is that the model and framework are established, while the additional analysis is specific to this representation and observable. The result's significance rests on the spatial conclusion. Exactness and successful reproduction do not by themselves establish broad physical importance. The bulk equality has a sufficient deformation restriction, and symmetry alone does not determine a generic isolated local Hamiltonian's complete time-averaged memory. The noisy realization supplies a specified model with exact attainment; its unestimated dissipative gap leaves the chain-size dependence of relaxation time unresolved.
+
+This supports retaining one focused contribution with the spatial law as its organizing claim. Stronger dynamics or a storage protocol would be separate scientific questions, rather than premises needed to state this result.
+
+## Relation to prior work
+
+Grant the literature the complete-commutant projection principle, quantum-group representation theory, orthogonal-polynomial and Jost tools, and the stationary-commutant mechanism for symmetry-preserving noise. The additional implication assessed here is the **evaluated physical multiplicity trace and uniform finite-deformation spatial asymptotics**.
+
+The [attribution map](../literature/ATTRIBUTION.md), [archived contribution review](../archive/research-handoff-2026-10-08/prior/REVIEW.md), and [targeted source check](../archive/research-handoff-2026-10-08/SOURCE_CHECK.md) identify the inspected passages and access limits. Those records did not identify a directly covering complete law in the same representation. This exposition relies on that bounded source comparison; it does not record a new literature search or establish exhaustive priority. Internal proof scrutiny and executable checks remain distinct from independent review.
+
+## Orders of limits that carry the interpretation
+
+| Statement | Order and domain |
+|---|---|
+| End-spin law | Fix finite $q>1$, then take $L\to\infty$. The exact $q=1$ result is stated separately. |
+| Bulk law | Fix $q>q_0$ and take $L\to\infty$ with $i_L/L\to x\in(0,1)$. |
+| Boundary-distance matching | First take $L\to\infty$ at fixed distance from the end, then take that distance large. |
+| Noisy attainment | Fix finite $L$ and positive noise strength, then take long time. Removing noise first returns isolated dynamics, whose infinite-time average can include Hamiltonian-specific excess. |
+
+The [model and claim boundaries](MODEL_AND_CLAIMS.md) give the full scope. The spatial law does not establish a hydrodynamic decay exponent or an encoded-memory lifetime. The [current work order](../work_orders/CURRENT.md) defines when a concrete objection or a selected new claim should reopen research.

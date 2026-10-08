@@ -8,7 +8,9 @@ Use this repository when seeking the explicitly evaluated ordinary-trace spin-1/
 
 The edge law holds for fixed real q>1. The bulk equality has the sufficient domain q>2.0810189966... and fixed interior site fraction. That threshold is not a transition. q=1 gives 1/L everywhere. Do not exchange limits, use quantum dimensions as trace weights, or equate the symmetry contribution with the full plateau of every local Hamiltonian. No hydrodynamic exponent, encoded-memory fidelity, or uniform mixing-time scaling is established. The local noisy realization is unrecorded/averaged and preserves the complete algebra.
 
-Full-commutant principles and spectral tools are inherited. The additional calculation and source-reading limits are explicitly attributed. Reproducible checks are internal evidence, not independent proof or originality certification. Historical proofs/checkers/reports live in archive/research-handoff-2026-10-08/ and must not be overwritten.
+The physical story is a changed spatial overlap with a conserved algebra whose dimension stays the same for every finite q>=1. End enhancement and bulk suppression are asymptotic comparisons in the stated regimes; both contributions vanish as L grows. They do not imply transport of memory or conservation of total single-site memory.
+
+Full-commutant principles and spectral tools are inherited. research/CONTRIBUTION_REVIEW.md separates the central spatial law, proof ingredients, Hamiltonian-specific excess, local noisy attainment, and nonlocal reference ensemble. The additional calculation and source-reading limits are explicitly attributed. Reproducible checks are internal evidence, not independent proof or originality certification. Historical proofs/checkers/reports live in archive/research-handoff-2026-10-08/ and must not be overwritten.
 
 Purpose and contact
 This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at gogoko699@gmail.com (mailto:gogoko699@gmail.com).
