@@ -329,9 +329,13 @@
       [
         "$M$",
         "$`M`$"
+      ],
+      [
+        "\\operatorname{Tr}",
+        "\\mathrm{Tr}"
       ]
     ],
-    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
+    "purpose": "Navigation, GitHub display and inline math formatting, and present-tense import status only; scientific assertions and display formulas unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged. Subsequent upright-name and thin-space replacements avoid GitHub\u2019s rejected operatorname macro without changing mathematical meaning."
   },
   "research/PLATEAU_DICTIONARY.md": {
     "source": "archive/research-handoff-2026-10-08/prior/PLATEAU_DICTIONARY.md",
@@ -455,9 +459,29 @@
       [
         "$\\bar C/M\\to1$",
         "$`\\bar C/M\\to1`$"
+      ],
+      [
+        "\\operatorname{Sym}",
+        "\\mathrm{Sym}"
+      ],
+      [
+        "\\operatorname{Tr}",
+        "\\mathrm{Tr}"
+      ],
+      [
+        "\\mathrm{Tr}_{m_j}O_j",
+        "\\mathrm{Tr}_{m_j}\\,O_j"
+      ],
+      [
+        "\\mathrm{Tr}A",
+        "\\mathrm{Tr}\\,A"
+      ],
+      [
+        "\\mathrm{Sym}C",
+        "\\mathrm{Sym}\\,C"
       ]
     ],
-    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
+    "purpose": "Navigation, GitHub math delimiters, and present-tense import status only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged. Subsequent upright-name and thin-space replacements avoid GitHub\u2019s rejected operatorname macro without changing mathematical meaning."
   },
   "research/LOCAL_REALIZATION.md": {
     "source": "archive/research-handoff-2026-10-08/LOCAL_REALIZATION.md",
@@ -717,8 +741,12 @@
       [
         "$q>q_0$",
         "$`q>q_0`$"
+      ],
+      [
+        "\\operatorname{Tr}",
+        "\\mathrm{Tr}"
       ]
     ],
-    "purpose": "Navigation, GitHub math delimiters, and stable introductory/status wording only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged."
+    "purpose": "Navigation, GitHub math delimiters, and stable introductory/status wording only; scientific assertions unchanged. Additional literal replacements use GitHub fenced math and code-marked inline math; mathematical payloads are unchanged. Subsequent upright-name and thin-space replacements avoid GitHub\u2019s rejected operatorname macro without changing mathematical meaning."
   }
 }

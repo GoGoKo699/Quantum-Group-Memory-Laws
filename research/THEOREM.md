@@ -17,7 +17,7 @@ quantum-dimension-weighted trace**.
 Define
 ```math
 M_{L,i}(q)=2^{-L}\|\Pi_q(X_i)\|_{\rm HS}^2,
-\qquad C_i(t)=2^{-L}\operatorname{Tr}[X_i(t)X_i],\quad C_i(0)=1.
+\qquad C_i(t)=2^{-L}\mathrm{Tr}[X_i(t)X_i],\quad C_i(0)=1.
 ```
 
 For every symmetry-preserving Hamiltonian, the finite-size infinite-time average
@@ -35,7 +35,7 @@ m_{L,h}=\binom L{(L-h)/2}-\binom L{(L-h)/2-1}.
 Hence
 ```math
 M_{L,i}=2^{-L}\sum_h\frac{
-\|\operatorname{Tr}_{m_{L,h}}(P_hX_iP_h)\|_{\rm HS}^2}{m_{L,h}}.
+\|\mathrm{Tr}_{m_{L,h}}(P_hX_iP_h)\|_{\rm HS}^2}{m_{L,h}}.
 ```
 The $`q`$-Clebsch--Gordan recursion evaluates this sum in $`O(L^3)`$ arithmetic work and
 $`O(L^2)`$ stored entries for a fixed $`i`$. Those are arithmetic counts, not uniform

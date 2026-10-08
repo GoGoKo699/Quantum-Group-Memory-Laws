@@ -47,7 +47,7 @@ real $`q\ge1`$,
 ```math
 \mathcal H_L=\bigoplus_h\mathcal V_{h/2}\otimes\mathbb C^{m_{L,h}},
 \qquad
-\mathcal A_q=\bigoplus_h\operatorname{End}(\mathcal V_{h/2})\otimes I_{m_{L,h}}.
+\mathcal A_q=\bigoplus_h\mathrm{End}(\mathcal V_{h/2})\otimes I_{m_{L,h}}.
 ```
 
 Here the allowed $`h`$ have the parity of $`L`$, and
@@ -68,25 +68,25 @@ source's displayed quantum-group singlet uses the reversed orientation.
 ## 3. Derive the quantity whose spatial law we evaluate
 
 Use the physical inner product
-$`\langle O,Q\rangle=2^{-L}\operatorname{Tr}(O^\dagger Q)`$.
+$`\langle O,Q\rangle=2^{-L}\mathrm{Tr}(O^\dagger Q)`$.
 Within sector $`h`$, every operator in $`\mathcal A_q`$ has the form
 $`B_h\otimes I_{m_{L,h}}`$. Let $`P_h`$ project onto that sector. The orthogonal
 projection of an arbitrary operator $`O`$ is therefore
 
 ```math
 \Pi_q(O)=\bigoplus_h
-\left[\frac{\operatorname{Tr}_{m_{L,h}}(P_hOP_h)}{m_{L,h}}
+\left[\frac{\mathrm{Tr}_{m_{L,h}}(P_hOP_h)}{m_{L,h}}
 \otimes I_{m_{L,h}}\right].
 ```
 
 To check the denominator, take the inner product of the residual with any
 $`B_h\otimes I`$. The partial trace of the first term is
-$`\operatorname{Tr}_{m_{L,h}}(P_hOP_h)`$, while that of the proposed projection is
+$`\mathrm{Tr}_{m_{L,h}}(P_hOP_h)`$, while that of the proposed projection is
 the same matrix. Their difference is zero. Operators between different sectors
 are orthogonal to the block-diagonal conserved algebra.
 
 For the local Pauli operator $`X_i`$, define
-$`T_h=\operatorname{Tr}_{m_{L,h}}(P_hX_iP_h)`$. Since the unnormalized
+$`T_h=\mathrm{Tr}_{m_{L,h}}(P_hX_iP_h)`$. Since the unnormalized
 Hilbert–Schmidt norm of $`I_m`$ has square $`m`$, the projection formula gives
 
 ```math
@@ -96,7 +96,7 @@ M_{L,i}(q)=2^{-L}\|\Pi_q(X_i)\|_{\mathrm{HS}}^2
 
 This is the starting expression in the [theorem](THEOREM.md). The multiplicity
 trace is taken **before squaring**. Our Pauli convention has
-$`2^{-L}\operatorname{Tr}(X_i^2)=1`$; using $`S_i^x=X_i/2`$ instead divides the
+$`2^{-L}\mathrm{Tr}(X_i^2)=1`$; using $`S_i^x=X_i/2`$ instead divides the
 correlation and projection weight by four.
 
 For an isolated Hamiltonian preserving $`\mathcal A_q`$, its invariant operator
@@ -115,7 +115,7 @@ spin algebra. Thus
 ```math
 \Pi_1(X_i)=\frac1L\sum_{j=1}^L X_j,
 \qquad
-2^{-L}\operatorname{Tr}(X_jX_k)=\delta_{jk},
+2^{-L}\mathrm{Tr}(X_jX_k)=\delta_{jk},
 \qquad M_{L,i}(1)=\frac1L.
 ```
 

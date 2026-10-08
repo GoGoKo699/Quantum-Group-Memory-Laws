@@ -19,7 +19,7 @@ The single background anchor is Moudgalya–Motrunich, arXiv:2108.10324v2. Follo
 The following conversion is derived here from the repository's definition, independently of any plotted source value. Set
 
 ```math
-\langle A,B\rangle=2^{-L}\operatorname{Tr}(A^\dagger B),\qquad
+\langle A,B\rangle=2^{-L}\mathrm{Tr}(A^\dagger B),\qquad
 w(A)=\langle\Pi_q A,\Pi_q A\rangle,\qquad M=w(X_i).
 ```
 
@@ -33,7 +33,7 @@ The projection preserves adjoints and magnetization-charge sectors. For $`s_i^+=
 
 Thus the projection weight divided by the initial norm is the same in all three conventions. This is a statement about the symmetry projection, not arbitrary finite-time complex correlators.
 
-The [finite-recursion derivation, Section 5](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md) evaluates the projection of $`X_i`$ onto $`\operatorname{span}\{E,F\}`$ as
+The [finite-recursion derivation, Section 5](../archive/research-handoff-2026-10-08/prior/prior/prior/prior/PILOT.md) evaluates the projection of $`X_i`$ onto $`\mathrm{span}\{E,F\}`$ as
 
 ```math
 M^{\{E,F\}}_{L,i}
