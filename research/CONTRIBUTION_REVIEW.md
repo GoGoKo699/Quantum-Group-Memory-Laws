@@ -8,6 +8,15 @@ For ordinary $SU(2)$, the contribution is exactly $1/L$ at every site. Real quan
 
 The number of conserved operator directions does not increase. For every finite real $q\ge1$, the represented algebra has dimension $\binom{L+3}{3}$. Deformation changes its embedding in physical operator space and its overlap with local spins. The algebras are generally not nested. The [Pauli-basis identity](LOCAL_REALIZATION.md#5-same-number-of-conserved-directions-different-spatial-overlap) explains this distinction: its sum runs over all Pauli strings, so it implies neither conservation of total single-site memory nor motion of memory from the bulk to the ends.
 
+The bulk law also fixes a common interior shape. At each fixed $q>q_0$, with $i_L/L\to x\in(0,1)$,
+
+$$
+\frac{M_{L,i_L}(q)}{M_{L,\lfloor L/2\rfloor}(q)}
+\longrightarrow\frac{\mathcal F(x)}{\mathcal F(1/2)}.
+$$
+
+Thus deformation changes the leading bulk amplitude, while this ratio to the center is independent of $q$ throughout the proved domain. This is the normalized profile already stated in the [bulk account, Section 2](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md), with fixed interior position fractions; it does not extend the result to sites approaching a boundary.
+
 ## What supports the central claim
 
 | Role | Result and its use |
