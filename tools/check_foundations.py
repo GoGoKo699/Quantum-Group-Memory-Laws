@@ -45,13 +45,17 @@ def checked_group(cases, errors):
     return {'passed': True, 'cases': cases, 'max_errors': errors, 'tolerance': TOL}
 
 
+def profile_elementary(x):
+    return ((math.sqrt(2-x)/x**1.5 + math.sqrt(1+x)/(1-x)**1.5)/(2*math.pi)
+            + 3*math.sqrt(2)/(4*math.pi*math.sqrt(x*(1-x)))
+            * (math.asinh(math.sqrt(2*x/(1-x)))
+               + math.asinh(math.sqrt(2*(1-x)/x))))
+
+
 def profile_checks():
     records = []
     for x in (.02, .1, .25, .5, .7, .98):
-        elementary = ((math.sqrt(2-x)/x**1.5 + math.sqrt(1+x)/(1-x)**1.5)/(2*math.pi)
-                      + 3*math.sqrt(2)/(4*math.pi*math.sqrt(x*(1-x)))
-                      * (math.asinh(math.sqrt(2*x/(1-x)))
-                         + math.asinh(math.sqrt(2*(1-x)/x))))
+        elementary = profile_elementary(x)
         integral = bulk.shape(x)
         records.append({'x': x, 'elementary': elementary, 'quadrature': integral,
                         'absolute_error': abs(elementary-integral)})

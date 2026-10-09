@@ -101,6 +101,54 @@ B_d(q)\sim\mathcal K(q)(\pi\sqrt2)^{-1}d^{-3/2}\quad(d\to\infty).
 One first takes $`L`$ to infinity at fixed $`d`$. This is not a uniform finite-$`L`$
 interpolation between the end and a site proportional to $`L`$.
 
+### Corollary: edge-to-bulk contrast
+
+For every fixed finite $`q>q_0`$ and site sequence $`i_L/L\to x\in(0,1)`$,
+
+```math
+\frac{M_{L,1}(q)}{M_{L,i_L}(q)}
+=\frac{\tanh(\log q)}{\sqrt{2\pi}\,\mathcal K(q)\mathcal F(x)}
+L^{3/2}[1+o(1)].
+```
+
+**Proof.** At fixed $`q>1`$, $`0\lt z=q^{-2}\lt 1`$. Every factor in the
+products defining $`A_\pm`$ is positive, and its deviation from one is
+absolutely summable. The products therefore have finite nonzero limits,
+so $`0\lt\mathcal K(q)\lt\infty`$. For fixed interior $`x`$, the integral
+defining $`\mathcal F(x)`$ is finite and strictly positive: its denominator
+is bounded away from zero and its numerator is positive for $`0\lt u\lt1`$.
+Write $`a(q)=\tanh(\log q)/\sqrt{2\pi}>0`$. The edge formula becomes
+$`a(q)L^{-1/2}[1+O_q(L^{-1/2})]`$; dividing it by the bulk formula proves
+the result. This uses the common domain $`q>q_0`$.
+
+For even $`L`$, take the center site $`i_L=L/2`$ and $`x=1/2`$. The coefficient
+is $`a(q)/[\mathcal K(q)\mathcal F(1/2)]`$, with the exact value
+
+```math
+\mathcal F(1/2)=\frac{2\sqrt3+3\sqrt2\,\mathrm{arsinh}\,\sqrt2}{\pi}.
+```
+
+At $`q=2.6`$ this coefficient is $`0.0309890224956737\ldots`$, evaluated from
+the analytical products and center value above. Either central site of an
+even chain has the same memory by reflection.
+
+Comparison with the exact undeformed value $`M_{L,i}(1)=1/L`$ gives
+
+```math
+\begin{aligned}
+\frac{M_{L,1}(q)}{M_{L,1}(1)}
+&\sim\frac{\tanh(\log q)}{\sqrt{2\pi}}\sqrt L
+&&\quad(q>1),\\
+\frac{M_{L,i_L}(q)}{M_{L,i_L}(1)}
+&\sim\frac{\mathcal K(q)\mathcal F(x)}L
+&&\quad(q>q_0).
+\end{aligned}
+```
+
+Each statement fixes finite $`q`$; each bulk comparison also fixes the limiting
+interior fraction. The [physical mechanism](PHYSICAL_MECHANISM.md) explains
+the contrast through local overlaps and its retained-polarization readout.
+
 ## 4. Proof map and inherited inputs
 
 The full derivation is in [the bulk account](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md), with
