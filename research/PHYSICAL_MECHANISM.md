@@ -19,9 +19,15 @@ duality and preservation of the maximally mixed state give
 
 Thus $`M`$ is the retained same-site polarization fraction in that model. The
 identity holds for every allowed $`p`$, without a small-polarization approximation.
-Long time is taken at fixed finite $`L`$ and positive noise strength. For an
-isolated symmetry-preserving Hamiltonian, the same preparation measures $`pC_i(t)`$,
-whose time average can include the [Hamiltonian-specific excess](PLATEAU_DICTIONARY.md).
+For separate preparations with the same $`0\lt|p|\le1`$ at the end and at an
+interior site, the ratio of long-time retained same-site polarizations is
+exactly $`pM_{L,1}/(pM_{L,i})=M_{L,1}/M_{L,i}`$. First take long time at fixed
+finite $`L`$, positive noise strength, and positive rates on every bond, with
+any coherent Hamiltonian preserving the entire algebra. Then take the spatial
+large-$`L`$ limit in the [contrast corollary](THEOREM.md#corollary-edge-to-bulk-contrast).
+For an isolated symmetry-preserving Hamiltonian, the same preparation measures
+$`pC_i(t)`$, whose time average can include the
+[Hamiltonian-specific excess](PLATEAU_DICTIONARY.md).
 
 ## 1. An exact conditional-sector formula
 
@@ -155,6 +161,20 @@ $`\mathcal K(q)=(A_+^2+A_-^2)/2`$ and the spatial profile $`\mathcal F(x)`$.
 Thus $`q`$ changes the sector-conditioned local overlaps while leaving both
 $`p_{L,h}`$ and $`\dim\mathcal A_q=\binom{L+3}{3}`$ unchanged.
 
+The [corollary](THEOREM.md#corollary-edge-to-bulk-contrast) makes this spatial
+contrast explicit: end memory divided by interior memory grows as $`L^{3/2}`$
+at fixed $`q>q_0`$ and fixed interior fraction. Relative to ordinary spin
+symmetry, the end contribution is asymptotically enhanced and the interior
+contribution suppressed, while both deformed local fractions still vanish.
+
+![End and center memory at q = 2.6 compared with the undeformed reference and analytical asymptotes](../figures/end_center_memory.svg)
+
+**Figure A.** At $`q=2.6`$, markers are floating-point evaluations of the exact
+finite-size recurrence at even $`L=10,20,40,80,160,320,640`$, for the end
+$`i=1`$ and center $`i=L/2`$. Lines show the analytical leading end and center
+laws and the exact undeformed reference $`1/L`$. Both axes are logarithmic;
+all coefficients come from the analytical formulas.
+
 ## 5. An elementary form of the bulk profile
 
 The integral in the theorem can be evaluated without further asymptotics:
@@ -198,6 +218,24 @@ $`\mathcal F(x)\sim(\pi\sqrt2)^{-1}x^{-3/2}`$ as $`x\downarrow0`$
 are explicit. The normalized shape at fixed interior positions is the ratio
 $`\mathcal F(x)/\mathcal F(1/2)`$. The theorem specifies the separate
 boundary-distance limit.
+
+![Normalized interior profile at L = 160 for q = 2.6 and q = 3.5 compared with the analytical limiting curve](../figures/normalized_interior_profile.svg)
+
+**Figure B.** The line is $`\mathcal F(x)/\mathcal F(1/2)`$ at fixed interior
+fractions; markers are floating-point recurrence ratios
+$`M_{160,i}(q)/M_{160,80}(q)`$ for $`q=2.6,3.5`$. The sites are
+$`i=16,32,40,48,64,80`$ and their exact reflection partners $`161-i`$.
+With $`x=i/160`$, finite-chain reflection maps $`x\mapsto161/160-x`$,
+about $`x=161/320`$.
+Finite-size corrections can depend on $`q`$, whereas the limiting normalized
+interior profile is deformation-independent for $`q>q_0`$. The curve describes
+fixed interior fractions, with the separate boundary-distance regime given
+in the theorem.
+
+Both figures illustrate the analytical results through floating-point
+evaluations, rather than certified intervals. The uniform asymptotics and
+orders of limits follow from the proofs. [Figure regeneration and checks](../VERIFICATION.md#explanatory-figures)
+record the settings, source functions, displayed points, and independent comparisons.
 
 ## 6. A concrete local dynamics and its undeformed limit
 

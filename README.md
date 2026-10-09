@@ -56,6 +56,9 @@ approaches a boundary.
 Within the proved bulk domain, the ratio to the center contribution tends to
 $`\mathcal F(x)/\mathcal F(1/2)`$, independently of $`q`$. Deformation changes the
 leading bulk amplitude while preserving this normalized interior profile.
+The [edge-to-bulk contrast](research/THEOREM.md#corollary-edge-to-bulk-contrast)
+grows as $`L^{3/2}`$ at fixed $`q>q_0`$ and fixed interior fraction;
+[two explanatory figures](research/PHYSICAL_MECHANISM.md) show the size and position dependence.
 
 ## Why position matters
 
