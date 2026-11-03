@@ -2,7 +2,7 @@
 
 The comparisons below identify the primary passages supporting the inherited framework and distinguish their observables and representations from the spatial law evaluated here. Section and equation references use the stated versions.
 
-The single background anchor is Moudgalya–Motrunich, arXiv:2108.10324v2. Follow the [tutorial bridge](../research/TUTORIAL_BRIDGE.md) for its reading route and the translation into this repository. The comparisons below serve attribution and proof provenance rather than a list of prerequisite tutorials.
+The single educational anchor is [Watrous 2018](../learning/WATROUS_BRIDGE.md). The physical-trace projection derivation and Moudgalya–Motrunich notation translation are retained as [commutant background](../research/COMMUTANT_BACKGROUND.md). The comparisons below serve scholarly attribution and proof provenance. The additional physical-erasure claim has its own [related-work account](../references/RELATED_WORK.md).
 
 ## Physical predecessors
 

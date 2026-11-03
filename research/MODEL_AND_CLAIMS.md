@@ -25,3 +25,7 @@ The [physical mechanism](PHYSICAL_MECHANISM.md) gives its direct polarization re
 The generally nonlocal random-eigenbasis reference evaluates the mean Hamiltonian-specific excess. Its assumptions and role as a reference ensemble are given in the [plateau dictionary](PLATEAU_DICTIONARY.md).
 
 The finite numerical checks test identities and evaluations. The large-$`L`$ law rests on the uniform analytical proof. The [attribution map](../literature/ATTRIBUTION.md) compares the result with prior work.
+
+## Additional operational claim: physical erasure after the projection
+
+The [physical-erasure account](../science/README.md) treats the same stationary projection as a supplied CPTP channel and composes it with independent receiver-flagged erasure on the original sites. It writes deformation as r and erasure probability as p. For every fixed finite r>1 and 0<p<1, its [all-sector theorem](../science/capacity.md) proves a positive achievable rate and a size-independent two-way quantum-capacity ceiling. This is a separate operational claim with a complete [first-mismatch proof](../science/first_mismatch.md); it is not inferred from the spatial asymptotics above. The original protected spatial theorem, proof domains, trace weights and mixing-gap qualifications remain unchanged.

@@ -104,3 +104,17 @@ A green badge or steps-only summary is not source-matched verification. Local ex
 ## Interpretation
 
 The full physical Hilbert-space checks use dimensions up to 256. Larger chain lengths use polynomial-size recurrence arrays. These checks test identities, normalizations, and evaluations; the uniform asymptotic laws rest on the analytical arguments linked in the [proof map](research/PROOF_MAP.md).
+
+## Additional physical-erasure theorem
+
+The additional operational claim under [science](science/README.md) has separate [physical-erasure checks](verification/README.md). They preserve the original 24 groups, archived assertions, canonical reports and all protected bytes. Run:
+
+```sh
+python verification/check_small_sectors.py --output build/verification/small_sectors.json
+OPENBLAS_NUM_THREADS=1 python verification/check_estimator.py --output build/verification/estimator.json
+OPENBLAS_NUM_THREADS=1 python verification/check_cg_amplitudes.py --output build/verification/cg_amplitudes.json
+```
+
+The first script checks exact small-sector physical Kraus maps, conditional Choi spectra and the charged achievable-rate comparisons. The second independently enumerates physical words and all erasure flags, then checks the first-event distribution, estimator tails, censoring and representative arbitrary-prior posteriors against a separate dynamic recurrence. The third checks signed Clebsch–Gordan embeddings against the physical raising coproduct and complete basis orthogonality.
+
+The uniform all-path entropy argument is analytical. The capacity statement further uses the exact full-projection complementary measurement and the established adaptive channel squashed-entanglement converse; these finite scripts are not substitutes for those arguments. The stationary channel is supplied, so no mixing-time verification is claimed.

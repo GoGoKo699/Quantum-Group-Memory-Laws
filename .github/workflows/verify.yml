@@ -8,7 +8,7 @@ permissions:
   contents: read
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
       OPENBLAS_NUM_THREADS: '1'
@@ -37,6 +37,11 @@ jobs:
         run: python tools/verify.py --output build/verification
       - name: Check complementary analytical identities
         run: python tools/check_foundations.py --output build/verification/foundations.json
+      - name: Check physical erasure maps and full-path estimator
+        run: |
+          python verification/check_small_sectors.py
+          python verification/check_cg_amplitudes.py
+          python verification/check_estimator.py
       - name: Reproduce explanatory figures and check maintained assets
         run: python tools/generate_figures.py --check --output build/verification/figures
       - name: Check unchanged tracked source
