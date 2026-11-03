@@ -1,117 +1,92 @@
 # Quantum Group Memory Laws
 
-**A nonlocal spin symmetry fixes different memory laws at the ends and in the bulk.**
+**A nonlocal spin symmetry changes the spatial memory profile, while fixed physical erasure still imposes a size-independent quantum-capacity ceiling.**
 
-How much of a local spin's late-time memory is fixed by symmetry alone?
-For a fixed chain length, the conserved algebra has the same dimension at every
-finite real $`q\ge1`$. Yet the part of a local transverse spin protected by that
-algebra changes with position. Ordinary spin symmetry gives $`1/L`$ everywhere;
-deformation gives an end contribution of order $`L^{-1/2}`$ and a bulk contribution
-of order $`L^{-2}`$ in the proved regimes below.
+This project studies the full real-deformation symmetry projection of an open spin-half chain. It evaluates its protected local transverse-spin memory and determines how much coherent information can survive subsequent independent physical erasure. Both questions use the same ordinary-trace projection; their observables and proofs are different.
 
-| Read next | Purpose |
-|---|---|
-| [Tutorial bridge](research/TUTORIAL_BRIDGE.md) · [Physical mechanism](research/PHYSICAL_MECHANISM.md) | Learn from one external source, then follow the projection and sector explanation. |
-| [Theorem](research/THEOREM.md) · [Proof map](research/PROOF_MAP.md) | Read the exact laws, constants, domains, and full proof dependencies. |
-| [Model and claims](research/MODEL_AND_CLAIMS.md) · [Local realization](research/LOCAL_REALIZATION.md) | Check the physical trace, assumptions, and noise-averaged attainment. |
-| [Attribution](literature/ATTRIBUTION.md) | Compare the evaluated spatial law with its inherited framework and predecessors. |
-| [Verification](VERIFICATION.md) | Reproduce the checks and inspect their evidence. |
-| [LLM guide](llms.txt) | Identify relevant questions and the authoritative reading route. |
+**Sister project:** [Quantum Permutation Noise Limits](https://github.com/GoGoKo699/Quantum-Permutation-Noise-Limits) establishes the ordinary-permutation endpoint, with exact flagged-erasure capacities and a Schur/symmetric-loss reduction. This repository owns the complete finite-deformation physical-erasure proof. The changed embedding alters local loss maps, so the extension needs a new argument rather than a global change of algebra basis.
 
-## What symmetry protects
+## Physical erasure after the complete stationary projection
 
-Use the ordinary infinite-temperature trace on an open chain of $`L`$ physical spin-$`\tfrac12`$ sites.
-For a local Pauli operator $`X_i`$, define
+Write $`r\gt1`$ for fixed finite real deformation, $`0\lt p\lt1`$ for physical erasure probability, and
+
+```math
+\mathcal N_{n,r,p}=\mathcal E_p^{\otimes n}\circ\Pi_r.
+```
+
+Here $`\Pi_r`$ projects onto the **whole** represented symmetry algebra, including products of its generators. Erasure acts afterward on the original physical sites, with positions flagged to the receiver. The capacity is measured in qubits per complete $`n`$-site block.
+
+```math
+\boxed{
+1-h_2(p/2)\le Q_2(\mathcal N_{n,r,p})
+\le C(r,p)\lt\infty\qquad(n\ge1).}
+```
+
+The upper constant is independent of size and covers arbitrary encodings, reference-entangled inputs and adaptive protocols with unlimited two-way classical communication. It is nonsharp. At zero erasure the largest coherent sector instead carries $`\log_2(n+1)`$ qubits.
+
+The proof begins with [exact conditional one-erasure maps](science/small_sectors.md). A [first-erased-mismatch estimate](science/first_mismatch.md) then bounds the uncertainty of a magnetic label uniformly over every Clebsch–Gordan path and every prior. A [direct complementary-channel argument](science/capacity.md) turns this into a squashed-entanglement ceiling for the full stationary channel. The existing Schur/symmetric-loss resource and adaptive squashed-entanglement converse are credited separately.
+
+At $`r=1`$, projection is ordinary permutation twirling. The sister's exact benchmark is $`Q_2=\log_2(n+1)-\mathbb E\log_2(L+1)`$, with $`L\sim\mathrm{Bin}(n,p)`$, tending to $`-\log_2p`$. No equality with that formula is claimed at finite deformation.
+
+## The spatial memory laws
+
+The original spatial account uses $`q=r`$ and chain length $`L=n`$. With the ordinary physical trace,
 
 ```math
 M_{L,i}(q)=2^{-L}\|\Pi_q(X_i)\|_{\mathrm{HS}}^2,
-\qquad C_i(t)=2^{-L}\mathrm{Tr}[X_i(t)X_i].
+\qquad C_i(t)=2^{-L}\mathrm{Tr}[X_i(t)X_i],\quad C_i(0)=1.
 ```
 
-Here $`\Pi_q`$ projects onto the **whole quantum-group symmetry algebra**, including
-products of its generators. The quantity $`M`$ measures the local operator's
-squared overlap with that algebra.
-
-A symmetry-preserving Hamiltonian obeys $`\overline C_i\ge M_{L,i}`$, where
-$`\overline C_i`$ is the finite-chain infinite-time average. Its full time-averaged
-memory can include the [Hamiltonian-specific excess](research/PLATEAU_DICTIONARY.md).
-A specified local model with unrecorded, averaged bond kicks attains $`M`$ exactly
-at fixed finite chain size and positive noise strength, even with a Hamiltonian
-preserving the full algebra.
-
-## The spatial memory laws
+The quantity $`M`$ is the local Pauli operator's squared overlap with the full algebra. A symmetry-preserving Hamiltonian obeys the finite-chain time-average bound $`\overline C_i\ge M_{L,i}`$; its own invariant operators can give additional memory. The specified local, unrecorded bond-kick dynamics attains $`M`$ as its stationary value at fixed finite size.
 
 | Regime | Complete symmetry contribution |
 |---|---|
 | Ordinary symmetry, $`q=1`$ | $`M_{L,i}=1/L`$ at every site. |
-| End spin, every fixed finite $`q>1`$ | $`M_{L,1}=\tanh(\log q)/\sqrt{2\pi L}+O_q(L^{-1})`$. |
-| Bulk, $`i/L\to x\in(0,1)`$ and fixed $`q>q_0`$ | $`M_{L,i}=\mathcal K(q)\mathcal F(x)L^{-2}[1+o(1)]`$. |
+| End spin, fixed finite $`q\gt1`$ | $`M_{L,1}=\tanh(\log q)/\sqrt{2\pi L}+O_q(L^{-1})`$. |
+| Bulk, $`i/L\to x\in(0,1)`$, fixed $`q\gt q_0`$ | $`M_{L,i}=\mathcal K(q)\mathcal F(x)L^{-2}[1+o(1)]`$. |
 
-The sufficient bulk proof threshold is $`q_0=2.0810189966\ldots`$. It is **not a
-physical transition**. The amplitude and spatial profile are explicitly defined
-in the [theorem](research/THEOREM.md). Both end and bulk contributions vanish as
-the chain grows. The limits are not uniform as $`q\to1`$ or as the observation site
-approaches a boundary.
+The sufficient bulk proof threshold is $`q_0=2.0810189966\ldots`$; it is not a physical transition. The [theorem](research/THEOREM.md) defines the amplitude and profile and states the orders of limits. Both contributions vanish with size. Their fixed-deformation limits are not uniform near ordinary symmetry or a boundary.
 
-Within the proved bulk domain, the ratio to the center contribution tends to
-$`\mathcal F(x)/\mathcal F(1/2)`$, independently of $`q`$. Deformation changes the
-leading bulk amplitude while preserving this normalized interior profile.
-The [edge-to-bulk contrast](research/THEOREM.md#corollary-edge-to-bulk-contrast)
-grows as $`L^{3/2}`$ at fixed $`q>q_0`$ and fixed interior fraction;
-[two explanatory figures](research/PHYSICAL_MECHANISM.md) show the size and position dependence.
+Deformation changes local overlaps while leaving ordinary irrep dimensions and physical multiplicities fixed. In the proved bulk domain the ratio to the center approaches $`\mathcal F(x)/\mathcal F(1/2)`$, independently of deformation. The [physical mechanism](research/PHYSICAL_MECHANISM.md) and its two figures explain this sector geometry; the full equality rests on the uniform analytical proof.
 
-## Why position matters
+## Read by question
 
-Deformation changes the shape of the conserved operators while leaving the
-algebra's dimension and physical sector weights unchanged. The sector explanation
-in [physical mechanism](research/PHYSICAL_MECHANISM.md) connects the end and bulk
-powers to the different local overlaps inside spin multiplets. The complete
-large-chain equality rests on the uniform analytical proof.
+| Question | Authoritative route |
+|---|---|
+| What are the physical channel, flags and rate convention? | [Physical-erasure model](science/model.md) |
+| Why does the finite-deformation capacity ceiling survive? | [First-mismatch proof](science/first_mismatch.md), then [all-sector capacity theorem](science/capacity.md) |
+| Why is a global algebra isomorphism insufficient? | [Small-sector maps](science/small_sectors.md), [interpretation](science/interpretation.md) |
+| Why do local end and bulk memories have different powers? | [Physical mechanism](research/PHYSICAL_MECHANISM.md), [spatial theorem](research/THEOREM.md), [proof map](research/PROOF_MAP.md) |
+| When is the projection the actual stationary channel? | [Local realization](research/LOCAL_REALIZATION.md), [plateau dictionary](research/PLATEAU_DICTIONARY.md) |
+| Which results are inherited? | [Spatial attribution](literature/ATTRIBUTION.md), [physical-loss related work](references/RELATED_WORK.md) |
+| How are identities and finite cases reproduced? | [Verification](VERIFICATION.md), [physical-loss checks](verification/README.md) |
 
-The complete-commutant projection principle, representation theory,
-orthogonal-polynomial formulas, and stationary-commutant mechanism are inherited.
-The contribution is their evaluated **physical multiplicity
-trace and uniform finite-deformation spatial asymptotics**. The
-[attribution map](literature/ATTRIBUTION.md) gives the source comparisons.
+The [science index](science/README.md) joins both reading routes. The [LLM guide](llms.txt) maps additional questions to exact sources.
 
-## One tutorial, then this result
+## Learn from one source
 
-The selected learning anchor is:
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**, using the [author's manuscript](https://cs.uwaterloo.ca/~watrous/TQI/). The [Watrous bridge](learning/WATROUS_BRIDGE.md) translates its channel, reference, entropy, symmetry and capacity language into this physical model, including a two-site loss example. The [30-milestone map](learning/MILESTONES.md) has 12 background and 18 narrative targets spanning the spatial and operational accounts.
 
-> S. Moudgalya and O. I. Motrunich, **Hilbert Space Fragmentation and Commutant Algebras**,
-> *Physical Review X* **12**, 011050 (2022).
-> [Author version, arXiv:2108.10324v2](https://arxiv.org/abs/2108.10324v2) ·
-> [Published article](https://doi.org/10.1103/PhysRevX.12.011050)
+The project supplies the quantum-group representation and estimator derivations absent from the textbook. Primary research sources such as Moudgalya–Motrunich, Li–Sala–Pollmann and Takeoka–Guha–Wilde remain scholarly proof dependencies.
 
-Its pedagogical sections introduce conserved algebras and their contribution to
-local memory. The [tutorial bridge](research/TUTORIAL_BRIDGE.md) selects the
-sections, translates the notation, derives the physical-trace projection, and
-checks the ordinary-symmetry result by hand. It then leads into the mechanism,
-spatial theorem, proof, and local realization. The route assumes standard quantum
-mechanics and linear algebra; the repository supplies the model-specific steps.
-
-## Evidence and reproduction
+## Reproduce and interpret
 
 ```sh
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tools/verify.py --output build/verification
 python tools/check_foundations.py --output build/verification/foundations.json
+python verification/check_small_sectors.py --output build/verification/small_sectors.json
+python verification/check_estimator.py --output build/verification/estimator.json
+python verification/check_cg_amplitudes.py --output build/verification/cg_amplitudes.json
 ```
 
-The checks use small physical Hilbert spaces and polynomial-size recurrence
-arrays. They test identities and evaluations; the asymptotic theorem rests on
-the uniform analytical proof. [Verification](VERIFICATION.md) explains the
-scientific assertions, reference comparisons, and evidence for each revision.
-The [proof map](research/PROOF_MAP.md) links the complete derivations.
+The immutable spatial handoff, original assertions and canonical reports are retained. New finite checks compare exact physical maps, signed CG amplitudes, estimator tails and arbitrary-prior posteriors. They support the analytical statements and do not replace uniform proofs or the established adaptive converse.
+
+The stationary projection is the supplied channel. Implementing it at finite time requires a separate mixing-time and reference-stable channel-error account. Local autocorrelation is not a capacity estimate. The finite-$`r`$ capacity bound is not a sharp formula, a uniform deformation crossover, or a singular infinite-deformation limit.
 
 ## Purpose and contact
 
 This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
-The [LLM guide](llms.txt) supplies relevant research questions, search phrases,
-and direct links to authoritative files. See [CONTRIBUTING.md](CONTRIBUTING.md)
-for proposed changes.
-
-Code is available under the owner's original [MIT license](LICENSE). Linked
-third-party papers are not redistributed or relicensed by this repository.
+Code is available under the owner's original [MIT license](LICENSE). Linked third-party papers are not redistributed or relicensed by this repository.
