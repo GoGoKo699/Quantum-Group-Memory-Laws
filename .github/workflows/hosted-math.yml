@@ -1,0 +1,43 @@
+name: Inspect actual GitHub mathematics
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hosted-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser and math compiler
+        run: |
+          npm install --prefix /tmp/hosted-dependencies --no-save --no-package-lock playwright@1.56.1 mathjax-full@3.2.1
+          /tmp/hosted-dependencies/node_modules/.bin/playwright install --with-deps chromium
+      - name: Compare active source with actual GitHub MathML
+        env:
+          NODE_PATH: /tmp/hosted-dependencies/node_modules
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t pages < <(git ls-tree -r --name-only HEAD | python -c 'import sys; print("\n".join(p for p in sys.stdin.read().splitlines() if p.endswith(".md") and (p in ["README.md", "CONTRIBUTING.md", "VERIFICATION.md"] or p.startswith(("science/", "research/", "learning/", "literature/", "verification/")))))')
+          args=()
+          for page in "${pages[@]}"; do args+=(--page "$page"); done
+          node verification/hosted/capture_hosted_math.cjs --root . --repository GoGoKo699/Quantum-Group-Memory-Laws --revision "$(git rev-parse HEAD)" --output build/hosted-review "${args[@]}"
+      - name: Preserve source-bound report and visual captures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: hosted-math-${{ github.sha }}
+          path: build/hosted-review/
+          retention-days: 14
+          if-no-files-found: error
