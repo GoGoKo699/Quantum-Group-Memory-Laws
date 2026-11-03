@@ -81,7 +81,7 @@ For the lower-hazard survival bound, stop the process also at its $`(g+1)`$st hi
 For finite $`\tau`$, use
 
 ```math
-\widehat\delta=\operatorname{clip}_{[0,K]}(\log_z A_\tau).
+\widehat\delta=\mathrm{clip}_{[0,K]}(\log_z A_\tau).
 ```
 
 Set $`\widehat\delta=0`$ when there is no observed mismatch. The estimator uses the known path and the environment's erased-bit observations only.

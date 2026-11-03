@@ -21,7 +21,7 @@ Start with §§2.1–2.2 and the two-site example below. Then read only the rele
 
 ## One physical space, two uses of its projection
 
-The carrier consists of $`n`$ physical qubits. Write $`r>1`$ for a fixed finite real deformation and $`p`$ for the independent erasure probability, with $`0<p<1`$. Earlier spatial-memory pages use $`L`$ for chain length and $`q`$ for deformation; in this bridge $`L=n`$ and $`q=r`$.
+The carrier consists of $`n`$ physical qubits. Write $`r>1`$ for a fixed finite real deformation and $`p`$ for the independent erasure probability, with $`0\lt p\lt1`$. Earlier spatial-memory pages use $`L`$ for chain length and $`q`$ for deformation; in this bridge $`L=n`$ and $`q=r`$.
 
 For each spin $`j`$, let $`V_j`$ be its $`2j+1`$ dimensional representation and $`M_j`$ its multiplicity space. A deformed Clebsch–Gordan basis gives
 
@@ -115,6 +115,6 @@ The loss theorem also has a positive lower bound. A logical qubit using the all-
 1-h_2(p/2)\le Q_2(\mathcal E_p^{\otimes n}\circ\Pi_r)\le C(r,p),
 ```
 
-where $`h_2`$ is binary entropy. The left side is positive at every fixed $`0<p<1`$. The [capacity account](../science/capacity.md) derives the physical code and the bound. Thus coherent communication stays of order one per block; the ceiling does not assert that all entanglement is lost.
+where $`h_2`$ is binary entropy. The left side is positive at every fixed $`0\lt p\lt1`$. The [capacity account](../science/capacity.md) derives the physical code and the bound. Thus coherent communication stays of order one per block; the ceiling does not assert that all entanglement is lost.
 
 The primary research sources in the attribution accounts remain necessary for checking inherited inputs. They are scholarly references, not additional educational anchors.
