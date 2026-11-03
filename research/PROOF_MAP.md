@@ -2,7 +2,7 @@
 
 Read the [compact theorem](THEOREM.md) with the [model and assumptions](MODEL_AND_CLAIMS.md). The table connects each proof obligation to its detailed derivation.
 
-For preparation, the [tutorial bridge](TUTORIAL_BRIDGE.md) connects the selected Moudgalya–Motrunich source to the physical multiplicity projection used by these proofs.
+For preparation, the [Watrous bridge](../learning/WATROUS_BRIDGE.md) develops the quantum-channel tools used by the joint account. The [commutant background](COMMUTANT_BACKGROUND.md) preserves the Moudgalya–Motrunich notation and physical multiplicity-projection derivation used by the spatial proofs.
 
 | Obligation | Authoritative source |
 |---|---|
